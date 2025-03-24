@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("75ad9b38-37b6-400b-9228-e9933ffda106")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("SkillSheetAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dfb311a8cd987611ab5038a9a103e2707c287aa7")]
 [assembly: System.Reflection.AssemblyProductAttribute("SkillSheetAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SkillSheetAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -169,3 +169,4 @@ D:\SkillSheet\SkillSheetAPI\obj\Debug\net8.0\SkillSheetAPI.genruntimeconfig.cach
 D:\SkillSheet\SkillSheetAPI\obj\Debug\net8.0\ref\SkillSheetAPI.dll
 D:\SkillSheet\SkillSheetAPI\bin\Debug\net8.0\SkillSheetAPI.staticwebassets.runtime.json
 D:\SkillSheet\SkillSheetAPI\bin\Debug\net8.0\Microsoft.AspNetCore.SpaServices.Extensions.dll
+D:\SkillSheet\SkillSheetAPI\obj\Debug\net8.0\SkillSheetAPI.sourcelink.json
