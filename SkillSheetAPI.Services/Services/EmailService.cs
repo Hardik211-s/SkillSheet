@@ -1,0 +1,65 @@
+﻿using System.Net.Mail;
+using System.Net;
+using SkillSheetAPI.Services.Interfaces;
+
+namespace SkillSheetAPI.Services.Services
+{
+    public class EmailService :IEmailService
+    {
+
+        public async Task SendEmail(string username,string password,string email,string msg)
+        {
+            string userEmailBODY = $@"
+        <html>
+        <head>
+            <style>
+                body {{ font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; }}
+                .container {{ max-width: 600px; margin: auto; background: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }}
+                h2 {{ color: #2c3e50; }}
+                .details {{ background: #f8f9fa; padding: 15px; border-radius: 5px; margin-top: 10px; }}
+                .button {{ display: inline-block; margin-top: 15px; padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }}
+                .footer {{ margin-top: 20px; font-size: 12px; color: #7f8c8d; }}
+            </style>
+        </head>
+        <body>
+            <div class='container'>
+                <h2>🎉 Account {msg} Successfully!</h2>
+                <p>Dear <strong>{username}</strong>,</p>
+                <p>Your account has been successfully created. Here are your login details:</p>
+
+                <div class='details'>
+                    <p><strong>Username:</strong> {username}</p>
+                    <p><strong>Password:</strong> {password}</p>
+                </div>
+
+              
+
+                <p class='footer'>Thank you, <br> Hardik Savaliya </p>
+            </div>
+        </body>
+        </html>";
+            try
+            {
+                // Create a new instance of the SmtpClient class
+                SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+                client.EnableSsl = true;
+                client.UseDefaultCredentials = false;
+                client.Credentials = new NetworkCredential("hardik96500c@gmail.com", "deel avtw qgtn jbdn");
+
+                // Create a new instance of the MailMessage class
+                MailMessage mailMessage = new MailMessage();
+                mailMessage.From = new MailAddress("hardik96500c@gmail.com");
+                mailMessage.To.Add(email);
+                mailMessage.Subject = "Test Email";
+                mailMessage.Body = userEmailBODY;
+                mailMessage.IsBodyHtml = true;
+
+                // Send the email
+                await Task.Run(() => client.Send(mailMessage));
+            }
+            catch (Exception ex) {
+                Console.WriteLine(ex.Message);
+            }
+        }
+    }
+}
