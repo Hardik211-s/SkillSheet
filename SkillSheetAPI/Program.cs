@@ -112,7 +112,7 @@ app.UseStaticFiles(new StaticFileOptions
     FileProvider = new PhysicalFileProvider(
            Path.Combine(Directory.GetCurrentDirectory(), "Resources")),
     RequestPath = "SkillSheetAPI/Resources"
-});
+}); 
 app.UseStaticFiles();
 
 app.UseHttpsRedirection();
