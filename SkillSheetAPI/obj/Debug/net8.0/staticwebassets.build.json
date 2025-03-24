@@ -1,0 +1,3833 @@
+{
+  "Version": 1,
+  "Hash": "zH/FX4q79yfJ/lc7wmWDCfpVB6u7xXj9FtGnj63EXOQ=",
+  "Source": "SkillSheetAPI",
+  "BasePath": "_content/SkillSheetAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "SkillSheetAPI\\wwwroot",
+      "Source": "SkillSheetAPI",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\19197184.jpg",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "assets/19197184#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1vwcfezok1",
+      "Integrity": "Xcgb/VL27p0T6NAedF9ixkLcS9zItxwvAnfCG716tzw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\19197184.jpg"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\19199158.jpg",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "assets/19199158#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wqn10h3wny",
+      "Integrity": "eELqZpBFs4o8CJCqii0lnmFchGfOGjnSpZxrRqiKv+8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\19199158.jpg"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\3055778.jpg",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "assets/3055778#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6yy5mlfm77",
+      "Integrity": "0gUKQJcs9VrxdnuZTFe0/308fpg1wd2ENQa/pRWtfnA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\3055778.jpg"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\3487284.jpg",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "assets/3487284#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "owayipjshj",
+      "Integrity": "SA7Gg7DtG8PflDgiFmSSmhO5y54wlcenY+1mVq6e2hU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\3487284.jpg"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\5162744.jpg",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "assets/5162744#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "c85ovqt0u2",
+      "Integrity": "hNhUnfsS4zbI/L3wRar205yzN5+RHBCu/Emgnt14FWA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\5162744.jpg"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\5215677-removebg-preview.png",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "assets/5215677-removebg-preview#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rstu6ur6ny",
+      "Integrity": "WyDqCc4NVmxzXZM4z4uvWhl4AKGVS622IMQ4no2JWtg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\5215677-removebg-preview.png"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\6587133.jpg",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "assets/6587133#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jyl06g6etp",
+      "Integrity": "K1UnECf1SuwHoJLLXVvrL9KUvVnmBjQKYhabXH10KDw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\6587133.jpg"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\8786988.jpg",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "assets/8786988#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s7zvggtvrf",
+      "Integrity": "+FsP63j8yw/Dc94ZIDf8KYk3JDekQOLNa4XU4Jx8qKQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\8786988.jpg"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\8786988-removebg-preview.png",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "assets/8786988-removebg-preview#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lk873im5qw",
+      "Integrity": "282RBeDWr76mjeg84cpSffB+oE8k19b2oZeUVGTFdAI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\8786988-removebg-preview.png"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\add_skill.png",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "assets/add_skill#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "59fzke0ngh",
+      "Integrity": "B3z1TdWbjgeO06KEzD+cjAnBVeRzQbnz7cwHrLmgNB4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\add_skill.png"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\bigdata_4.jpg",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "assets/bigdata_4#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "imaifi8yck",
+      "Integrity": "Sv3FUNHr85IG7YyXRx9EvnmRNWb+kyBJdRLegL4r+LU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\bigdata_4.jpg"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\camera.png",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "assets/camera#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8ix4l3cwxp",
+      "Integrity": "YJywjJokmbmL77GD2+MpXGLsa7Ywiv6HOZYD+GSZamc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\camera.png"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\find user2.png",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "assets/find user2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tv8vcx849c",
+      "Integrity": "uW6juee2d9dPlfQTWaqgvuhxyH8iLOB4Z1DwBljmjXk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\find user2.png"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\find_user.png",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "assets/find_user#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vvi72gwxkk",
+      "Integrity": "Wx3/1YDgFqFUkbLZ+2UFHaeWTA8zVpR0P4/BJIY6FKk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\find_user.png"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\freepik__background__74231.png",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "assets/freepik__background__74231#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zz797xjxf8",
+      "Integrity": "v4usVb6mUcEntt/6mtzo+/EDOcBPcDZb/pW2QrJjwlQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\freepik__background__74231.png"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icon.png",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "assets/icon#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2b8n2qai2o",
+      "Integrity": "zpOxoilTKd0KrOtnHfXdYR0d8rkB5WbLgJ6vZXY/8QE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\icon.png"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icon2.png",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "assets/icon2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "211qzl2j8n",
+      "Integrity": "SiEcYYbWPXjJeDQzaqSVctZc1nSlY6mJFQZo3ofSihk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\icon2.png"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-add-user-30 (1).png",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "assets/icons8-add-user-30 (1)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "oclqzfnp8i",
+      "Integrity": "aMLtfuBL0Cy+Q8WGWQOmQLnF2OMJRLU3VYc/VGV4TSI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\icons8-add-user-30 (1).png"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-cancel-30.png",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "assets/icons8-cancel-30#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0821pn09ao",
+      "Integrity": "gIlf+qcJ3GTgrY29Qqlf5iun+WvK1ValqZskCekz5+Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\icons8-cancel-30.png"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-dashboard-48 (1).png",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "assets/icons8-dashboard-48 (1)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jwtdslm2lz",
+      "Integrity": "o8g/8eedKxlpn8phHa79Jmao2KWYpCJALu3xDCltaR8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\icons8-dashboard-48 (1).png"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-dashboard-48.png",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "assets/icons8-dashboard-48#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "37t1yni99o",
+      "Integrity": "8TfaduEUmLWiTCINzg96TJMe7/q6GaewOnlYOVrk3Ns=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\icons8-dashboard-48.png"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-detail-40.png",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "assets/icons8-detail-40#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "w0ksof0ebi",
+      "Integrity": "YIj15Mm5sSgydMoaZLH37VQJ8CUvRXsbZyw2jtrvrzw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\icons8-detail-40.png"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-name-24.png",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "assets/icons8-name-24#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "d5r5uthhrk",
+      "Integrity": "TyU5rofgiA6PVPgNpKEB9lKKr0rXrRPRnJAu9LyBbNs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\icons8-name-24.png"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-sheet-24.png",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "assets/icons8-sheet-24#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "w0s85bkrob",
+      "Integrity": "II9iQ2sfuzigByBwjxJ2H7kX3UbVl5v6bS8vHVeObNw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\icons8-sheet-24.png"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-sheet-48.png",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "assets/icons8-sheet-48#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "201voxd1v2",
+      "Integrity": "0mJVTWO+L91zQ8YHapFrPkpZtEO3RtkWkH4PYT8/Xic=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\icons8-sheet-48.png"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-user-settings-64.png",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "assets/icons8-user-settings-64#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h8tz8er4mo",
+      "Integrity": "P9HuGdqjtiDbsTpQ3RLH5LBYSyZWWLDtrNueHzi74yM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\icons8-user-settings-64.png"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\manage_profile.png",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "assets/manage_profile#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sawty9gc3m",
+      "Integrity": "PJFc46wcXv2rhhcFih3C/JPgptSwhgcBbHdL7tEoKi4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\manage_profile.png"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\my_skill.png",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "assets/my_skill#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hnouy293gw",
+      "Integrity": "TdI0NaTfHElSyEIc3FrllseiiKp89dDy7II8OckdaSU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\my_skill.png"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\profile.png",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "assets/profile#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h9v3kvuc41",
+      "Integrity": "++4LKJ1SzPPAe+MYqP/gbPst6CxGpPu50SvnRSYjoP8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\profile.png"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\Set_of_programmers_02_02.jpg",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "assets/Set_of_programmers_02_02#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "eofttsidws",
+      "Integrity": "Yn7RvSqae3qIpG5VMUy+4n3ORmcZ1DgIq36RlfYq064=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\Set_of_programmers_02_02.jpg"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\vision-scope-document-abstract-concept-illustration-vision-statement-scope-document-main-plan-project-management-software-business-analysis-idea-goal.png",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "assets/vision-scope-document-abstract-concept-illustration-vision-statement-scope-document-main-plan-project-management-software-business-analysis-idea-goal#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6dd9vnn4nc",
+      "Integrity": "6lbQsw/6OBQUvlDkvGsRKYtn7crqTAffTCYuRIx9hBQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\vision-scope-document-abstract-concept-illustration-vision-statement-scope-document-main-plan-project-management-software-business-analysis-idea-goal.png"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\favicon.ico",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "favicon#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vagikyz9qx",
+      "Integrity": "+RAr6AKXwFKSB2B75Sd7T5C8qJ1lmI+hdxuRx4lOgV8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\index.html",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yv8nw8nx8e",
+      "Integrity": "vnxKaQ2mlpw0qgSJDDRmWZe3NPPVhMHhXqrLoxEzaH8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\main-6G43QSKD.js",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "main-6G43QSKD#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xtkay8re8q",
+      "Integrity": "C8atna9SK9GHwFBvDs8IFN8zaxgrmxWSnwKB/x9Vvi8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\main-6G43QSKD.js"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\polyfills-FFHMD2TL.js",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "polyfills-FFHMD2TL#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "39tegmrjtp",
+      "Integrity": "adzqBFZD3Q3pmKPNDMu7RrRr/yZRqHpWxzwo6yCOj5g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\polyfills-FFHMD2TL.js"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\scripts-EEEIPNC3.js",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "scripts-EEEIPNC3#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sej8s0gw2x",
+      "Integrity": "RLACcEWxTx5o0304S130+Y1bHWzJiZVqm1xuCOrHrvg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\scripts-EEEIPNC3.js"
+    },
+    {
+      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\styles-E4SXJBJ6.css",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "styles-E4SXJBJ6#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1q5qkhrx0n",
+      "Integrity": "h/h+RFEqs+e9mZlaWuk+qf7L22X1vCVbCuPwC32yWBQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\styles-E4SXJBJ6.css"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "assets/19197184.1vwcfezok1.jpg",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\19197184.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2869542"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Xcgb/VL27p0T6NAedF9ixkLcS9zItxwvAnfCG716tzw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 18:14:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1vwcfezok1"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/19197184.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Xcgb/VL27p0T6NAedF9ixkLcS9zItxwvAnfCG716tzw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/19197184.jpg",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\19197184.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2869542"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Xcgb/VL27p0T6NAedF9ixkLcS9zItxwvAnfCG716tzw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 18:14:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Xcgb/VL27p0T6NAedF9ixkLcS9zItxwvAnfCG716tzw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/19199158.jpg",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\19199158.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3561706"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eELqZpBFs4o8CJCqii0lnmFchGfOGjnSpZxrRqiKv+8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 17:58:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eELqZpBFs4o8CJCqii0lnmFchGfOGjnSpZxrRqiKv+8="
+        }
+      ]
+    },
+    {
+      "Route": "assets/19199158.wqn10h3wny.jpg",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\19199158.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3561706"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eELqZpBFs4o8CJCqii0lnmFchGfOGjnSpZxrRqiKv+8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 17:58:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wqn10h3wny"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/19199158.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eELqZpBFs4o8CJCqii0lnmFchGfOGjnSpZxrRqiKv+8="
+        }
+      ]
+    },
+    {
+      "Route": "assets/3055778.6yy5mlfm77.jpg",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\3055778.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "446368"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0gUKQJcs9VrxdnuZTFe0/308fpg1wd2ENQa/pRWtfnA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Feb 2025 05:25:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6yy5mlfm77"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/3055778.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0gUKQJcs9VrxdnuZTFe0/308fpg1wd2ENQa/pRWtfnA="
+        }
+      ]
+    },
+    {
+      "Route": "assets/3055778.jpg",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\3055778.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "446368"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0gUKQJcs9VrxdnuZTFe0/308fpg1wd2ENQa/pRWtfnA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Feb 2025 05:25:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0gUKQJcs9VrxdnuZTFe0/308fpg1wd2ENQa/pRWtfnA="
+        }
+      ]
+    },
+    {
+      "Route": "assets/3487284.jpg",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\3487284.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "743654"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SA7Gg7DtG8PflDgiFmSSmhO5y54wlcenY+1mVq6e2hU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Feb 2025 05:26:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SA7Gg7DtG8PflDgiFmSSmhO5y54wlcenY+1mVq6e2hU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/3487284.owayipjshj.jpg",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\3487284.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "743654"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SA7Gg7DtG8PflDgiFmSSmhO5y54wlcenY+1mVq6e2hU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Feb 2025 05:26:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "owayipjshj"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/3487284.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SA7Gg7DtG8PflDgiFmSSmhO5y54wlcenY+1mVq6e2hU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/5162744.c85ovqt0u2.jpg",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\5162744.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "200778"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hNhUnfsS4zbI/L3wRar205yzN5+RHBCu/Emgnt14FWA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 18:24:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c85ovqt0u2"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/5162744.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hNhUnfsS4zbI/L3wRar205yzN5+RHBCu/Emgnt14FWA="
+        }
+      ]
+    },
+    {
+      "Route": "assets/5162744.jpg",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\5162744.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "200778"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hNhUnfsS4zbI/L3wRar205yzN5+RHBCu/Emgnt14FWA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 18:24:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hNhUnfsS4zbI/L3wRar205yzN5+RHBCu/Emgnt14FWA="
+        }
+      ]
+    },
+    {
+      "Route": "assets/5215677-removebg-preview.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\5215677-removebg-preview.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "301729"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WyDqCc4NVmxzXZM4z4uvWhl4AKGVS622IMQ4no2JWtg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Feb 2025 06:05:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WyDqCc4NVmxzXZM4z4uvWhl4AKGVS622IMQ4no2JWtg="
+        }
+      ]
+    },
+    {
+      "Route": "assets/5215677-removebg-preview.rstu6ur6ny.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\5215677-removebg-preview.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "301729"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WyDqCc4NVmxzXZM4z4uvWhl4AKGVS622IMQ4no2JWtg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Feb 2025 06:05:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rstu6ur6ny"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/5215677-removebg-preview.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WyDqCc4NVmxzXZM4z4uvWhl4AKGVS622IMQ4no2JWtg="
+        }
+      ]
+    },
+    {
+      "Route": "assets/6587133.jpg",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\6587133.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "261277"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"K1UnECf1SuwHoJLLXVvrL9KUvVnmBjQKYhabXH10KDw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 18:18:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-K1UnECf1SuwHoJLLXVvrL9KUvVnmBjQKYhabXH10KDw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/6587133.jyl06g6etp.jpg",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\6587133.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "261277"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"K1UnECf1SuwHoJLLXVvrL9KUvVnmBjQKYhabXH10KDw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 18:18:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jyl06g6etp"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/6587133.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-K1UnECf1SuwHoJLLXVvrL9KUvVnmBjQKYhabXH10KDw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/8786988.jpg",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\8786988.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "227759"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+FsP63j8yw/Dc94ZIDf8KYk3JDekQOLNa4XU4Jx8qKQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Feb 2025 06:05:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+FsP63j8yw/Dc94ZIDf8KYk3JDekQOLNa4XU4Jx8qKQ="
+        }
+      ]
+    },
+    {
+      "Route": "assets/8786988.s7zvggtvrf.jpg",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\8786988.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "227759"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+FsP63j8yw/Dc94ZIDf8KYk3JDekQOLNa4XU4Jx8qKQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Feb 2025 06:05:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s7zvggtvrf"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/8786988.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+FsP63j8yw/Dc94ZIDf8KYk3JDekQOLNa4XU4Jx8qKQ="
+        }
+      ]
+    },
+    {
+      "Route": "assets/8786988-removebg-preview.lk873im5qw.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\8786988-removebg-preview.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "119108"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"282RBeDWr76mjeg84cpSffB+oE8k19b2oZeUVGTFdAI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Feb 2025 06:06:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lk873im5qw"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/8786988-removebg-preview.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-282RBeDWr76mjeg84cpSffB+oE8k19b2oZeUVGTFdAI="
+        }
+      ]
+    },
+    {
+      "Route": "assets/8786988-removebg-preview.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\8786988-removebg-preview.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "119108"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"282RBeDWr76mjeg84cpSffB+oE8k19b2oZeUVGTFdAI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Feb 2025 06:06:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-282RBeDWr76mjeg84cpSffB+oE8k19b2oZeUVGTFdAI="
+        }
+      ]
+    },
+    {
+      "Route": "assets/add_skill.59fzke0ngh.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\add_skill.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "441"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B3z1TdWbjgeO06KEzD+cjAnBVeRzQbnz7cwHrLmgNB4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 09:21:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "59fzke0ngh"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/add_skill.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-B3z1TdWbjgeO06KEzD+cjAnBVeRzQbnz7cwHrLmgNB4="
+        }
+      ]
+    },
+    {
+      "Route": "assets/add_skill.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\add_skill.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "441"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B3z1TdWbjgeO06KEzD+cjAnBVeRzQbnz7cwHrLmgNB4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 09:21:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-B3z1TdWbjgeO06KEzD+cjAnBVeRzQbnz7cwHrLmgNB4="
+        }
+      ]
+    },
+    {
+      "Route": "assets/bigdata_4.imaifi8yck.jpg",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\bigdata_4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1871053"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Sv3FUNHr85IG7YyXRx9EvnmRNWb+kyBJdRLegL4r+LU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 18:13:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "imaifi8yck"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/bigdata_4.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Sv3FUNHr85IG7YyXRx9EvnmRNWb+kyBJdRLegL4r+LU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/bigdata_4.jpg",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\bigdata_4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1871053"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Sv3FUNHr85IG7YyXRx9EvnmRNWb+kyBJdRLegL4r+LU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 18:13:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Sv3FUNHr85IG7YyXRx9EvnmRNWb+kyBJdRLegL4r+LU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/camera.8ix4l3cwxp.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\camera.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "282"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YJywjJokmbmL77GD2+MpXGLsa7Ywiv6HOZYD+GSZamc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 12:15:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8ix4l3cwxp"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/camera.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YJywjJokmbmL77GD2+MpXGLsa7Ywiv6HOZYD+GSZamc="
+        }
+      ]
+    },
+    {
+      "Route": "assets/camera.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\camera.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "282"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YJywjJokmbmL77GD2+MpXGLsa7Ywiv6HOZYD+GSZamc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 12:15:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YJywjJokmbmL77GD2+MpXGLsa7Ywiv6HOZYD+GSZamc="
+        }
+      ]
+    },
+    {
+      "Route": "assets/find user2.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\find user2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1298"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uW6juee2d9dPlfQTWaqgvuhxyH8iLOB4Z1DwBljmjXk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 08:18:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uW6juee2d9dPlfQTWaqgvuhxyH8iLOB4Z1DwBljmjXk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/find user2.tv8vcx849c.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\find user2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1298"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uW6juee2d9dPlfQTWaqgvuhxyH8iLOB4Z1DwBljmjXk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 08:18:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tv8vcx849c"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/find user2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uW6juee2d9dPlfQTWaqgvuhxyH8iLOB4Z1DwBljmjXk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/find_user.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\find_user.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1031"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Wx3/1YDgFqFUkbLZ+2UFHaeWTA8zVpR0P4/BJIY6FKk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 08:20:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Wx3/1YDgFqFUkbLZ+2UFHaeWTA8zVpR0P4/BJIY6FKk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/find_user.vvi72gwxkk.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\find_user.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1031"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Wx3/1YDgFqFUkbLZ+2UFHaeWTA8zVpR0P4/BJIY6FKk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 08:20:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vvi72gwxkk"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/find_user.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Wx3/1YDgFqFUkbLZ+2UFHaeWTA8zVpR0P4/BJIY6FKk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/freepik__background__74231.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\freepik__background__74231.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1051631"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v4usVb6mUcEntt/6mtzo+/EDOcBPcDZb/pW2QrJjwlQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 04:25:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-v4usVb6mUcEntt/6mtzo+/EDOcBPcDZb/pW2QrJjwlQ="
+        }
+      ]
+    },
+    {
+      "Route": "assets/freepik__background__74231.zz797xjxf8.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\freepik__background__74231.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1051631"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v4usVb6mUcEntt/6mtzo+/EDOcBPcDZb/pW2QrJjwlQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 04:25:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zz797xjxf8"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/freepik__background__74231.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-v4usVb6mUcEntt/6mtzo+/EDOcBPcDZb/pW2QrJjwlQ="
+        }
+      ]
+    },
+    {
+      "Route": "assets/icon.2b8n2qai2o.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "326514"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zpOxoilTKd0KrOtnHfXdYR0d8rkB5WbLgJ6vZXY/8QE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Mar 2025 04:19:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2b8n2qai2o"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/icon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zpOxoilTKd0KrOtnHfXdYR0d8rkB5WbLgJ6vZXY/8QE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/icon.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "326514"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zpOxoilTKd0KrOtnHfXdYR0d8rkB5WbLgJ6vZXY/8QE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Mar 2025 04:19:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zpOxoilTKd0KrOtnHfXdYR0d8rkB5WbLgJ6vZXY/8QE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/icon2.211qzl2j8n.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icon2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "366117"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SiEcYYbWPXjJeDQzaqSVctZc1nSlY6mJFQZo3ofSihk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Mar 2025 04:21:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "211qzl2j8n"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/icon2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SiEcYYbWPXjJeDQzaqSVctZc1nSlY6mJFQZo3ofSihk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/icon2.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icon2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "366117"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SiEcYYbWPXjJeDQzaqSVctZc1nSlY6mJFQZo3ofSihk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Mar 2025 04:21:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SiEcYYbWPXjJeDQzaqSVctZc1nSlY6mJFQZo3ofSihk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/icons8-add-user-30 (1).oclqzfnp8i.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-add-user-30 (1).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "598"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aMLtfuBL0Cy+Q8WGWQOmQLnF2OMJRLU3VYc/VGV4TSI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 19:15:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oclqzfnp8i"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/icons8-add-user-30 (1).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aMLtfuBL0Cy+Q8WGWQOmQLnF2OMJRLU3VYc/VGV4TSI="
+        }
+      ]
+    },
+    {
+      "Route": "assets/icons8-add-user-30 (1).png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-add-user-30 (1).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "598"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aMLtfuBL0Cy+Q8WGWQOmQLnF2OMJRLU3VYc/VGV4TSI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 19:15:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aMLtfuBL0Cy+Q8WGWQOmQLnF2OMJRLU3VYc/VGV4TSI="
+        }
+      ]
+    },
+    {
+      "Route": "assets/icons8-cancel-30.0821pn09ao.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-cancel-30.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "258"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gIlf+qcJ3GTgrY29Qqlf5iun+WvK1ValqZskCekz5+Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Feb 2025 04:13:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0821pn09ao"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/icons8-cancel-30.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gIlf+qcJ3GTgrY29Qqlf5iun+WvK1ValqZskCekz5+Y="
+        }
+      ]
+    },
+    {
+      "Route": "assets/icons8-cancel-30.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-cancel-30.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "258"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gIlf+qcJ3GTgrY29Qqlf5iun+WvK1ValqZskCekz5+Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Feb 2025 04:13:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gIlf+qcJ3GTgrY29Qqlf5iun+WvK1ValqZskCekz5+Y="
+        }
+      ]
+    },
+    {
+      "Route": "assets/icons8-dashboard-48 (1).jwtdslm2lz.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-dashboard-48 (1).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"o8g/8eedKxlpn8phHa79Jmao2KWYpCJALu3xDCltaR8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 19:16:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jwtdslm2lz"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/icons8-dashboard-48 (1).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-o8g/8eedKxlpn8phHa79Jmao2KWYpCJALu3xDCltaR8="
+        }
+      ]
+    },
+    {
+      "Route": "assets/icons8-dashboard-48 (1).png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-dashboard-48 (1).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"o8g/8eedKxlpn8phHa79Jmao2KWYpCJALu3xDCltaR8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 19:16:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-o8g/8eedKxlpn8phHa79Jmao2KWYpCJALu3xDCltaR8="
+        }
+      ]
+    },
+    {
+      "Route": "assets/icons8-dashboard-48.37t1yni99o.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-dashboard-48.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "323"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8TfaduEUmLWiTCINzg96TJMe7/q6GaewOnlYOVrk3Ns=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 18:53:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "37t1yni99o"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/icons8-dashboard-48.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8TfaduEUmLWiTCINzg96TJMe7/q6GaewOnlYOVrk3Ns="
+        }
+      ]
+    },
+    {
+      "Route": "assets/icons8-dashboard-48.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-dashboard-48.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "323"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8TfaduEUmLWiTCINzg96TJMe7/q6GaewOnlYOVrk3Ns=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 18:53:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8TfaduEUmLWiTCINzg96TJMe7/q6GaewOnlYOVrk3Ns="
+        }
+      ]
+    },
+    {
+      "Route": "assets/icons8-detail-40.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-detail-40.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "270"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YIj15Mm5sSgydMoaZLH37VQJ8CUvRXsbZyw2jtrvrzw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 20:09:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YIj15Mm5sSgydMoaZLH37VQJ8CUvRXsbZyw2jtrvrzw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/icons8-detail-40.w0ksof0ebi.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-detail-40.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "270"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YIj15Mm5sSgydMoaZLH37VQJ8CUvRXsbZyw2jtrvrzw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 20:09:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w0ksof0ebi"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/icons8-detail-40.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YIj15Mm5sSgydMoaZLH37VQJ8CUvRXsbZyw2jtrvrzw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/icons8-name-24.d5r5uthhrk.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-name-24.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "253"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TyU5rofgiA6PVPgNpKEB9lKKr0rXrRPRnJAu9LyBbNs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 09:13:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d5r5uthhrk"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/icons8-name-24.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TyU5rofgiA6PVPgNpKEB9lKKr0rXrRPRnJAu9LyBbNs="
+        }
+      ]
+    },
+    {
+      "Route": "assets/icons8-name-24.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-name-24.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "253"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TyU5rofgiA6PVPgNpKEB9lKKr0rXrRPRnJAu9LyBbNs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 09:13:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TyU5rofgiA6PVPgNpKEB9lKKr0rXrRPRnJAu9LyBbNs="
+        }
+      ]
+    },
+    {
+      "Route": "assets/icons8-sheet-24.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-sheet-24.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "201"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"II9iQ2sfuzigByBwjxJ2H7kX3UbVl5v6bS8vHVeObNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 19:27:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-II9iQ2sfuzigByBwjxJ2H7kX3UbVl5v6bS8vHVeObNw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/icons8-sheet-24.w0s85bkrob.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-sheet-24.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "201"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"II9iQ2sfuzigByBwjxJ2H7kX3UbVl5v6bS8vHVeObNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 19:27:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w0s85bkrob"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/icons8-sheet-24.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-II9iQ2sfuzigByBwjxJ2H7kX3UbVl5v6bS8vHVeObNw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/icons8-sheet-48.201voxd1v2.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-sheet-48.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "327"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0mJVTWO+L91zQ8YHapFrPkpZtEO3RtkWkH4PYT8/Xic=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 19:25:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "201voxd1v2"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/icons8-sheet-48.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0mJVTWO+L91zQ8YHapFrPkpZtEO3RtkWkH4PYT8/Xic="
+        }
+      ]
+    },
+    {
+      "Route": "assets/icons8-sheet-48.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-sheet-48.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "327"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0mJVTWO+L91zQ8YHapFrPkpZtEO3RtkWkH4PYT8/Xic=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 19:25:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0mJVTWO+L91zQ8YHapFrPkpZtEO3RtkWkH4PYT8/Xic="
+        }
+      ]
+    },
+    {
+      "Route": "assets/icons8-user-settings-64.h8tz8er4mo.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-user-settings-64.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1645"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"P9HuGdqjtiDbsTpQ3RLH5LBYSyZWWLDtrNueHzi74yM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 19:13:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h8tz8er4mo"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/icons8-user-settings-64.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-P9HuGdqjtiDbsTpQ3RLH5LBYSyZWWLDtrNueHzi74yM="
+        }
+      ]
+    },
+    {
+      "Route": "assets/icons8-user-settings-64.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-user-settings-64.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1645"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"P9HuGdqjtiDbsTpQ3RLH5LBYSyZWWLDtrNueHzi74yM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 19:13:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-P9HuGdqjtiDbsTpQ3RLH5LBYSyZWWLDtrNueHzi74yM="
+        }
+      ]
+    },
+    {
+      "Route": "assets/manage_profile.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\manage_profile.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1350"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PJFc46wcXv2rhhcFih3C/JPgptSwhgcBbHdL7tEoKi4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 09:28:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PJFc46wcXv2rhhcFih3C/JPgptSwhgcBbHdL7tEoKi4="
+        }
+      ]
+    },
+    {
+      "Route": "assets/manage_profile.sawty9gc3m.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\manage_profile.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1350"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PJFc46wcXv2rhhcFih3C/JPgptSwhgcBbHdL7tEoKi4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 09:28:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sawty9gc3m"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/manage_profile.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PJFc46wcXv2rhhcFih3C/JPgptSwhgcBbHdL7tEoKi4="
+        }
+      ]
+    },
+    {
+      "Route": "assets/my_skill.hnouy293gw.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\my_skill.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "415"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TdI0NaTfHElSyEIc3FrllseiiKp89dDy7II8OckdaSU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 09:25:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hnouy293gw"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/my_skill.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TdI0NaTfHElSyEIc3FrllseiiKp89dDy7II8OckdaSU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/my_skill.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\my_skill.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "415"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TdI0NaTfHElSyEIc3FrllseiiKp89dDy7II8OckdaSU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 09:25:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TdI0NaTfHElSyEIc3FrllseiiKp89dDy7II8OckdaSU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/profile.h9v3kvuc41.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\profile.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1463"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"++4LKJ1SzPPAe+MYqP/gbPst6CxGpPu50SvnRSYjoP8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 04:23:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h9v3kvuc41"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/profile.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-++4LKJ1SzPPAe+MYqP/gbPst6CxGpPu50SvnRSYjoP8="
+        }
+      ]
+    },
+    {
+      "Route": "assets/profile.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\profile.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1463"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"++4LKJ1SzPPAe+MYqP/gbPst6CxGpPu50SvnRSYjoP8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 04:23:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-++4LKJ1SzPPAe+MYqP/gbPst6CxGpPu50SvnRSYjoP8="
+        }
+      ]
+    },
+    {
+      "Route": "assets/Set_of_programmers_02_02.eofttsidws.jpg",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\Set_of_programmers_02_02.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1115325"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Yn7RvSqae3qIpG5VMUy+4n3ORmcZ1DgIq36RlfYq064=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 18:20:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "eofttsidws"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/Set_of_programmers_02_02.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yn7RvSqae3qIpG5VMUy+4n3ORmcZ1DgIq36RlfYq064="
+        }
+      ]
+    },
+    {
+      "Route": "assets/Set_of_programmers_02_02.jpg",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\Set_of_programmers_02_02.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1115325"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Yn7RvSqae3qIpG5VMUy+4n3ORmcZ1DgIq36RlfYq064=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 18:20:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yn7RvSqae3qIpG5VMUy+4n3ORmcZ1DgIq36RlfYq064="
+        }
+      ]
+    },
+    {
+      "Route": "assets/vision-scope-document-abstract-concept-illustration-vision-statement-scope-document-main-plan-project-management-software-business-analysis-idea-goal.6dd9vnn4nc.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\vision-scope-document-abstract-concept-illustration-vision-statement-scope-document-main-plan-project-management-software-business-analysis-idea-goal.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "890930"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6lbQsw/6OBQUvlDkvGsRKYtn7crqTAffTCYuRIx9hBQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 07:38:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6dd9vnn4nc"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/vision-scope-document-abstract-concept-illustration-vision-statement-scope-document-main-plan-project-management-software-business-analysis-idea-goal.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6lbQsw/6OBQUvlDkvGsRKYtn7crqTAffTCYuRIx9hBQ="
+        }
+      ]
+    },
+    {
+      "Route": "assets/vision-scope-document-abstract-concept-illustration-vision-statement-scope-document-main-plan-project-management-software-business-analysis-idea-goal.png",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\vision-scope-document-abstract-concept-illustration-vision-statement-scope-document-main-plan-project-management-software-business-analysis-idea-goal.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "890930"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6lbQsw/6OBQUvlDkvGsRKYtn7crqTAffTCYuRIx9hBQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 07:38:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6lbQsw/6OBQUvlDkvGsRKYtn7crqTAffTCYuRIx9hBQ="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ico",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15086"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+RAr6AKXwFKSB2B75Sd7T5C8qJ1lmI+hdxuRx4lOgV8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Feb 2025 04:09:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+RAr6AKXwFKSB2B75Sd7T5C8qJ1lmI+hdxuRx4lOgV8="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.vagikyz9qx.ico",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15086"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+RAr6AKXwFKSB2B75Sd7T5C8qJ1lmI+hdxuRx4lOgV8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Feb 2025 04:09:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vagikyz9qx"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+RAr6AKXwFKSB2B75Sd7T5C8qJ1lmI+hdxuRx4lOgV8="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35697"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vnxKaQ2mlpw0qgSJDDRmWZe3NPPVhMHhXqrLoxEzaH8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 10:04:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vnxKaQ2mlpw0qgSJDDRmWZe3NPPVhMHhXqrLoxEzaH8="
+        }
+      ]
+    },
+    {
+      "Route": "index.yv8nw8nx8e.html",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35697"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vnxKaQ2mlpw0qgSJDDRmWZe3NPPVhMHhXqrLoxEzaH8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 10:04:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yv8nw8nx8e"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vnxKaQ2mlpw0qgSJDDRmWZe3NPPVhMHhXqrLoxEzaH8="
+        }
+      ]
+    },
+    {
+      "Route": "main-6G43QSKD.js",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\main-6G43QSKD.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1549153"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"C8atna9SK9GHwFBvDs8IFN8zaxgrmxWSnwKB/x9Vvi8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 09:14:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-C8atna9SK9GHwFBvDs8IFN8zaxgrmxWSnwKB/x9Vvi8="
+        }
+      ]
+    },
+    {
+      "Route": "main-6G43QSKD.xtkay8re8q.js",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\main-6G43QSKD.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1549153"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"C8atna9SK9GHwFBvDs8IFN8zaxgrmxWSnwKB/x9Vvi8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 09:14:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xtkay8re8q"
+        },
+        {
+          "Name": "label",
+          "Value": "main-6G43QSKD.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-C8atna9SK9GHwFBvDs8IFN8zaxgrmxWSnwKB/x9Vvi8="
+        }
+      ]
+    },
+    {
+      "Route": "polyfills-FFHMD2TL.39tegmrjtp.js",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\polyfills-FFHMD2TL.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34519"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"adzqBFZD3Q3pmKPNDMu7RrRr/yZRqHpWxzwo6yCOj5g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 09:14:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "39tegmrjtp"
+        },
+        {
+          "Name": "label",
+          "Value": "polyfills-FFHMD2TL.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-adzqBFZD3Q3pmKPNDMu7RrRr/yZRqHpWxzwo6yCOj5g="
+        }
+      ]
+    },
+    {
+      "Route": "polyfills-FFHMD2TL.js",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\polyfills-FFHMD2TL.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34519"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"adzqBFZD3Q3pmKPNDMu7RrRr/yZRqHpWxzwo6yCOj5g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 09:14:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-adzqBFZD3Q3pmKPNDMu7RrRr/yZRqHpWxzwo6yCOj5g="
+        }
+      ]
+    },
+    {
+      "Route": "scripts-EEEIPNC3.js",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\scripts-EEEIPNC3.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80336"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RLACcEWxTx5o0304S130+Y1bHWzJiZVqm1xuCOrHrvg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 09:14:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RLACcEWxTx5o0304S130+Y1bHWzJiZVqm1xuCOrHrvg="
+        }
+      ]
+    },
+    {
+      "Route": "scripts-EEEIPNC3.sej8s0gw2x.js",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\scripts-EEEIPNC3.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80336"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RLACcEWxTx5o0304S130+Y1bHWzJiZVqm1xuCOrHrvg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 09:14:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sej8s0gw2x"
+        },
+        {
+          "Name": "label",
+          "Value": "scripts-EEEIPNC3.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RLACcEWxTx5o0304S130+Y1bHWzJiZVqm1xuCOrHrvg="
+        }
+      ]
+    },
+    {
+      "Route": "styles-E4SXJBJ6.1q5qkhrx0n.css",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\styles-E4SXJBJ6.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "238590"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"h/h+RFEqs+e9mZlaWuk+qf7L22X1vCVbCuPwC32yWBQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 09:14:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1q5qkhrx0n"
+        },
+        {
+          "Name": "label",
+          "Value": "styles-E4SXJBJ6.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-h/h+RFEqs+e9mZlaWuk+qf7L22X1vCVbCuPwC32yWBQ="
+        }
+      ]
+    },
+    {
+      "Route": "styles-E4SXJBJ6.css",
+      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\styles-E4SXJBJ6.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "238590"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"h/h+RFEqs+e9mZlaWuk+qf7L22X1vCVbCuPwC32yWBQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 09:14:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-h/h+RFEqs+e9mZlaWuk+qf7L22X1vCVbCuPwC32yWBQ="
+        }
+      ]
+    }
+  ]
+}

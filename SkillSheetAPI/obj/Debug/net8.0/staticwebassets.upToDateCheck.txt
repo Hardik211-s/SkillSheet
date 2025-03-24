@@ -1,0 +1,37 @@
+wwwroot\assets\19197184.jpg
+wwwroot\assets\19199158.jpg
+wwwroot\assets\3055778.jpg
+wwwroot\assets\3487284.jpg
+wwwroot\assets\5162744.jpg
+wwwroot\assets\5215677-removebg-preview.png
+wwwroot\assets\6587133.jpg
+wwwroot\assets\8786988.jpg
+wwwroot\assets\8786988-removebg-preview.png
+wwwroot\assets\add_skill.png
+wwwroot\assets\bigdata_4.jpg
+wwwroot\assets\camera.png
+wwwroot\assets\find user2.png
+wwwroot\assets\find_user.png
+wwwroot\assets\freepik__background__74231.png
+wwwroot\assets\icon.png
+wwwroot\assets\icon2.png
+wwwroot\assets\icons8-add-user-30 (1).png
+wwwroot\assets\icons8-cancel-30.png
+wwwroot\assets\icons8-dashboard-48 (1).png
+wwwroot\assets\icons8-dashboard-48.png
+wwwroot\assets\icons8-detail-40.png
+wwwroot\assets\icons8-name-24.png
+wwwroot\assets\icons8-sheet-24.png
+wwwroot\assets\icons8-sheet-48.png
+wwwroot\assets\icons8-user-settings-64.png
+wwwroot\assets\manage_profile.png
+wwwroot\assets\my_skill.png
+wwwroot\assets\profile.png
+wwwroot\assets\Set_of_programmers_02_02.jpg
+wwwroot\assets\vision-scope-document-abstract-concept-illustration-vision-statement-scope-document-main-plan-project-management-software-business-analysis-idea-goal.png
+wwwroot\favicon.ico
+wwwroot\index.html
+wwwroot\main-6G43QSKD.js
+wwwroot\polyfills-FFHMD2TL.js
+wwwroot\scripts-EEEIPNC3.js
+wwwroot\styles-E4SXJBJ6.css
