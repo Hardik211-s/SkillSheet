@@ -6,7 +6,7 @@ namespace SkillSheetAPI.Models.DTOs
     {
         public long SkillId { get; set; }
 
-        public long SubcategoryId { get; set; }
+        public long SkillSubcategoryId { get; set; }
         public string? IconName { get; set; }
 
         public string SkillName { get; set; } 
