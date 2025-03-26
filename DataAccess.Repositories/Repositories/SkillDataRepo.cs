@@ -25,7 +25,11 @@ namespace DataAccess.Repositories.Repositories
         /// <returns>A list of skill categories.</returns>
         public async Task<List<SkillCategoryDTO>> GetSkillCategory()
         {
-            var allSkillCategory = await _skillsheetContext.SkillCategories.ToListAsync();
+            var allSkillCategory = _skillsheetContext.SkillCategories;
+            if (allSkillCategory == null)
+            {
+                throw new Exception("Skill category is not found.");
+            }
             return _mapper.Map<List<SkillCategoryDTO>>(allSkillCategory);
         }
         #endregion
@@ -38,6 +42,10 @@ namespace DataAccess.Repositories.Repositories
         public async Task<List<SkillSubcategoryDTO>> GetSkillSubcategory()
         {
             var allSkillSubcategory = await _skillsheetContext.SkillSubcategories.ToListAsync();
+            if (allSkillSubcategory == null)
+            {
+                throw new Exception("Skill sub category is not found.");
+            }
             return _mapper.Map<List<SkillSubcategoryDTO>>(allSkillSubcategory);
         }
         #endregion
@@ -50,8 +58,13 @@ namespace DataAccess.Repositories.Repositories
         /// <returns>A list of skill subcategories.</returns>
         public async Task<List<SkillSubcategoryDTO>> GetSkillSubcategory(int categoryID)
         {
-            var skillSubcategory = await _skillsheetContext.SkillSubcategories
-                .Where(o => o.CategoryId == categoryID).ToListAsync();
+            var allSkillSubcategory = _skillsheetContext.SkillSubcategories;
+            if (allSkillSubcategory == null)
+            {
+                throw new Exception("Skill sub category is not found.");
+            }
+
+            var skillSubcategory =await allSkillSubcategory.Where(o => o.SkillCategoryId == categoryID).ToListAsync();
             return _mapper.Map<List<SkillSubcategoryDTO>>(skillSubcategory);
         }
         #endregion
@@ -64,16 +77,10 @@ namespace DataAccess.Repositories.Repositories
         public async Task<List<SkillDTO>> GetSkill()
         {
             var allSkill = await _skillsheetContext.Skills.ToListAsync();
-            var orders = await _skillsheetContext.Skills
-                .Where(o => o.SkillId == 120)
-                .Select(o => new
-                {
-                    o.SkillName,
-                    category = o.Subcategory.Category.CategoryName,
-                    name = o.Subcategory.SubcategoryName
-                })
-                .ToListAsync();
-
+            if (allSkill == null)
+            {
+                throw new Exception("Skills is not found.");
+            }
             return _mapper.Map<List<SkillDTO>>(allSkill);
         }
         #endregion
@@ -86,9 +93,13 @@ namespace DataAccess.Repositories.Repositories
         /// <returns>A list of skills.</returns>
         public async Task<List<SkillDTO>> GetSkill(int subCategoryID)
         {
-            var allSkill = await _skillsheetContext.Skills
-                .Where(o => o.SubcategoryId == subCategoryID).ToListAsync();
-            return _mapper.Map<List<SkillDTO>>(allSkill);
+            var allSkillDetail = _skillsheetContext.Skills;
+            if (allSkillDetail == null)
+            {
+                throw new Exception("Skills is not found.");
+            }
+            var skills =await allSkillDetail.Where(o => o.SkillSubcategoryId == subCategoryID).ToListAsync();
+            return _mapper.Map<List<SkillDTO>>(skills);
         }
         #endregion
     }

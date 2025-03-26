@@ -1337,11 +1337,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SkillSheet\\DataAccess.Repositories\\DataAccess.Repositories.csproj",
+      "projectUniqueName": "D:\\SkillSheet - Copy (9)\\DataAccess.Repositories\\DataAccess.Repositories.csproj",
       "projectName": "DataAccess.Repositories",
-      "projectPath": "D:\\SkillSheet\\DataAccess.Repositories\\DataAccess.Repositories.csproj",
+      "projectPath": "D:\\SkillSheet - Copy (9)\\DataAccess.Repositories\\DataAccess.Repositories.csproj",
       "packagesPath": "C:\\Users\\Admin-\\.nuget\\packages\\",
-      "outputPath": "D:\\SkillSheet\\DataAccess.Repositories\\obj\\",
+      "outputPath": "D:\\SkillSheet - Copy (9)\\DataAccess.Repositories\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1364,11 +1364,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\SkillSheet\\DataAccess.Entities\\DataAccess.Entities.csproj": {
-              "projectPath": "D:\\SkillSheet\\DataAccess.Entities\\DataAccess.Entities.csproj"
+            "D:\\SkillSheet - Copy (9)\\DataAccess.Entities\\DataAccess.Entities.csproj": {
+              "projectPath": "D:\\SkillSheet - Copy (9)\\DataAccess.Entities\\DataAccess.Entities.csproj"
             },
-            "D:\\SkillSheet\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj": {
-              "projectPath": "D:\\SkillSheet\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj"
+            "D:\\SkillSheet - Copy (9)\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj": {
+              "projectPath": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj"
             }
           }
         }
@@ -1383,7 +1383,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -1426,7 +1426,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

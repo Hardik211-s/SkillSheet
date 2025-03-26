@@ -6,11 +6,12 @@ using AutoMapper;
 using DataAccess.Entities.Context;
 using DataAccess.Entities.Entities;
 using DataAccess.Repositories.Interfaces;
+using DataAccess.Repositories.Resource;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using SkillSheetAPI.Models.DTOs;
-using DataAccess.Repositories.Resource;
+using System.Data.Common;
 
 namespace DataAccess.Repositories.Repositories
 {
@@ -19,8 +20,8 @@ namespace DataAccess.Repositories.Repositories
         ApplicationDbContext _skillsheetContext;
         private readonly IMapper _mapper;
         private readonly IConfiguration _config;
-        
-        public AuthRepo(ApplicationDbContext skillsheetContext, IMapper mapper,IConfiguration config)
+
+        public AuthRepo(ApplicationDbContext skillsheetContext, IMapper mapper, IConfiguration config)
         {
             _skillsheetContext = skillsheetContext;
             _mapper = mapper;
@@ -34,7 +35,11 @@ namespace DataAccess.Repositories.Repositories
         /// <returns>A list of UserDTO objects.</returns>
         public async Task<List<UserDTO>> GetAllUser()
         {
-            var allUsers = await _skillsheetContext.Users.ToListAsync();
+            var allUsers = _skillsheetContext.UserDetails;
+            if (allUsers == null)
+            {
+                return new List<UserDTO>();
+            }
             return _mapper.Map<List<UserDTO>>(allUsers);
         }
 
@@ -45,7 +50,11 @@ namespace DataAccess.Repositories.Repositories
         /// <returns>A UserDTO object.</returns>
         public async Task<UserDTO> GetUserByUsername(string username)
         {
-            var user = await _skillsheetContext.Users.FirstOrDefaultAsync(u => u.Username == username);
+            var user = await _skillsheetContext.UserDetails.FirstOrDefaultAsync(u => u.Username == username);
+            if (user == null)
+            {
+                throw new Exception(ErrorResource.UserNotExistErrror);
+            }
             return _mapper.Map<UserDTO>(user);
         }
 
@@ -57,12 +66,17 @@ namespace DataAccess.Repositories.Repositories
         public async Task<UserDTO?> LoginUser(UserLoginDTO userLoginDTO)
         {
             bool isLogged = false;
-            var user = await _skillsheetContext.Users.FirstOrDefaultAsync(u => u.Username == userLoginDTO.Username);
-            if (user != null)
+            var user = await _skillsheetContext.UserDetails.FirstOrDefaultAsync(u => u.Username == userLoginDTO.Username);
+            if (user == null)
             {
-                isLogged = BCrypt.Net.BCrypt.Verify(userLoginDTO.Password, user.Password);
+                throw new Exception(ErrorResource.UserNotExistErrror);
             }
-            return !isLogged ? null : _mapper.Map<UserDTO>(user);
+            isLogged = BCrypt.Net.BCrypt.Verify(userLoginDTO.Password, user.Password);
+            if (!isLogged)
+            {
+                //throw new Exception(.UserExistError);
+            }
+            return _mapper.Map<UserDTO>(user);
         }
 
         /// <summary>
@@ -72,13 +86,24 @@ namespace DataAccess.Repositories.Repositories
         /// <returns>A UserDTO object.</returns>
         public async Task<UserDTO> RegisterUser(UserRegisterDTO userRegisterDTO)
         {
-            var existingUser = await _skillsheetContext.Users.FirstOrDefaultAsync(u => u.Username == userRegisterDTO.Username);
-            if (existingUser != null) throw new Exception(ErrorResource.UserExistError);
-            var userEntity = _mapper.Map<User>(userRegisterDTO);
-            userEntity.Password = BCrypt.Net.BCrypt.HashPassword(userRegisterDTO.Password); // Hash Password
-            await _skillsheetContext.Users.AddAsync(userEntity);
-            await _skillsheetContext.SaveChangesAsync();
-            return _mapper.Map<UserDTO>(userEntity);
+            try
+            {
+                var existingUser = await _skillsheetContext.UserDetails.FirstOrDefaultAsync(u => u.Username == userRegisterDTO.Username);
+
+                if (existingUser != null) throw new Exception(ErrorResource.UserExistError);
+
+                var userEntity = _mapper.Map<UserDetail>(userRegisterDTO);
+
+                userEntity.Password = BCrypt.Net.BCrypt.HashPassword(userRegisterDTO.Password); // Hash Password
+
+                await _skillsheetContext.UserDetails.AddAsync(userEntity);
+                await _skillsheetContext.SaveChangesAsync();
+                return _mapper.Map<UserDTO>(userEntity);
+            }
+            catch (DbException)
+            {
+                throw new Exception();
+            }
         }
 
         /// <summary>
@@ -88,28 +113,35 @@ namespace DataAccess.Repositories.Repositories
         /// <returns>True if the user is updated, otherwise false.</returns>
         public async Task<bool> UpdateUser(UserRegisterDTO userRegisterDTO)
         {
-            var userEntity = await _skillsheetContext.Users.FirstOrDefaultAsync(u => u.Username == userRegisterDTO.Username);
-            if (userEntity == null)
+            try
             {
-                return false;
+                var userEntity = await _skillsheetContext.UserDetails.FirstOrDefaultAsync(u => u.Username == userRegisterDTO.Username);
+                if (userEntity == null)
+                {
+                    throw new Exception("User is not register");
+                }
+                userEntity.Password = BCrypt.Net.BCrypt.HashPassword(userRegisterDTO.Password); // Hash Password
+                userEntity.Username = userRegisterDTO.Username;
+                userEntity.Email = userRegisterDTO.Email;
+                _skillsheetContext.UserDetails.Update(userEntity);
+                await _skillsheetContext.SaveChangesAsync();
+                return true;
             }
-            userEntity.Password = BCrypt.Net.BCrypt.HashPassword(userRegisterDTO.Password); // Hash Password
-            userEntity.Username = userRegisterDTO.Username;
-            userEntity.Email = userRegisterDTO.Email;
-            _skillsheetContext.Users.Update(userEntity);
-            await _skillsheetContext.SaveChangesAsync();
-            return true;
+            catch (DbUpdateException)
+            {
+                throw new Exception("An error occurred while update user in database.");
+            }
         }
 
         public async Task<bool> CheckUserPassword(UserRegisterDTO userData)
         {
 
-            var userEntity = await _skillsheetContext.Users.FirstOrDefaultAsync(u => u.Username == userData.Username );
+            var userEntity = await _skillsheetContext.UserDetails.FirstOrDefaultAsync(u => u.Username == userData.Username);
             if (userEntity == null)
             {
                 throw new Exception(ErrorResource.UserNotExistErrror);
-            } 
-            bool isLogged = BCrypt.Net.BCrypt.Verify( userData.Password, userEntity.Password);
+            }
+            bool isLogged = BCrypt.Net.BCrypt.Verify(userData.Password, userEntity.Password);
             return isLogged;
 
         }
@@ -121,20 +153,32 @@ namespace DataAccess.Repositories.Repositories
         /// <returns>True if the user is deleted, otherwise false.</returns>
         public async Task<bool> DeleteUser(string username)
         {
-            var userEntity = await _skillsheetContext.Users.FirstOrDefaultAsync(u => u.Username == username);
-            if (userEntity !=null && userEntity.Role == GeneralResource.Admin)
+            try
             {
-                throw new Exception(ErrorResource.NotDeleteAdminError );
-            }
-            
-            if (userEntity != null)
-            {
-                _skillsheetContext.Users.Remove(userEntity);
+
+
+                var userEntity = await _skillsheetContext.UserDetails.FirstOrDefaultAsync(u => u.Username == username);
+                if (userEntity != null && userEntity.Role == GeneralResource.Admin)
+                {
+                    throw new Exception(ErrorResource.NotDeleteAdminError);
+                }
+
+                if (userEntity == null)
+                {
+                    throw new Exception(ErrorResource.UserNotExistErrror);
+                }
+                _skillsheetContext.UserDetails.Remove(userEntity);
                 await _skillsheetContext.SaveChangesAsync();
                 return true;
             }
-            return false;
+            catch (DbException)
+            {
+                throw new Exception("An error occurred while delete user in database.");
+            }
         }
+
+
+
 
         /// <summary>
         /// Generates a JWT token for a user.
@@ -154,7 +198,7 @@ namespace DataAccess.Repositories.Repositories
             var secretKey = _config[GeneralResource.JwtKey];
             if (string.IsNullOrEmpty(secretKey))
             {
-                throw new ArgumentNullException(GeneralResource.JwtKey,ErrorResource.JwtError);
+                throw new ArgumentNullException(GeneralResource.JwtKey, ErrorResource.JwtError);
             }
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
@@ -168,4 +212,4 @@ namespace DataAccess.Repositories.Repositories
         }
     }
 }
-    
+

@@ -6,6 +6,7 @@ using SkillSheetAPI.Models.DTOs;
 using DataAccess.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using DataAccess.Repositories.Resource;
+using System.Data.Common;
 
 namespace DataAccess.Repositories.Repositories
 {
@@ -27,7 +28,7 @@ namespace DataAccess.Repositories.Repositories
         /// <returns>A list of user details.</returns>
         public async Task<List<DbUserDetailDTO>> GetAllUserDetail()
         {
-            var allUserDetail = await _skillsheetContext.UserDetails.ToListAsync();
+            var allUserDetail =  _skillsheetContext.UserDetails;
             if (allUserDetail == null) throw new Exception(ErrorResource.UserDetailNotExistError);
             return _mapper.Map<List<DbUserDetailDTO>>(allUserDetail);
         }
@@ -41,6 +42,7 @@ namespace DataAccess.Repositories.Repositories
         /// <returns>The user detail.</returns>
         public async Task<DbUserDetailDTO> GetUserDetailById(int id)
         {
+
             var userData = await _skillsheetContext.UserDetails.FirstOrDefaultAsync(u => u.Userid == id);
             if (userData == null) throw new Exception(ErrorResource.UserDetailNotExistError);
             return _mapper.Map<DbUserDetailDTO>(userData);
@@ -56,18 +58,31 @@ namespace DataAccess.Repositories.Repositories
         /// <returns>A boolean indicating success.</returns>
         public async Task<bool> AddUserDetail(UserDetailDTO userdata, string imageURL)
         {
-            var existingUser = await _skillsheetContext.Users.FirstOrDefaultAsync(u => u.Username == userdata.Username);
-            var existingUserDetail = await _skillsheetContext.UserDetails.FirstOrDefaultAsync(u => u.Username == userdata.Username);
-            if (existingUser == null) throw new Exception(ErrorResource.UserNotExistErrror);
-            if (existingUserDetail != null) throw new Exception(ErrorResource.UserDetailExistError);
+            try
+            {
+                var existingUserDetail = await _skillsheetContext.UserDetails.FirstOrDefaultAsync(u => u.Username == userdata.Username);
+                if (existingUserDetail == null) throw new Exception(ErrorResource.UserNotExistErrror);
 
-            UserDetail userDetail = _mapper.Map<UserDetail>(userdata);
-            userDetail.Userid = existingUser.Userid;
-            userDetail.Photo = imageURL;
+                existingUserDetail.FullName = userdata.FullName;
+                existingUserDetail.Sex = userdata.Sex;
+                existingUserDetail.PhoneNo = userdata.PhoneNo;
+                existingUserDetail.BirthDate = userdata.Birthdate;
+                existingUserDetail.JoiningDate = userdata.JoiningDate;
+                existingUserDetail.WorkJapan = userdata.WorkJapan;
+                existingUserDetail.Qualification = userdata.Qualification ?? string.Empty;
+                existingUserDetail.Country = userdata.Country ?? string.Empty;
+                existingUserDetail.Description = userdata.Description;
 
-            await _skillsheetContext.UserDetails.AddAsync(userDetail);
-            await _skillsheetContext.SaveChangesAsync();
-            return true;
+
+                _skillsheetContext.UserDetails.Update(existingUserDetail);
+                await _skillsheetContext.SaveChangesAsync();
+                return true;
+            }
+            catch (DbUpdateException)
+            {
+                throw new Exception("An error occurred while Update user detail in database.");
+
+            }
         }
         #endregion
 
@@ -80,37 +95,41 @@ namespace DataAccess.Repositories.Repositories
         /// <returns>The edited user detail model.</returns>
         public async Task<DbUserDetailDTO> EditUserDetail(UserDetailDTO userdata, string imageURL)
         {
-            var existingUser = await _skillsheetContext.Users.FirstOrDefaultAsync(u => u.Username == userdata.Username);
-            var existingUserDetail = await _skillsheetContext.UserDetails.FirstOrDefaultAsync(u => u.Username == userdata.Username);
-            if (existingUserDetail == null)
+            try
             {
-                throw new Exception(ErrorResource.UserDetailNotExistError);
-            }
-            if (existingUser == null)
-            {
-                throw new Exception(ErrorResource.UserNotExistErrror);
-            }
-            if (existingUserDetail != null && userdata != null)
-            {
-                existingUserDetail.FullName = userdata.FullName;
-                existingUserDetail.Sex = userdata.Sex;
-                existingUserDetail.PhoneNo = userdata.PhoneNo;
-                existingUserDetail.Birthdate = userdata.Birthdate;
-                existingUserDetail.JoiningDate = userdata.JoiningDate;
-                existingUserDetail.WorkJapan = userdata.WorkJapan;
-                existingUserDetail.Qualification = userdata.Qualification ?? string.Empty;
-                existingUserDetail.Country = userdata.Country ?? string.Empty;
-                existingUserDetail.Description = userdata.Description;
-
-                if (!string.IsNullOrEmpty(imageURL))
+                var existingUserDetail = await _skillsheetContext.UserDetails.FirstOrDefaultAsync(u => u.Username == userdata.Username);
+                if (existingUserDetail == null)
                 {
-                    existingUserDetail.Photo = imageURL;
+                    throw new Exception(ErrorResource.UserDetailNotExistError);
                 }
-                _skillsheetContext.UserDetails.Update(existingUserDetail);
-                await _skillsheetContext.SaveChangesAsync();
-            }
 
-            return _mapper.Map<DbUserDetailDTO>(existingUserDetail);
+                if (existingUserDetail != null && userdata != null)
+                {
+                    existingUserDetail.FullName = userdata.FullName;
+                    existingUserDetail.Sex = userdata.Sex;
+                    existingUserDetail.PhoneNo = userdata.PhoneNo;
+                    existingUserDetail.BirthDate = userdata.Birthdate;
+                    existingUserDetail.JoiningDate = userdata.JoiningDate;
+                    existingUserDetail.WorkJapan = userdata.WorkJapan;
+                    existingUserDetail.Qualification = userdata.Qualification ?? string.Empty;
+                    existingUserDetail.Country = userdata.Country ?? string.Empty;
+                    existingUserDetail.Description = userdata.Description;
+
+                    if (!string.IsNullOrEmpty(imageURL))
+                    {
+                        existingUserDetail.Photo = imageURL;
+                    }
+                    _skillsheetContext.UserDetails.Update(existingUserDetail);
+                    await _skillsheetContext.SaveChangesAsync();
+                }
+
+                return _mapper.Map<DbUserDetailDTO>(existingUserDetail);
+            }
+            catch (DbUpdateException)
+            {
+                throw new Exception("An error occurred while Update user detail in database.");
+
+            }
         }
         #endregion
 
@@ -122,12 +141,20 @@ namespace DataAccess.Repositories.Repositories
         /// <returns>A boolean indicating success.</returns>
         public async Task<bool> DeleteUserDetail(string username)
         {
-            var userEntity = await _skillsheetContext.UserDetails.FirstOrDefaultAsync(u => u.Username == username);
-            if (userEntity == null) throw new Exception(ErrorResource.UserNotExistErrror);
+            try
+            {
+                var userEntity = await _skillsheetContext.UserDetails.FirstOrDefaultAsync(u => u.Username == username);
+                if (userEntity == null) throw new Exception(ErrorResource.UserNotExistErrror);
 
-            _skillsheetContext.UserDetails.Remove(userEntity);
-            await _skillsheetContext.SaveChangesAsync();
-            return true;
+                _skillsheetContext.UserDetails.Remove(userEntity);
+                await _skillsheetContext.SaveChangesAsync();
+                return true;
+            }
+            catch (DbException)
+            {
+                throw new Exception("An error occurred while delete user detail in database.");
+
+            }
         }
         #endregion
 

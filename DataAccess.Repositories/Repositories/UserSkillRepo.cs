@@ -1,4 +1,5 @@
 ﻿
+using System.Data.Common;
 using AutoMapper;
 using DataAccess.Entities.Context;
 using DataAccess.Entities.Entities;
@@ -28,22 +29,25 @@ namespace DataAccess.Repositories.Repositories
         /// <returns>A list of all user skills.</returns>
         public async Task<List<UserAllDataDTO>> AllUserSkill()
         {
-            var existingUserSkill = await _skillsheetContext.UserSkills.Select(o => new UserAllDataDTO
+            var allUserSkills = _skillsheetContext.UserSkills;
+                
+            if (allUserSkills == null) throw new Exception(ErrorResource.SkillNotAvailableError);
+               
+                
+            var allUserSkillData=await allUserSkills.Select(o => new UserAllDataDTO
             {
                 Username = o.User.Username ?? string.Empty,
                 Skill = o.Skill.SkillName,
-                Subcategory = o.Skill.Subcategory.SubcategoryName,
-                Category = o.Skill.Subcategory.Category.CategoryName,
+                Subcategory = o.Skill.SkillSubcategory.SkillSubcategoryName,
+                Category = o.Skill.SkillSubcategory.SkillCategory.SkillCategoryName,
                 ProficiencyLevel = o.ProficiencyLevel,
                 Experience = o.Experience,
                 IconName = o.Skill.IconName ?? string.Empty,
                 UserSkillId = o.UserskillId
-            })
-                .ToListAsync();
+            }).ToListAsync();
 
-            if (existingUserSkill == null) throw new Exception(ErrorResource.SkillNotAvailableError);
 
-            return existingUserSkill;
+            return allUserSkillData;
         }
         #endregion
 
@@ -55,14 +59,17 @@ namespace DataAccess.Repositories.Repositories
         /// <returns>A list of user skills.</returns>
         public async Task<List<UserAllDataDTO>> GetUserSkill(int userID)
         {
-            var existingUserSkill = await _skillsheetContext.UserSkills
-                .Where(user => user.UserId == userID)
+            var allUserSkills =  _skillsheetContext.UserSkills;
+
+            if (allUserSkills == null) throw new Exception(ErrorResource.SkillNotAvailableError);
+
+            var userSkill= await allUserSkills.Where(user => user.UserId == userID)
                 .Select(userdata => new UserAllDataDTO
                 {
                     Username = userdata.User.Username ?? string.Empty,
                     Skill = userdata.Skill.SkillName,
-                    Subcategory = userdata.Skill.Subcategory.SubcategoryName,
-                    Category = userdata.Skill.Subcategory.Category.CategoryName,
+                    Subcategory = userdata.Skill.SkillSubcategory.SkillSubcategoryName,
+                    Category = userdata.Skill.SkillSubcategory.SkillCategory.SkillCategoryName,
                     ProficiencyLevel = userdata.ProficiencyLevel,
                     Experience = userdata.Experience,
                     IconName = userdata.Skill.IconName ?? string.Empty,
@@ -70,9 +77,9 @@ namespace DataAccess.Repositories.Repositories
                 })
                 .ToListAsync();
 
-            if (existingUserSkill == null) throw new Exception(ErrorResource.SkillNotAvailableError);
+            if (userSkill.Count == 0) throw new Exception("Skill is not available");
 
-            return existingUserSkill;
+            return userSkill;
         }
         #endregion
 
@@ -84,37 +91,45 @@ namespace DataAccess.Repositories.Repositories
         /// <returns>The added user skill.</returns>
         public async Task<DbUserSkillDTO> AddUserSkill(UserSkillDTO userSkillDTO)
         {
-            int size = userSkillDTO.MyId.Length;
-            var userSkillDetail = new UserSkill();
-
-            while (size != 0)
+            try
             {
-                bool exists = await _skillsheetContext.UserSkills
-                    .AnyAsync(us => us.SkillId == userSkillDTO.MyId[size - 1] && us.UserId == userSkillDTO.UserId);
-                var userSkill = _mapper.Map<UserSkill>(userSkillDTO);
-                if (exists)
+                int size = userSkillDTO.MyId.Length;
+                var userSkillDetail = new UserSkill();
+
+                //while loop for add multiple skill for perticular user
+                while (size != 0)
                 {
-                    var skillPresence = await _skillsheetContext.UserSkills.FirstOrDefaultAsync(o => o.UserId == userSkillDTO.UserId && o.SkillId == userSkillDTO.MyId[size - 1]);
-                    if (skillPresence != null)
+                    bool exists = await _skillsheetContext.UserSkills
+                        .AnyAsync(us => us.SkillId == userSkillDTO.MyId[size - 1] && us.UserId == userSkillDTO.UserId);
+                    var userSkill = _mapper.Map<UserSkill>(userSkillDTO);
+                    if (exists)
                     {
-                        skillPresence.ProficiencyLevel = userSkillDTO.ProficiencyLevel;
-                        skillPresence.Experience = userSkillDTO.Experience;
+                        var skillPresence = await _skillsheetContext.UserSkills.FirstOrDefaultAsync(o => o.UserId == userSkillDTO.UserId && o.SkillId == userSkillDTO.MyId[size - 1]);
+                        if (skillPresence != null)
+                        {
+                            skillPresence.ProficiencyLevel = userSkillDTO.ProficiencyLevel;
+                            skillPresence.Experience = userSkillDTO.Experience;
+                        }
+
+                        var userSkillDetail1 = _skillsheetContext.UserSkills.Update(skillPresence!).Entity;
+                        await _skillsheetContext.SaveChangesAsync();
+
+                        size -= 1;
+                        continue;
                     }
 
-                    var userSkillDetail1 = _skillsheetContext.UserSkills.Update(skillPresence!).Entity;
+                    userSkill.SkillId = userSkillDTO.MyId[size - 1];
+                    userSkillDetail = _skillsheetContext.UserSkills.Add(userSkill).Entity;
                     await _skillsheetContext.SaveChangesAsync();
-
                     size -= 1;
-                    continue;
                 }
 
-                userSkill.SkillId = userSkillDTO.MyId[size - 1];
-                userSkillDetail = _skillsheetContext.UserSkills.Add(userSkill).Entity;
-                await _skillsheetContext.SaveChangesAsync();
-                size -= 1;
+                return _mapper.Map<DbUserSkillDTO>(userSkillDetail);
             }
-
-            return _mapper.Map<DbUserSkillDTO>(userSkillDetail);
+            catch (DbException)
+            {
+                throw new Exception("An error occurred while add user skill in database.");
+            }
         }
         #endregion
 
@@ -126,18 +141,25 @@ namespace DataAccess.Repositories.Repositories
         /// <returns>The edited user skill.</returns>
         public async Task<DbUserSkillDTO> EditUserSkill(DbUserSkillDTO userSkillDTO)
         {
-            var existingUserSkill = await _skillsheetContext.UserSkills
-                .FirstOrDefaultAsync(u => u.UserskillId == userSkillDTO.UserskillId);
-            if (existingUserSkill == null) throw new Exception(ErrorResource.SkillNotAvailableError);
+            try
+            {
+                var existingUserSkill = await _skillsheetContext.UserSkills
+                    .FirstOrDefaultAsync(u => u.UserskillId == userSkillDTO.UserskillId);
+                if (existingUserSkill == null) throw new Exception(ErrorResource.SkillNotAvailableError);
 
-            var userSkill = _mapper.Map<UserSkill>(userSkillDTO);
-            existingUserSkill.ProficiencyLevel = userSkillDTO.ProficiencyLevel;
-            existingUserSkill.Experience = userSkillDTO.Experience;
+                var userSkill = _mapper.Map<UserSkill>(userSkillDTO);
+                existingUserSkill.ProficiencyLevel = userSkillDTO.ProficiencyLevel;
+                existingUserSkill.Experience = userSkillDTO.Experience;
 
-            var userSkillDetail = _skillsheetContext.UserSkills.Update(existingUserSkill).Entity;
-            await _skillsheetContext.SaveChangesAsync();
+                var userSkillDetail = _skillsheetContext.UserSkills.Update(existingUserSkill).Entity;
+                await _skillsheetContext.SaveChangesAsync();
 
-            return _mapper.Map<DbUserSkillDTO>(userSkillDetail);
+                return _mapper.Map<DbUserSkillDTO>(userSkillDetail);
+            }
+            catch (DbException)
+            {
+                throw new Exception("An error occurred while edit user skill in database.");
+            }
         }
         #endregion
 
@@ -149,14 +171,22 @@ namespace DataAccess.Repositories.Repositories
         /// <returns>The deleted user skill.</returns>
         public async Task<DbUserSkillDTO> DeleteUserSkill(int userSkillID)
         {
-            var existingUserSkill = await _skillsheetContext.UserSkills
-                .FirstOrDefaultAsync(u => u.UserskillId == userSkillID);
-            if (existingUserSkill == null) throw new Exception(ErrorResource.SkillNotAvailableError);
+            try
+            {
+                var existingUserSkill = await _skillsheetContext.UserSkills
+                    .FirstOrDefaultAsync(u => u.UserskillId == userSkillID);
+                if (existingUserSkill == null) throw new Exception(ErrorResource.SkillNotAvailableError);
 
-            var userSkillDetail = _skillsheetContext.UserSkills.Remove(existingUserSkill).Entity;
-            await _skillsheetContext.SaveChangesAsync();
+                var userSkillDetail = _skillsheetContext.UserSkills.Remove(existingUserSkill).Entity;
+                await _skillsheetContext.SaveChangesAsync();
 
-            return _mapper.Map<DbUserSkillDTO>(userSkillDetail);
+                return _mapper.Map<DbUserSkillDTO>(userSkillDetail);
+            }
+            catch (DbException)
+            {
+                throw new Exception("An error occurred while delete user skill in database.");
+
+            }
         }
         #endregion
     }

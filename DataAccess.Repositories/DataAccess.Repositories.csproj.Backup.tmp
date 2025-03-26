@@ -19,10 +19,4 @@
     <ProjectReference Include="..\SkillSheetAPI.Models\SkillSheetAPI.Models.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <EmbeddedResource Update="Resource\mainResource.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-
 </Project>
