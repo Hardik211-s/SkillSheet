@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using SkillSheetAPI.Models.DTOs;
 using SkillSheetAPI.Services.Interfaces;
+using SkillSheetAPI.Services.Resource;
 
 namespace SkillSheetAPI.Services.Services
 {
@@ -30,8 +31,22 @@ namespace SkillSheetAPI.Services.Services
         /// <returns>A list of user details.</returns>
         public async Task<List<DbUserDetailDTO>> GetAllUserService()
         {
-            var userModel = await _userDetailRepo.GetAllUserDetail();
-            return _mapper.Map<List<DbUserDetailDTO>>(userModel);
+            try
+            {
+                var allUserDetails = await _userDetailRepo.GetAllUserDetail();
+                if (allUserDetails != null)
+                {
+                    foreach (var user in allUserDetails)
+                    {
+                        user.Age = CountAge(user.Birthdate);
+                    }
+                }
+                return allUserDetails;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
         #endregion
 
@@ -43,9 +58,20 @@ namespace SkillSheetAPI.Services.Services
         /// <returns>A boolean indicating success.</returns>
         public async Task<bool> AddUserDetailService(UserDetailDTO userDetailDto)
         {
-            string imageURL = await Upload(userDetailDto.Photo);
-            var userModel = await _userDetailRepo.AddUserDetail(userDetailDto, imageURL);
-            return true;
+            try
+            {
+                string imageURL = string.Empty;
+                if (userDetailDto.Photo != null)
+                {
+                    imageURL = await Upload(userDetailDto.Photo);
+                }
+                bool isAddUser = await _userDetailRepo.AddUserDetail(userDetailDto, imageURL);
+                return isAddUser;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
         #endregion
 
@@ -57,9 +83,16 @@ namespace SkillSheetAPI.Services.Services
         /// <returns>The user detail.</returns>
         public async Task<DbUserDetailDTO> GetUserDetailService(int id)
         {
-            var userDetail = await _userDetailRepo.GetUserDetailById(id);
-            userDetail.Age = CountAge(userDetail.Birthdate);
-            return userDetail;
+            try
+            {
+                var userDetail = await _userDetailRepo.GetUserDetailById(id);
+                userDetail.Age = CountAge(userDetail.Birthdate);
+                return userDetail;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);    
+            }
         }
         #endregion
 
@@ -71,17 +104,20 @@ namespace SkillSheetAPI.Services.Services
         /// <returns>A boolean indicating success.</returns>
         public async Task<bool> EditUserDetailService(UserDetailDTO userDetailDto)
         {
-            string imageURL = "";
-            if (userDetailDto.Photo != null)
+            try
             {
-                imageURL = await Upload(userDetailDto.Photo);
+                string imageURL = string.Empty;
+                if (userDetailDto.Photo != null)
+                {
+                    imageURL = await Upload(userDetailDto.Photo);
+                }
+                var userDetail = await _userDetailRepo.EditUserDetail(userDetailDto, imageURL);
+                return true;
             }
-            var userDetail = await _userDetailRepo.EditUserDetail(userDetailDto, imageURL);
-            if (userDetail == null)
+            catch (Exception ex)
             {
-                return false;
+                throw new Exception(ex.Message);
             }
-            return true;
         }
         #endregion
 
@@ -93,8 +129,15 @@ namespace SkillSheetAPI.Services.Services
         /// <returns>A boolean indicating success.</returns>
         public async Task<bool> DeleteUserDetailService(string username)
         {
-            bool isDeleted = await _userDetailRepo.DeleteUserDetail(username);
-            return isDeleted;
+            try
+            {
+                bool isDeleted = await _userDetailRepo.DeleteUserDetail(username);
+                return isDeleted;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
         #endregion
 
@@ -110,21 +153,21 @@ namespace SkillSheetAPI.Services.Services
             {
                 if (file == null || file.Length == 0)
                 {
-                    throw new Exception("No file uploaded.");
+                    throw new Exception(ErrorResource.FileUploadError);
                 }
 
                 var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif" };
                 var fileExtension = Path.GetExtension(file.FileName).ToLower();
                 if (!allowedExtensions.Contains(fileExtension))
                 {
-                    throw new Exception("Invalid file type. Allowed types: jpg, jpeg, png, gif");
+                    throw new Exception(ErrorResource.FileTypeError);
                 }
 
                 var maxFileSize = 10485760; // Get max file size from configuration
                 if (file.Length > maxFileSize)
                 {
                     Console.WriteLine(maxFileSize + "      " + file.Length);
-                    throw new Exception($"File size exceeds the limit of {maxFileSize} bytes.");
+                    throw new Exception(ErrorResource.FileSizeError);
                 }
 
                 var folderName = Path.Combine("Resources", "Images");

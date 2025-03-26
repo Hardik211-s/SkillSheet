@@ -4,16 +4,17 @@ using DataAccess.Repositories.Interfaces;
 using SkillSheetAPI.Models.DTOs;
 using SkillSheetAPI.Services.Interfaces;
 using SkillSheetAPI;
+using SkillSheetAPI.Services.Resource;
 
 namespace SkillSheetAPI.Services.Services
 {
-    public class AuthService :IAuthService
+    public class AuthService : IAuthService
     {
         IAuthRepo _authRepo { get; set; }
         IEmailService _emailService { get; set; }
         private readonly IMapper _mapper;
 
-        public AuthService(IAuthRepo authRepo,IMapper mapper, IEmailService emailService)
+        public AuthService(IAuthRepo authRepo, IMapper mapper, IEmailService emailService)
         {
             this._authRepo = authRepo;
             this._mapper = mapper;
@@ -27,8 +28,8 @@ namespace SkillSheetAPI.Services.Services
         /// <returns>A list of UserDTO objects.</returns>
         public async Task<List<UserDTO>> GetAllUserService()
         {
-            var userModel = await _authRepo.GetAllUser();
-            return userModel;
+            var allUser = await _authRepo.GetAllUser();
+            return allUser;
         }
 
         /// <summary>
@@ -38,12 +39,21 @@ namespace SkillSheetAPI.Services.Services
         /// <returns>A UserDTO object.</returns>
         public async Task<UserDTO> RegisterUserService(UserRegisterDTO userDto)
         {
-            var userModel = await _authRepo.RegisterUser(userDto);
-            if ( userModel!=null)
+            try
             {
-                await _emailService.SendEmail(userModel.Username, userDto.Password, userModel.Email, "Created");
+                
+                var userData = await _authRepo.RegisterUser(userDto);
+                if (userData != null)
+                {
+                    await _emailService.SendEmail(userData.Username, userDto.Password, userData.Email, "Created");
+                }
+                return userData;
             }
-            return userModel;
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
         }
 
         /// <summary>
@@ -53,13 +63,17 @@ namespace SkillSheetAPI.Services.Services
         /// <returns>A tuple containing a UserDTO object and a JWT token string.</returns>
         public async Task<(UserDTO, string)> LoginUserService(UserLoginDTO userDto)
         {
-            var user = await _authRepo.LoginUser(userDto);
-            string token = string.Empty;
-            if (user != null)
+            try
             {
-                token = _authRepo.GenerateJwtToken(user);
+                var user = await _authRepo.LoginUser(userDto);
+                string token = _authRepo.GenerateJwtToken(user);
+                return (user, token);
             }
-            return (user, token);
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+
         }
 
         /// <summary>
@@ -69,12 +83,19 @@ namespace SkillSheetAPI.Services.Services
         /// <returns>True if the user is updated, otherwise false.</returns>
         public async Task<bool> UpdateUserService(UserRegisterDTO userDto)
         {
-            bool isUpdated = await _authRepo.UpdateUser(userDto);
-            if (isUpdated)
+            try
             {
-               await _emailService.SendEmail(userDto.Username, userDto.Password, userDto.Email, "Edited");
+                bool isUpdated = await _authRepo.UpdateUser(userDto);
+                if (isUpdated)
+                {
+                    await _emailService.SendEmail(userDto.Username, userDto.Password, userDto.Email, "Edited");
+                }
+                return isUpdated;
             }
-            return isUpdated;
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
 
         /// <summary>
@@ -84,25 +105,32 @@ namespace SkillSheetAPI.Services.Services
         /// <returns>True if the user is deleted, otherwise false.</returns>
         public async Task<bool> ChangePasswordService(ChangePasswordDTO changePasswordDTO)
         {
-            UserRegisterDTO userdata = _mapper.Map<UserRegisterDTO>(changePasswordDTO);
-            bool  checkPassword=await  _authRepo.CheckUserPassword(userdata);
-
-            if (!checkPassword)
+            try
             {
-                throw new Exception();
+                UserRegisterDTO userdata = _mapper.Map<UserRegisterDTO>(changePasswordDTO);
+                bool checkPassword = await _authRepo.CheckUserPassword(userdata);
+
+                if (!checkPassword)
+                {
+                    throw new Exception("User password is wrong");
+                }
+
+                userdata.Password = changePasswordDTO.NewPassword;
+
+                bool isUpdated = await _authRepo.UpdateUser(userdata);
+                if (isUpdated)
+                {
+                    await _emailService.SendEmail(userdata.Username, userdata.Password, userdata.Email, "Edited");
+                }
+                return isUpdated;
             }
-
-            userdata.Password = changePasswordDTO.NewPassword;
-
-            bool isUpdated = await _authRepo.UpdateUser(userdata);
-            if (isUpdated)
+            catch (Exception ex)
             {
-                await _emailService.SendEmail(userdata.Username, userdata.Password, userdata.Email, "Edited");
+                throw new Exception(ex.Message);
             }
-            return isUpdated;
         }
 
-        
+
 
         /// <summary>
         /// Deletes a user by username.
@@ -111,13 +139,19 @@ namespace SkillSheetAPI.Services.Services
         /// <returns>True if the user is deleted, otherwise false.</returns>
         public async Task<bool> DeleteUserService(string username)
         {
-            var user = await _authRepo.GetUserByUsername(username);
-            if (user == null)
+            try
             {
-                return false;
+
+                var user = await _authRepo.GetUserByUsername(username);
+
+                bool isDeleted = await _authRepo.DeleteUser(username);
+                return isDeleted;
             }
-            bool isDeleted = await _authRepo.DeleteUser(username);
-            return isDeleted;
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
         }
 
         #endregion

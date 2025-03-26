@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using DataAccess.Repositories.Interfaces; 
+using DataAccess.Repositories.Interfaces;
 using SkillSheetAPI.Models.DTOs;
 using SkillSheetAPI.Services.Interfaces;
 
@@ -9,9 +9,9 @@ namespace SkillSheetAPI.Services.Services
     {
 
         IUserSkillRepo _skillRepo;
-        private readonly IMapper _mapper; 
+        private readonly IMapper _mapper;
 
-        public UserSkillService(IUserSkillRepo userSkillRepo,IMapper mapper)
+        public UserSkillService(IUserSkillRepo userSkillRepo, IMapper mapper)
         {
             this._skillRepo = userSkillRepo;
             this._mapper = mapper;
@@ -23,8 +23,15 @@ namespace SkillSheetAPI.Services.Services
         /// <returns>A list of all user skills.</returns>
         public async Task<List<UserAllDataDTO>> AllUserSkillService()
         {
-            var userSkill = await _skillRepo.AllUserSkill();
-            return _mapper.Map<List<UserAllDataDTO>>(userSkill);
+            try
+            {
+                var userSkill = await _skillRepo.AllUserSkill();
+                return _mapper.Map<List<UserAllDataDTO>>(userSkill);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
         #endregion
 
@@ -36,8 +43,15 @@ namespace SkillSheetAPI.Services.Services
         /// <returns>A list of user skills.</returns>
         public async Task<List<UserAllDataDTO>> GetUserSkillService(int userID)
         {
-            var userSkill = await _skillRepo.GetUserSkill(userID);
-            return _mapper.Map<List<UserAllDataDTO>>(userSkill);
+            try
+            {
+                var userSkill = await _skillRepo.GetUserSkill(userID);
+                return _mapper.Map<List<UserAllDataDTO>>(userSkill);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
         #endregion
 
@@ -49,8 +63,15 @@ namespace SkillSheetAPI.Services.Services
         /// <returns>The added user skill.</returns>
         public async Task<DbUserSkillDTO> AddUserSkillService(UserSkillDTO userSkillDTO)
         {
-            var userSkill = await _skillRepo.AddUserSkill(userSkillDTO);
-            return userSkill;
+            try
+            {
+                var userSkill = await _skillRepo.AddUserSkill(userSkillDTO);
+                return userSkill;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
         #endregion
 
@@ -62,8 +83,15 @@ namespace SkillSheetAPI.Services.Services
         /// <returns>The edited user skill.</returns>
         public async Task<DbUserSkillDTO> EditUserSkillService(DbUserSkillDTO userSkillDTO)
         {
-            var userSkill = await _skillRepo.EditUserSkill(userSkillDTO);
-            return _mapper.Map<DbUserSkillDTO>(userSkill);
+            try
+            {
+                var userSkill = await _skillRepo.EditUserSkill(userSkillDTO);
+                return _mapper.Map<DbUserSkillDTO>(userSkill);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
         #endregion
 
@@ -75,8 +103,16 @@ namespace SkillSheetAPI.Services.Services
         /// <returns>The deleted user skill.</returns>
         public async Task<DbUserSkillDTO> DeleteUserSkillService(int userSkillID)
         {
-            var userSkill = await _skillRepo.DeleteUserSkill(userSkillID);
-            return _mapper.Map<DbUserSkillDTO>(userSkill);
+            try
+            {
+                var userSkill = await _skillRepo.DeleteUserSkill(userSkillID);
+                return _mapper.Map<DbUserSkillDTO>(userSkill);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
         }
         #endregion
     }

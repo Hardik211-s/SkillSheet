@@ -1,8 +1,3 @@
-D:\SkillSheet\SkillSheetAPI.Services\obj\Debug\net8.0\SkillSheetAPI.Services.csproj.AssemblyReference.cache
-D:\SkillSheet\SkillSheetAPI.Services\obj\Debug\net8.0\SkillSheetAPI.Services.GeneratedMSBuildEditorConfig.editorconfig
-D:\SkillSheet\SkillSheetAPI.Services\obj\Debug\net8.0\SkillSheetAPI.Services.AssemblyInfoInputs.cache
-D:\SkillSheet\SkillSheetAPI.Services\obj\Debug\net8.0\SkillSheetAPI.Services.AssemblyInfo.cs
-D:\SkillSheet\SkillSheetAPI.Services\obj\Debug\net8.0\SkillSheetAPI.Services.csproj.CoreCompileInputs.cache
 D:\SkillSheet\SkillSheetAPI.Services\bin\Debug\net8.0\SkillSheetAPI.Services.deps.json
 D:\SkillSheet\SkillSheetAPI.Services\bin\Debug\net8.0\SkillSheetAPI.Services.dll
 D:\SkillSheet\SkillSheetAPI.Services\bin\Debug\net8.0\SkillSheetAPI.Services.pdb
@@ -12,8 +7,40 @@ D:\SkillSheet\SkillSheetAPI.Services\bin\Debug\net8.0\SkillSheetAPI.Models.dll
 D:\SkillSheet\SkillSheetAPI.Services\bin\Debug\net8.0\DataAccess.Entities.pdb
 D:\SkillSheet\SkillSheetAPI.Services\bin\Debug\net8.0\DataAccess.Repositories.pdb
 D:\SkillSheet\SkillSheetAPI.Services\bin\Debug\net8.0\SkillSheetAPI.Models.pdb
+D:\SkillSheet\SkillSheetAPI.Services\obj\Debug\net8.0\SkillSheetAPI.Services.csproj.AssemblyReference.cache
+D:\SkillSheet\SkillSheetAPI.Services\obj\Debug\net8.0\SkillSheetAPI.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\SkillSheet\SkillSheetAPI.Services\obj\Debug\net8.0\SkillSheetAPI.Services.AssemblyInfoInputs.cache
+D:\SkillSheet\SkillSheetAPI.Services\obj\Debug\net8.0\SkillSheetAPI.Services.AssemblyInfo.cs
+D:\SkillSheet\SkillSheetAPI.Services\obj\Debug\net8.0\SkillSheetAPI.Services.csproj.CoreCompileInputs.cache
+D:\SkillSheet\SkillSheetAPI.Services\obj\Debug\net8.0\SkillSheetAPI.Services.sourcelink.json
 D:\SkillSheet\SkillSheetAPI.Services\obj\Debug\net8.0\SkillShe.957F1781.Up2Date
 D:\SkillSheet\SkillSheetAPI.Services\obj\Debug\net8.0\SkillSheetAPI.Services.dll
 D:\SkillSheet\SkillSheetAPI.Services\obj\Debug\net8.0\refint\SkillSheetAPI.Services.dll
 D:\SkillSheet\SkillSheetAPI.Services\obj\Debug\net8.0\SkillSheetAPI.Services.pdb
 D:\SkillSheet\SkillSheetAPI.Services\obj\Debug\net8.0\ref\SkillSheetAPI.Services.dll
+D:\SkillSheet\SkillSheetAPI.Services\obj\Debug\net8.0\SkillSheetAPI.Services.Resource.GeneralResource.resources
+D:\SkillSheet\SkillSheetAPI.Services\obj\Debug\net8.0\SkillSheetAPI.Services.csproj.GenerateResource.cache
+D:\SkillSheet\SkillSheetAPI.Services\obj\Debug\net8.0\SkillSheetAPI.Services.Resource.ErrorResource.resources
+D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\bin\Debug\net8.0\SkillSheetAPI.Services.deps.json
+D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\bin\Debug\net8.0\SkillSheetAPI.Services.dll
+D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\bin\Debug\net8.0\SkillSheetAPI.Services.pdb
+D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\bin\Debug\net8.0\DataAccess.Entities.dll
+D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\bin\Debug\net8.0\DataAccess.Repositories.dll
+D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\bin\Debug\net8.0\SkillSheetAPI.Models.dll
+D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\bin\Debug\net8.0\DataAccess.Entities.pdb
+D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\bin\Debug\net8.0\DataAccess.Repositories.pdb
+D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\bin\Debug\net8.0\SkillSheetAPI.Models.pdb
+D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\obj\Debug\net8.0\SkillSheetAPI.Services.csproj.AssemblyReference.cache
+D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\obj\Debug\net8.0\SkillSheetAPI.Services.Resource.ErrorResource.resources
+D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\obj\Debug\net8.0\SkillSheetAPI.Services.Resource.GeneralResource.resources
+D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\obj\Debug\net8.0\SkillSheetAPI.Services.csproj.GenerateResource.cache
+D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\obj\Debug\net8.0\SkillSheetAPI.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\obj\Debug\net8.0\SkillSheetAPI.Services.AssemblyInfoInputs.cache
+D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\obj\Debug\net8.0\SkillSheetAPI.Services.AssemblyInfo.cs
+D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\obj\Debug\net8.0\SkillSheetAPI.Services.csproj.CoreCompileInputs.cache
+D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\obj\Debug\net8.0\SkillSheetAPI.Services.sourcelink.json
+D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\obj\Debug\net8.0\SkillShe.957F1781.Up2Date
+D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\obj\Debug\net8.0\SkillSheetAPI.Services.dll
+D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\obj\Debug\net8.0\refint\SkillSheetAPI.Services.dll
+D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\obj\Debug\net8.0\SkillSheetAPI.Services.pdb
+D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\obj\Debug\net8.0\ref\SkillSheetAPI.Services.dll

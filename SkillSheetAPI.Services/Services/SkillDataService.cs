@@ -10,7 +10,7 @@ namespace SkillSheetAPI.Services.Services
         ISkillDataRepo _skillDataRepo { get; set; }
         private readonly IMapper _mapper;
 
-        public SkillDataService( IMapper mapper,ISkillDataRepo skillDataRepo)
+        public SkillDataService(IMapper mapper, ISkillDataRepo skillDataRepo)
         {
             this._skillDataRepo = skillDataRepo;
             this._mapper = mapper;
@@ -22,8 +22,15 @@ namespace SkillSheetAPI.Services.Services
         /// <returns>A list of skill categories.</returns>
         public async Task<List<SkillCategoryDTO>> GetSkillCategoryService()
         {
-            var skillCategory = await _skillDataRepo.GetSkillCategory();
-            return _mapper.Map<List<SkillCategoryDTO>>(skillCategory);
+            try
+            {
+                var skillCategory = await _skillDataRepo.GetSkillCategory();
+                return _mapper.Map<List<SkillCategoryDTO>>(skillCategory);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
         #endregion
 
@@ -34,8 +41,15 @@ namespace SkillSheetAPI.Services.Services
         /// <returns>A list of skill subcategories.</returns>
         public async Task<List<SkillSubcategoryDTO>> GetSkillSubcategoryService()
         {
-            var skillSubcategory = await _skillDataRepo.GetSkillSubcategory();
-            return _mapper.Map<List<SkillSubcategoryDTO>>(skillSubcategory);
+            try
+            {
+                var skillSubcategory = await _skillDataRepo.GetSkillSubcategory();
+                return _mapper.Map<List<SkillSubcategoryDTO>>(skillSubcategory);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
         #endregion
 
@@ -47,8 +61,15 @@ namespace SkillSheetAPI.Services.Services
         /// <returns>A list of skill subcategories.</returns>
         public async Task<List<SkillSubcategoryDTO>> GetSkillSubcategoryService(int categoryID)
         {
-            var skillSubcategory = await _skillDataRepo.GetSkillSubcategory(categoryID);
-            return _mapper.Map<List<SkillSubcategoryDTO>>(skillSubcategory);
+            try
+            {
+                var skillSubcategory = await _skillDataRepo.GetSkillSubcategory(categoryID);
+                return _mapper.Map<List<SkillSubcategoryDTO>>(skillSubcategory);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
         #endregion
 
@@ -59,8 +80,15 @@ namespace SkillSheetAPI.Services.Services
         /// <returns>A list of skills.</returns>
         public async Task<List<SkillDTO>> GetSkillService()
         {
-            var skills = await _skillDataRepo.GetSkill();
-            return _mapper.Map<List<SkillDTO>>(skills);
+            try
+            {
+                var skills = await _skillDataRepo.GetSkill();
+                return _mapper.Map<List<SkillDTO>>(skills);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
         #endregion
 
@@ -72,8 +100,15 @@ namespace SkillSheetAPI.Services.Services
         /// <returns>A list of skills.</returns>
         public async Task<List<SkillDTO>> GetSkillService(int subCategoryID)
         {
-            var skills = await _skillDataRepo.GetSkill(subCategoryID);
-            return _mapper.Map<List<SkillDTO>>(skills);
+            try
+            {
+                var skills = await _skillDataRepo.GetSkill(subCategoryID);
+                return _mapper.Map<List<SkillDTO>>(skills);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
         #endregion
     }

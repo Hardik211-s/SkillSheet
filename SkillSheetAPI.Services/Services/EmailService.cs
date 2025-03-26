@@ -1,6 +1,7 @@
 ﻿using System.Net.Mail;
 using System.Net;
 using SkillSheetAPI.Services.Interfaces;
+using SkillSheetAPI.Services.Resource;
 
 namespace SkillSheetAPI.Services.Services
 {
@@ -41,16 +42,16 @@ namespace SkillSheetAPI.Services.Services
             try
             {
                 // Create a new instance of the SmtpClient class
-                SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+                SmtpClient client = new SmtpClient(GeneralResource.SmtpClient, 587);
                 client.EnableSsl = true;
                 client.UseDefaultCredentials = false;
-                client.Credentials = new NetworkCredential("hardik96500c@gmail.com", "deel avtw qgtn jbdn");
+                client.Credentials = new NetworkCredential(GeneralResource.SourceMail, GeneralResource.SourcePassword);
 
                 // Create a new instance of the MailMessage class
                 MailMessage mailMessage = new MailMessage();
-                mailMessage.From = new MailAddress("hardik96500c@gmail.com");
+                mailMessage.From = new MailAddress(GeneralResource.SourceMail);
                 mailMessage.To.Add(email);
-                mailMessage.Subject = "Test Email";
+                mailMessage.Subject = GeneralResource.MailSubject;
                 mailMessage.Body = userEmailBODY;
                 mailMessage.IsBodyHtml = true;
 
