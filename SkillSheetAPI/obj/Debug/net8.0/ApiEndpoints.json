@@ -100,6 +100,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "SkillSheetAPI.Controllers.PDFController",
+    "Method": "GeneratePDF",
+    "RelativePath": "api/PDF/GeneratePDF",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SkillSheetAPI.Controllers.SkillDataController",
     "Method": "GetSkillCategory",
     "RelativePath": "api/SkillData/Category",

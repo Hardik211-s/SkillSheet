@@ -2,6 +2,7 @@
 using SkillSheetAPI.Models.DTOs;
 using SkillSheetAPI.Services.Interfaces;
 using SkillSheetAPI.Resources;
+using MediaBrowser.Model.Dto;
 
 namespace SkillSheetAPI.Controllers
 {
@@ -35,7 +36,7 @@ namespace SkillSheetAPI.Controllers
             {
                 
                 var allUsers =await _authService.GetAllUserService();
-                return Ok(new { message = GeneralResource.DashboardDataSuccess, allUsers });
+                return Ok(new { message = GeneralResource.UserDataFoundSuccess, allUsers });
             }
             catch (Exception ex)
             {
@@ -56,11 +57,11 @@ namespace SkillSheetAPI.Controllers
             {
                 var user =await _authService.RegisterUserService(userDto);
                 
-                return Ok(user);
+                return Ok(new { message = "User register successfully !", user});
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(new { message = ex.Message });
             }
         }
 
@@ -77,18 +78,15 @@ namespace SkillSheetAPI.Controllers
             try
             {
                 var (userData, token) =await _authService.LoginUserService(userDto);
-                if (userData == null)
-                {
-                    return NotFound(new { message = GeneralResource.UserNotFound });
-                }
                 return Ok(new { message = GeneralResource.UserLogin, userData, token });
 
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                return NotFound(new { message = ex.Message });
+
             }
-            
+
         }
 
         /// <summary>
@@ -105,16 +103,13 @@ namespace SkillSheetAPI.Controllers
             try
             { 
                 bool isUpdate=await _authService.UpdateUserService(userDto);
-                if (isUpdate == false)
-                {
-                    return NotFound(new { message = GeneralResource.UserNotFound});
-                }
+                
                 return Ok(new { message =GeneralResource.UserEdit});
             
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(new { message = ex.Message });
             }
         }
 
@@ -141,7 +136,7 @@ namespace SkillSheetAPI.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(new { message = ex.Message });
             }
         }
 
@@ -158,19 +153,15 @@ namespace SkillSheetAPI.Controllers
             try
             {
                 bool isDeleted =await _authService.DeleteUserService(username);
-                if (isDeleted == false)
-                {
-                    return NotFound(new { message =GeneralResource.UserNotFound });
-                }
                 return Ok(new { message = GeneralResource.UserDelete });
-
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(new { message = ex.Message });
             }
         }
-       
-        
+ 
+
+
     }
 }

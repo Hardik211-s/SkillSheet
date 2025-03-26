@@ -10,6 +10,7 @@ namespace SkillSheetAPI.MapperProfiles
         public UserDetailMappingProfile()
         {
             CreateMap<UserDetail, UserDetailDTO>();
+            CreateMap<DbUserDetailDTO, UserDetailDTO>();
             CreateMap<UserDetail, DbUserDetailDTO>();
             CreateMap< UserDetailDTO,UserDetail>();
         }

@@ -175,6 +175,18 @@
         }
       }
     },
+    "/api/PDF/GeneratePDF": {
+      "get": {
+        "tags": [
+          "PDF"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/SkillData/Category": {
       "get": {
         "tags": [

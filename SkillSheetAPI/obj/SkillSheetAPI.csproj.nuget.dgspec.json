@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SkillSheet\\SkillSheetAPI\\SkillSheetAPI.csproj": {}
+    "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\SkillSheetAPI.csproj": {}
   },
   "projects": {
-    "D:\\SkillSheet\\DataAccess.Entities\\DataAccess.Entities.csproj": {
+    "D:\\SkillSheet - Copy (9)\\DataAccess.Entities\\DataAccess.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SkillSheet\\DataAccess.Entities\\DataAccess.Entities.csproj",
+        "projectUniqueName": "D:\\SkillSheet - Copy (9)\\DataAccess.Entities\\DataAccess.Entities.csproj",
         "projectName": "DataAccess.Entities",
-        "projectPath": "D:\\SkillSheet\\DataAccess.Entities\\DataAccess.Entities.csproj",
+        "projectPath": "D:\\SkillSheet - Copy (9)\\DataAccess.Entities\\DataAccess.Entities.csproj",
         "packagesPath": "C:\\Users\\Admin-\\.nuget\\packages\\",
-        "outputPath": "D:\\SkillSheet\\DataAccess.Entities\\obj\\",
+        "outputPath": "D:\\SkillSheet - Copy (9)\\DataAccess.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -46,7 +46,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -93,18 +93,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\SkillSheet\\DataAccess.Repositories\\DataAccess.Repositories.csproj": {
+    "D:\\SkillSheet - Copy (9)\\DataAccess.Repositories\\DataAccess.Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SkillSheet\\DataAccess.Repositories\\DataAccess.Repositories.csproj",
+        "projectUniqueName": "D:\\SkillSheet - Copy (9)\\DataAccess.Repositories\\DataAccess.Repositories.csproj",
         "projectName": "DataAccess.Repositories",
-        "projectPath": "D:\\SkillSheet\\DataAccess.Repositories\\DataAccess.Repositories.csproj",
+        "projectPath": "D:\\SkillSheet - Copy (9)\\DataAccess.Repositories\\DataAccess.Repositories.csproj",
         "packagesPath": "C:\\Users\\Admin-\\.nuget\\packages\\",
-        "outputPath": "D:\\SkillSheet\\DataAccess.Repositories\\obj\\",
+        "outputPath": "D:\\SkillSheet - Copy (9)\\DataAccess.Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -127,11 +127,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\SkillSheet\\DataAccess.Entities\\DataAccess.Entities.csproj": {
-                "projectPath": "D:\\SkillSheet\\DataAccess.Entities\\DataAccess.Entities.csproj"
+              "D:\\SkillSheet - Copy (9)\\DataAccess.Entities\\DataAccess.Entities.csproj": {
+                "projectPath": "D:\\SkillSheet - Copy (9)\\DataAccess.Entities\\DataAccess.Entities.csproj"
               },
-              "D:\\SkillSheet\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj": {
-                "projectPath": "D:\\SkillSheet\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj"
+              "D:\\SkillSheet - Copy (9)\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj": {
+                "projectPath": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj"
               }
             }
           }
@@ -146,7 +146,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -189,18 +189,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\SkillSheet\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj": {
+    "D:\\SkillSheet - Copy (9)\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SkillSheet\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj",
+        "projectUniqueName": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj",
         "projectName": "SkillSheetAPI.Models",
-        "projectPath": "D:\\SkillSheet\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj",
+        "projectPath": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj",
         "packagesPath": "C:\\Users\\Admin-\\.nuget\\packages\\",
-        "outputPath": "D:\\SkillSheet\\SkillSheetAPI.Models\\obj\\",
+        "outputPath": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -223,8 +223,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\SkillSheet\\DataAccess.Entities\\DataAccess.Entities.csproj": {
-                "projectPath": "D:\\SkillSheet\\DataAccess.Entities\\DataAccess.Entities.csproj"
+              "D:\\SkillSheet - Copy (9)\\DataAccess.Entities\\DataAccess.Entities.csproj": {
+                "projectPath": "D:\\SkillSheet - Copy (9)\\DataAccess.Entities\\DataAccess.Entities.csproj"
               }
             }
           }
@@ -239,7 +239,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -266,18 +266,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\SkillSheet\\SkillSheetAPI.Services\\SkillSheetAPI.Services.csproj": {
+    "D:\\SkillSheet - Copy (9)\\SkillSheetAPI.Services\\SkillSheetAPI.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SkillSheet\\SkillSheetAPI.Services\\SkillSheetAPI.Services.csproj",
+        "projectUniqueName": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI.Services\\SkillSheetAPI.Services.csproj",
         "projectName": "SkillSheetAPI.Services",
-        "projectPath": "D:\\SkillSheet\\SkillSheetAPI.Services\\SkillSheetAPI.Services.csproj",
+        "projectPath": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI.Services\\SkillSheetAPI.Services.csproj",
         "packagesPath": "C:\\Users\\Admin-\\.nuget\\packages\\",
-        "outputPath": "D:\\SkillSheet\\SkillSheetAPI.Services\\obj\\",
+        "outputPath": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -300,14 +300,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\SkillSheet\\DataAccess.Entities\\DataAccess.Entities.csproj": {
-                "projectPath": "D:\\SkillSheet\\DataAccess.Entities\\DataAccess.Entities.csproj"
+              "D:\\SkillSheet - Copy (9)\\DataAccess.Entities\\DataAccess.Entities.csproj": {
+                "projectPath": "D:\\SkillSheet - Copy (9)\\DataAccess.Entities\\DataAccess.Entities.csproj"
               },
-              "D:\\SkillSheet\\DataAccess.Repositories\\DataAccess.Repositories.csproj": {
-                "projectPath": "D:\\SkillSheet\\DataAccess.Repositories\\DataAccess.Repositories.csproj"
+              "D:\\SkillSheet - Copy (9)\\DataAccess.Repositories\\DataAccess.Repositories.csproj": {
+                "projectPath": "D:\\SkillSheet - Copy (9)\\DataAccess.Repositories\\DataAccess.Repositories.csproj"
               },
-              "D:\\SkillSheet\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj": {
-                "projectPath": "D:\\SkillSheet\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj"
+              "D:\\SkillSheet - Copy (9)\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj": {
+                "projectPath": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj"
               }
             }
           }
@@ -322,11 +322,21 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "PDFsharp": {
+              "target": "Package",
+              "version": "[6.1.1, )"
+            },
+            "itext7": {
+              "target": "Package",
+              "version": "[9.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -343,18 +353,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\SkillSheet\\SkillSheetAPI\\SkillSheetAPI.csproj": {
+    "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\SkillSheetAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SkillSheet\\SkillSheetAPI\\SkillSheetAPI.csproj",
+        "projectUniqueName": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\SkillSheetAPI.csproj",
         "projectName": "SkillSheetAPI",
-        "projectPath": "D:\\SkillSheet\\SkillSheetAPI\\SkillSheetAPI.csproj",
+        "projectPath": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\SkillSheetAPI.csproj",
         "packagesPath": "C:\\Users\\Admin-\\.nuget\\packages\\",
-        "outputPath": "D:\\SkillSheet\\SkillSheetAPI\\obj\\",
+        "outputPath": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -377,17 +387,17 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\SkillSheet\\DataAccess.Entities\\DataAccess.Entities.csproj": {
-                "projectPath": "D:\\SkillSheet\\DataAccess.Entities\\DataAccess.Entities.csproj"
+              "D:\\SkillSheet - Copy (9)\\DataAccess.Entities\\DataAccess.Entities.csproj": {
+                "projectPath": "D:\\SkillSheet - Copy (9)\\DataAccess.Entities\\DataAccess.Entities.csproj"
               },
-              "D:\\SkillSheet\\DataAccess.Repositories\\DataAccess.Repositories.csproj": {
-                "projectPath": "D:\\SkillSheet\\DataAccess.Repositories\\DataAccess.Repositories.csproj"
+              "D:\\SkillSheet - Copy (9)\\DataAccess.Repositories\\DataAccess.Repositories.csproj": {
+                "projectPath": "D:\\SkillSheet - Copy (9)\\DataAccess.Repositories\\DataAccess.Repositories.csproj"
               },
-              "D:\\SkillSheet\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj": {
-                "projectPath": "D:\\SkillSheet\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj"
+              "D:\\SkillSheet - Copy (9)\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj": {
+                "projectPath": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj"
               },
-              "D:\\SkillSheet\\SkillSheetAPI.Services\\SkillSheetAPI.Services.csproj": {
-                "projectPath": "D:\\SkillSheet\\SkillSheetAPI.Services\\SkillSheetAPI.Services.csproj"
+              "D:\\SkillSheet - Copy (9)\\SkillSheetAPI.Services\\SkillSheetAPI.Services.csproj": {
+                "projectPath": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI.Services\\SkillSheetAPI.Services.csproj"
               }
             }
           }
@@ -402,7 +412,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -443,6 +453,18 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[7.3.1, )"
             }
           },
           "imports": [
@@ -464,7 +486,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

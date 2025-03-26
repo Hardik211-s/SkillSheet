@@ -97,6 +97,15 @@ namespace SkillSheetAPI.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to All user found successfully !.
+        /// </summary>
+        public static string UserDataFoundSuccess {
+            get {
+                return ResourceManager.GetString("UserDataFoundSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to User deleted successfully.
         /// </summary>
         public static string UserDelete {
@@ -120,6 +129,15 @@ namespace SkillSheetAPI.Resources {
         public static string UserLogin {
             get {
                 return ResourceManager.GetString("UserLogin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User not added.
+        /// </summary>
+        public static string UserNotAdd {
+            get {
+                return ResourceManager.GetString("UserNotAdd", resourceCulture);
             }
         }
         

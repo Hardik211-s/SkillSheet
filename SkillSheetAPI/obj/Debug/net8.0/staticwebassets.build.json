@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zH/FX4q79yfJ/lc7wmWDCfpVB6u7xXj9FtGnj63EXOQ=",
+  "Hash": "i8vop/ddITDavj5Nq9uWFi/hz37uVB8xh1S5Co2K9KI=",
   "Source": "SkillSheetAPI",
   "BasePath": "_content/SkillSheetAPI",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "SkillSheetAPI\\wwwroot",
       "Source": "SkillSheetAPI",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\19197184.jpg",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\19197184.jpg",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "assets/19197184#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -38,10 +38,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\19197184.jpg"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\19199158.jpg",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\19199158.jpg",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "assets/19199158#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -59,10 +59,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\19199158.jpg"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\3055778.jpg",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\3055778.jpg",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "assets/3055778#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\3055778.jpg"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\3487284.jpg",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\3487284.jpg",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "assets/3487284#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -101,10 +101,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\3487284.jpg"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\5162744.jpg",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\5162744.jpg",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "assets/5162744#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\5162744.jpg"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\5215677-removebg-preview.png",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\5215677-removebg-preview.png",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "assets/5215677-removebg-preview#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\5215677-removebg-preview.png"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\6587133.jpg",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\6587133.jpg",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "assets/6587133#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -164,10 +164,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\6587133.jpg"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\8786988.jpg",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\8786988.jpg",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "assets/8786988#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -185,10 +185,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\8786988.jpg"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\8786988-removebg-preview.png",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\8786988-removebg-preview.png",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "assets/8786988-removebg-preview#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -206,10 +206,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\8786988-removebg-preview.png"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\add_skill.png",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\add_skill.png",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "assets/add_skill#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -227,10 +227,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\add_skill.png"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\bigdata_4.jpg",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\bigdata_4.jpg",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "assets/bigdata_4#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -248,10 +248,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\bigdata_4.jpg"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\camera.png",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\camera.png",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "assets/camera#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -269,10 +269,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\camera.png"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\find user2.png",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\find user2.png",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "assets/find user2#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -290,10 +290,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\find user2.png"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\find_user.png",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\find_user.png",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "assets/find_user#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -311,10 +311,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\find_user.png"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\freepik__background__74231.png",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\freepik__background__74231.png",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "assets/freepik__background__74231#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -332,10 +332,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\freepik__background__74231.png"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icon.png",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icon.png",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "assets/icon#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -353,10 +353,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icon.png"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icon2.png",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icon2.png",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "assets/icon2#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icon2.png"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-add-user-30 (1).png",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-add-user-30 (1).png",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "assets/icons8-add-user-30 (1)#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -395,10 +395,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons8-add-user-30 (1).png"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-cancel-30.png",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-cancel-30.png",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "assets/icons8-cancel-30#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons8-cancel-30.png"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-dashboard-48 (1).png",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-dashboard-48 (1).png",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "assets/icons8-dashboard-48 (1)#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -437,10 +437,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons8-dashboard-48 (1).png"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-dashboard-48.png",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-dashboard-48.png",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "assets/icons8-dashboard-48#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -458,10 +458,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons8-dashboard-48.png"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-detail-40.png",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-detail-40.png",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "assets/icons8-detail-40#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -479,10 +479,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons8-detail-40.png"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-name-24.png",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-name-24.png",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "assets/icons8-name-24#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -500,10 +500,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons8-name-24.png"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-sheet-24.png",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-sheet-24.png",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "assets/icons8-sheet-24#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -521,10 +521,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons8-sheet-24.png"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-sheet-48.png",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-sheet-48.png",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "assets/icons8-sheet-48#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -542,10 +542,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons8-sheet-48.png"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-user-settings-64.png",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-user-settings-64.png",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "assets/icons8-user-settings-64#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -563,10 +563,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons8-user-settings-64.png"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\manage_profile.png",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\manage_profile.png",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "assets/manage_profile#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -584,10 +584,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\manage_profile.png"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\my_skill.png",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\my_skill.png",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "assets/my_skill#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -605,10 +605,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\my_skill.png"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\profile.png",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\profile.png",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "assets/profile#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -626,10 +626,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\profile.png"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\Set_of_programmers_02_02.jpg",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\Set_of_programmers_02_02.jpg",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "assets/Set_of_programmers_02_02#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -647,10 +647,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\Set_of_programmers_02_02.jpg"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\vision-scope-document-abstract-concept-illustration-vision-statement-scope-document-main-plan-project-management-software-business-analysis-idea-goal.png",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\vision-scope-document-abstract-concept-illustration-vision-statement-scope-document-main-plan-project-management-software-business-analysis-idea-goal.png",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "assets/vision-scope-document-abstract-concept-illustration-vision-statement-scope-document-main-plan-project-management-software-business-analysis-idea-goal#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -668,10 +668,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vision-scope-document-abstract-concept-illustration-vision-statement-scope-document-main-plan-project-management-software-business-analysis-idea-goal.png"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\favicon.ico",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\favicon.ico",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "favicon#[.{fingerprint}]?.ico",
       "AssetKind": "All",
@@ -689,10 +689,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\index.html",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\index.html",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "index#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -710,10 +710,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\main-6G43QSKD.js",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\main-6G43QSKD.js",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "main-6G43QSKD#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\main-6G43QSKD.js"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\polyfills-FFHMD2TL.js",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\polyfills-FFHMD2TL.js",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "polyfills-FFHMD2TL#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -752,10 +752,10 @@
       "OriginalItemSpec": "wwwroot\\polyfills-FFHMD2TL.js"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\scripts-EEEIPNC3.js",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\scripts-EEEIPNC3.js",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "scripts-EEEIPNC3#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -773,10 +773,10 @@
       "OriginalItemSpec": "wwwroot\\scripts-EEEIPNC3.js"
     },
     {
-      "Identity": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\styles-E4SXJBJ6.css",
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\styles-E4SXJBJ6.css",
       "SourceId": "SkillSheetAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
       "BasePath": "_content/SkillSheetAPI",
       "RelativePath": "styles-E4SXJBJ6#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -792,12 +792,33 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\styles-E4SXJBJ6.css"
+    },
+    {
+      "Identity": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\uploads\\2.jpg",
+      "SourceId": "SkillSheetAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\",
+      "BasePath": "_content/SkillSheetAPI",
+      "RelativePath": "uploads/2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "spgh81ufli",
+      "Integrity": "IEX1nrWiBAu50sWY1VYToAdAu4X5X6TOOJqZ9f/kVps=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\2.jpg"
     }
   ],
   "Endpoints": [
     {
       "Route": "assets/19197184.1vwcfezok1.jpg",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\19197184.jpg",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\19197184.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -842,7 +863,7 @@
     },
     {
       "Route": "assets/19197184.jpg",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\19197184.jpg",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\19197184.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -879,7 +900,7 @@
     },
     {
       "Route": "assets/19199158.jpg",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\19199158.jpg",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\19199158.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -916,7 +937,7 @@
     },
     {
       "Route": "assets/19199158.wqn10h3wny.jpg",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\19199158.jpg",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\19199158.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -961,7 +982,7 @@
     },
     {
       "Route": "assets/3055778.6yy5mlfm77.jpg",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\3055778.jpg",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\3055778.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1006,7 +1027,7 @@
     },
     {
       "Route": "assets/3055778.jpg",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\3055778.jpg",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\3055778.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1043,7 +1064,7 @@
     },
     {
       "Route": "assets/3487284.jpg",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\3487284.jpg",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\3487284.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1080,7 +1101,7 @@
     },
     {
       "Route": "assets/3487284.owayipjshj.jpg",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\3487284.jpg",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\3487284.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1125,7 +1146,7 @@
     },
     {
       "Route": "assets/5162744.c85ovqt0u2.jpg",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\5162744.jpg",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\5162744.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1170,7 +1191,7 @@
     },
     {
       "Route": "assets/5162744.jpg",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\5162744.jpg",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\5162744.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1207,7 +1228,7 @@
     },
     {
       "Route": "assets/5215677-removebg-preview.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\5215677-removebg-preview.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\5215677-removebg-preview.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1244,7 +1265,7 @@
     },
     {
       "Route": "assets/5215677-removebg-preview.rstu6ur6ny.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\5215677-removebg-preview.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\5215677-removebg-preview.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1289,7 +1310,7 @@
     },
     {
       "Route": "assets/6587133.jpg",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\6587133.jpg",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\6587133.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1326,7 +1347,7 @@
     },
     {
       "Route": "assets/6587133.jyl06g6etp.jpg",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\6587133.jpg",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\6587133.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1371,7 +1392,7 @@
     },
     {
       "Route": "assets/8786988.jpg",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\8786988.jpg",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\8786988.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1408,7 +1429,7 @@
     },
     {
       "Route": "assets/8786988.s7zvggtvrf.jpg",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\8786988.jpg",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\8786988.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1453,7 +1474,7 @@
     },
     {
       "Route": "assets/8786988-removebg-preview.lk873im5qw.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\8786988-removebg-preview.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\8786988-removebg-preview.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1498,7 +1519,7 @@
     },
     {
       "Route": "assets/8786988-removebg-preview.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\8786988-removebg-preview.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\8786988-removebg-preview.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1535,7 +1556,7 @@
     },
     {
       "Route": "assets/add_skill.59fzke0ngh.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\add_skill.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\add_skill.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1580,7 +1601,7 @@
     },
     {
       "Route": "assets/add_skill.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\add_skill.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\add_skill.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1617,7 +1638,7 @@
     },
     {
       "Route": "assets/bigdata_4.imaifi8yck.jpg",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\bigdata_4.jpg",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\bigdata_4.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1662,7 +1683,7 @@
     },
     {
       "Route": "assets/bigdata_4.jpg",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\bigdata_4.jpg",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\bigdata_4.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1699,7 +1720,7 @@
     },
     {
       "Route": "assets/camera.8ix4l3cwxp.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\camera.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\camera.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1744,7 +1765,7 @@
     },
     {
       "Route": "assets/camera.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\camera.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\camera.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1781,7 +1802,7 @@
     },
     {
       "Route": "assets/find user2.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\find user2.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\find user2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1818,7 +1839,7 @@
     },
     {
       "Route": "assets/find user2.tv8vcx849c.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\find user2.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\find user2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1863,7 +1884,7 @@
     },
     {
       "Route": "assets/find_user.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\find_user.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\find_user.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1900,7 +1921,7 @@
     },
     {
       "Route": "assets/find_user.vvi72gwxkk.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\find_user.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\find_user.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1945,7 +1966,7 @@
     },
     {
       "Route": "assets/freepik__background__74231.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\freepik__background__74231.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\freepik__background__74231.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1982,7 +2003,7 @@
     },
     {
       "Route": "assets/freepik__background__74231.zz797xjxf8.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\freepik__background__74231.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\freepik__background__74231.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2027,7 +2048,7 @@
     },
     {
       "Route": "assets/icon.2b8n2qai2o.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icon.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2072,7 +2093,7 @@
     },
     {
       "Route": "assets/icon.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icon.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2109,7 +2130,7 @@
     },
     {
       "Route": "assets/icon2.211qzl2j8n.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icon2.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icon2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2154,7 +2175,7 @@
     },
     {
       "Route": "assets/icon2.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icon2.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icon2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2191,7 +2212,7 @@
     },
     {
       "Route": "assets/icons8-add-user-30 (1).oclqzfnp8i.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-add-user-30 (1).png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-add-user-30 (1).png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2236,7 +2257,7 @@
     },
     {
       "Route": "assets/icons8-add-user-30 (1).png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-add-user-30 (1).png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-add-user-30 (1).png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2273,7 +2294,7 @@
     },
     {
       "Route": "assets/icons8-cancel-30.0821pn09ao.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-cancel-30.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-cancel-30.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2318,7 +2339,7 @@
     },
     {
       "Route": "assets/icons8-cancel-30.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-cancel-30.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-cancel-30.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2355,7 +2376,7 @@
     },
     {
       "Route": "assets/icons8-dashboard-48 (1).jwtdslm2lz.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-dashboard-48 (1).png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-dashboard-48 (1).png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2400,7 +2421,7 @@
     },
     {
       "Route": "assets/icons8-dashboard-48 (1).png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-dashboard-48 (1).png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-dashboard-48 (1).png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2437,7 +2458,7 @@
     },
     {
       "Route": "assets/icons8-dashboard-48.37t1yni99o.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-dashboard-48.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-dashboard-48.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2482,7 +2503,7 @@
     },
     {
       "Route": "assets/icons8-dashboard-48.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-dashboard-48.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-dashboard-48.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2519,7 +2540,7 @@
     },
     {
       "Route": "assets/icons8-detail-40.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-detail-40.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-detail-40.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2556,7 +2577,7 @@
     },
     {
       "Route": "assets/icons8-detail-40.w0ksof0ebi.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-detail-40.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-detail-40.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2601,7 +2622,7 @@
     },
     {
       "Route": "assets/icons8-name-24.d5r5uthhrk.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-name-24.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-name-24.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2646,7 +2667,7 @@
     },
     {
       "Route": "assets/icons8-name-24.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-name-24.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-name-24.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2683,7 +2704,7 @@
     },
     {
       "Route": "assets/icons8-sheet-24.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-sheet-24.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-sheet-24.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2720,7 +2741,7 @@
     },
     {
       "Route": "assets/icons8-sheet-24.w0s85bkrob.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-sheet-24.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-sheet-24.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2765,7 +2786,7 @@
     },
     {
       "Route": "assets/icons8-sheet-48.201voxd1v2.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-sheet-48.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-sheet-48.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2810,7 +2831,7 @@
     },
     {
       "Route": "assets/icons8-sheet-48.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-sheet-48.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-sheet-48.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2847,7 +2868,7 @@
     },
     {
       "Route": "assets/icons8-user-settings-64.h8tz8er4mo.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-user-settings-64.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-user-settings-64.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2892,7 +2913,7 @@
     },
     {
       "Route": "assets/icons8-user-settings-64.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\icons8-user-settings-64.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-user-settings-64.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2929,7 +2950,7 @@
     },
     {
       "Route": "assets/manage_profile.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\manage_profile.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\manage_profile.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2966,7 +2987,7 @@
     },
     {
       "Route": "assets/manage_profile.sawty9gc3m.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\manage_profile.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\manage_profile.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3011,7 +3032,7 @@
     },
     {
       "Route": "assets/my_skill.hnouy293gw.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\my_skill.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\my_skill.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3056,7 +3077,7 @@
     },
     {
       "Route": "assets/my_skill.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\my_skill.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\my_skill.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3093,7 +3114,7 @@
     },
     {
       "Route": "assets/profile.h9v3kvuc41.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\profile.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\profile.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3138,7 +3159,7 @@
     },
     {
       "Route": "assets/profile.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\profile.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\profile.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3175,7 +3196,7 @@
     },
     {
       "Route": "assets/Set_of_programmers_02_02.eofttsidws.jpg",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\Set_of_programmers_02_02.jpg",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\Set_of_programmers_02_02.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3220,7 +3241,7 @@
     },
     {
       "Route": "assets/Set_of_programmers_02_02.jpg",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\Set_of_programmers_02_02.jpg",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\Set_of_programmers_02_02.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3257,7 +3278,7 @@
     },
     {
       "Route": "assets/vision-scope-document-abstract-concept-illustration-vision-statement-scope-document-main-plan-project-management-software-business-analysis-idea-goal.6dd9vnn4nc.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\vision-scope-document-abstract-concept-illustration-vision-statement-scope-document-main-plan-project-management-software-business-analysis-idea-goal.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\vision-scope-document-abstract-concept-illustration-vision-statement-scope-document-main-plan-project-management-software-business-analysis-idea-goal.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3302,7 +3323,7 @@
     },
     {
       "Route": "assets/vision-scope-document-abstract-concept-illustration-vision-statement-scope-document-main-plan-project-management-software-business-analysis-idea-goal.png",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\assets\\vision-scope-document-abstract-concept-illustration-vision-statement-scope-document-main-plan-project-management-software-business-analysis-idea-goal.png",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\vision-scope-document-abstract-concept-illustration-vision-statement-scope-document-main-plan-project-management-software-business-analysis-idea-goal.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3339,7 +3360,7 @@
     },
     {
       "Route": "favicon.ico",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\favicon.ico",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3376,7 +3397,7 @@
     },
     {
       "Route": "favicon.vagikyz9qx.ico",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\favicon.ico",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3421,7 +3442,7 @@
     },
     {
       "Route": "index.html",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\index.html",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3458,7 +3479,7 @@
     },
     {
       "Route": "index.yv8nw8nx8e.html",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\index.html",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3503,7 +3524,7 @@
     },
     {
       "Route": "main-6G43QSKD.js",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\main-6G43QSKD.js",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\main-6G43QSKD.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3540,7 +3561,7 @@
     },
     {
       "Route": "main-6G43QSKD.xtkay8re8q.js",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\main-6G43QSKD.js",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\main-6G43QSKD.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3585,7 +3606,7 @@
     },
     {
       "Route": "polyfills-FFHMD2TL.39tegmrjtp.js",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\polyfills-FFHMD2TL.js",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\polyfills-FFHMD2TL.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3630,7 +3651,7 @@
     },
     {
       "Route": "polyfills-FFHMD2TL.js",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\polyfills-FFHMD2TL.js",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\polyfills-FFHMD2TL.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3667,7 +3688,7 @@
     },
     {
       "Route": "scripts-EEEIPNC3.js",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\scripts-EEEIPNC3.js",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\scripts-EEEIPNC3.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3704,7 +3725,7 @@
     },
     {
       "Route": "scripts-EEEIPNC3.sej8s0gw2x.js",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\scripts-EEEIPNC3.js",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\scripts-EEEIPNC3.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3749,7 +3770,7 @@
     },
     {
       "Route": "styles-E4SXJBJ6.1q5qkhrx0n.css",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\styles-E4SXJBJ6.css",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\styles-E4SXJBJ6.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3794,7 +3815,7 @@
     },
     {
       "Route": "styles-E4SXJBJ6.css",
-      "AssetFile": "D:\\SkillSheet\\SkillSheetAPI\\wwwroot\\styles-E4SXJBJ6.css",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\styles-E4SXJBJ6.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3826,6 +3847,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-h/h+RFEqs+e9mZlaWuk+qf7L22X1vCVbCuPwC32yWBQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/2.jpg",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\uploads\\2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20850"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IEX1nrWiBAu50sWY1VYToAdAu4X5X6TOOJqZ9f/kVps=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 04:59:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IEX1nrWiBAu50sWY1VYToAdAu4X5X6TOOJqZ9f/kVps="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/2.spgh81ufli.jpg",
+      "AssetFile": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\uploads\\2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20850"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IEX1nrWiBAu50sWY1VYToAdAu4X5X6TOOJqZ9f/kVps=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 04:59:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "spgh81ufli"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IEX1nrWiBAu50sWY1VYToAdAu4X5X6TOOJqZ9f/kVps="
         }
       ]
     }

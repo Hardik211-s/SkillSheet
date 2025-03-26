@@ -6,8 +6,8 @@ public class AuthMappingProfile : Profile
 {
     public AuthMappingProfile()
     {
-        CreateMap<User, UserDTO>(); // Entity to Domain Model
-        CreateMap<UserRegisterDTO,User>();  
+        CreateMap<UserDetail, UserDTO>(); // Entity to Domain Model
+        CreateMap<UserRegisterDTO,UserDetail>();  
      
         CreateMap< ChangePasswordDTO,UserRegisterDTO>();  // DTO to Model  
         CreateMap< UserRegisterDTO, UserLoginDTO>(); 

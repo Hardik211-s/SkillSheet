@@ -129,6 +129,9 @@
   <data name="UserChangePassword" xml:space="preserve">
     <value>Change password successfully</value>
   </data>
+  <data name="UserDataFoundSuccess" xml:space="preserve">
+    <value>All user found successfully !</value>
+  </data>
   <data name="UserDelete" xml:space="preserve">
     <value>User deleted successfully</value>
   </data>
@@ -137,6 +140,9 @@
   </data>
   <data name="UserLogin" xml:space="preserve">
     <value>User login successfully!</value>
+  </data>
+  <data name="UserNotAdd" xml:space="preserve">
+    <value>User not added</value>
   </data>
   <data name="UserNotDelete" xml:space="preserve">
     <value>User is not deleted</value>

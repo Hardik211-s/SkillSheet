@@ -9,7 +9,7 @@ using System.Text;
 using SkillSheetAPI.MapperProfiles;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.OpenApi.Models;
-using Microsoft.AspNetCore.SpaServices.AngularCli;
+using Microsoft.AspNetCore.Http.Features;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,6 +31,7 @@ builder.Services.AddScoped<ISkillDataRepo, SkillDataRepo>();
 builder.Services.AddScoped<IUserDetailService, UserDetailService>();
 builder.Services.AddScoped<IUserSkillRepo, UserSkillRepo>();
 builder.Services.AddScoped<IUserSkillService, UserSkillService>();
+//builder.Services.AddScoped<IPdfService,PdfService>();
 
 // Register AutoMapper profiles
 builder.Services.AddAutoMapper(typeof(AuthMappingProfile));
@@ -40,6 +41,7 @@ builder.Services.AddAutoMapper(typeof(UserSkillMappingProfile));
 
 // Configure JWT authentication
 var jwtSecret = builder.Configuration["Jwt:SecretKey"];
+builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddAuthentication(Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)
        .AddJwtBearer(options =>
@@ -65,8 +67,8 @@ builder.Services.AddCors(options =>
                   .AllowAnyHeader();
         });
 });
+
 builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -95,6 +97,10 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
+builder.Services.Configure<FormOptions>(options =>
+{
+    options.MultipartBodyLengthLimit = 50 * 1024 * 1024; // 50 MB
+});
 
 builder.Services.AddAuthorization();
 var app = builder.Build();
@@ -107,11 +113,15 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseCors("AllowAllOrigins");
+app.UseCors(builder => builder
+   .AllowAnyOrigin()
+   .AllowAnyMethod()
+   .AllowAnyHeader());
 app.UseStaticFiles(new StaticFileOptions
 {
     FileProvider = new PhysicalFileProvider(
            Path.Combine(Directory.GetCurrentDirectory(), "Resources")),
-    RequestPath = "SkillSheetAPI/Resources"
+    RequestPath = "/Resources"
 }); 
 app.UseStaticFiles();
 

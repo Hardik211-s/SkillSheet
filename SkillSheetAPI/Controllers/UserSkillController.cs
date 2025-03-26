@@ -67,7 +67,7 @@ namespace SkillSheetAPI.Controllers
         /// <param name="userSkillDTO">The user skill DTO.</param>
         /// <returns>An <see cref="IActionResult"/> indicating the result of the operation.</returns>
         [HttpPost]
-        [Authorize(Roles = "User")] 
+        //[Authorize(Roles = "User")] 
         public async Task<IActionResult> AddUserSkill(UserSkillDTO userSkillDTO)
         {
             try
@@ -76,7 +76,8 @@ namespace SkillSheetAPI.Controllers
                 if (userSkill == null) {
                     return BadRequest(ErrorResource.GeneralError);
                 }
-                return Ok(new { userSkill });
+                return Ok(new { message = "User skill added!" });
+
             }
             catch (Exception ex)
             {
@@ -90,7 +91,7 @@ namespace SkillSheetAPI.Controllers
         /// <param name="userSkillDTO">The user skill DTO.</param>
         /// <returns>An <see cref="IActionResult"/> indicating the result of the operation.</returns>
         [HttpPatch]
-        [Authorize(Roles = "User")]
+        //[Authorize(Roles = "User")]
 
         public async Task<IActionResult> EditUserSkill(DbUserSkillDTO userSkillDTO)
         {
@@ -101,7 +102,8 @@ namespace SkillSheetAPI.Controllers
                 {
                     return BadRequest(ErrorResource.GeneralError);
                 }
-                return Ok(new { userSkill });
+                return Ok(new { message = "User skill edited!" });
+
             }
             catch (Exception ex)
             {
@@ -115,7 +117,7 @@ namespace SkillSheetAPI.Controllers
         /// <param name="id">The user skill ID.</param>
         /// <returns>An <see cref="IActionResult"/> indicating the result of the operation.</returns>
         [HttpDelete("{id}")]
-        [Authorize(Roles = "User")]
+        //[Authorize(Roles = "User")]
 
         public async Task<IActionResult> DeleteUserSkill(int id)
         {
@@ -126,7 +128,7 @@ namespace SkillSheetAPI.Controllers
                 {
                     return BadRequest(ErrorResource.GeneralError);
                 }
-                return Ok(new { userSkill });
+                return Ok(new { message="User skill deleted!" });
             }
             catch (Exception ex)
             {

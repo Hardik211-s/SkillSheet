@@ -35,3 +35,4 @@ wwwroot\main-6G43QSKD.js
 wwwroot\polyfills-FFHMD2TL.js
 wwwroot\scripts-EEEIPNC3.js
 wwwroot\styles-E4SXJBJ6.css
+wwwroot\uploads\2.jpg
