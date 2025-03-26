@@ -7,8 +7,24 @@ D:\SkillSheet\DataAccess.Entities\obj\Debug\net8.0\DataAccess.Entities.Generated
 D:\SkillSheet\DataAccess.Entities\obj\Debug\net8.0\DataAccess.Entities.AssemblyInfoInputs.cache
 D:\SkillSheet\DataAccess.Entities\obj\Debug\net8.0\DataAccess.Entities.AssemblyInfo.cs
 D:\SkillSheet\DataAccess.Entities\obj\Debug\net8.0\DataAccess.Entities.csproj.CoreCompileInputs.cache
+D:\SkillSheet\DataAccess.Entities\obj\Debug\net8.0\DataAccess.Entities.sourcelink.json
 D:\SkillSheet\DataAccess.Entities\obj\Debug\net8.0\DataAccess.Entities.dll
 D:\SkillSheet\DataAccess.Entities\obj\Debug\net8.0\refint\DataAccess.Entities.dll
 D:\SkillSheet\DataAccess.Entities\obj\Debug\net8.0\DataAccess.Entities.pdb
 D:\SkillSheet\DataAccess.Entities\obj\Debug\net8.0\DataAccess.Entities.genruntimeconfig.cache
 D:\SkillSheet\DataAccess.Entities\obj\Debug\net8.0\ref\DataAccess.Entities.dll
+D:\SkillSheet - Copy (9)\DataAccess.Entities\bin\Debug\net8.0\DataAccess.Entities.deps.json
+D:\SkillSheet - Copy (9)\DataAccess.Entities\bin\Debug\net8.0\DataAccess.Entities.runtimeconfig.json
+D:\SkillSheet - Copy (9)\DataAccess.Entities\bin\Debug\net8.0\DataAccess.Entities.dll
+D:\SkillSheet - Copy (9)\DataAccess.Entities\bin\Debug\net8.0\DataAccess.Entities.pdb
+D:\SkillSheet - Copy (9)\DataAccess.Entities\obj\Debug\net8.0\DataAccess.Entities.csproj.AssemblyReference.cache
+D:\SkillSheet - Copy (9)\DataAccess.Entities\obj\Debug\net8.0\DataAccess.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\SkillSheet - Copy (9)\DataAccess.Entities\obj\Debug\net8.0\DataAccess.Entities.AssemblyInfoInputs.cache
+D:\SkillSheet - Copy (9)\DataAccess.Entities\obj\Debug\net8.0\DataAccess.Entities.AssemblyInfo.cs
+D:\SkillSheet - Copy (9)\DataAccess.Entities\obj\Debug\net8.0\DataAccess.Entities.csproj.CoreCompileInputs.cache
+D:\SkillSheet - Copy (9)\DataAccess.Entities\obj\Debug\net8.0\DataAccess.Entities.sourcelink.json
+D:\SkillSheet - Copy (9)\DataAccess.Entities\obj\Debug\net8.0\DataAccess.Entities.dll
+D:\SkillSheet - Copy (9)\DataAccess.Entities\obj\Debug\net8.0\refint\DataAccess.Entities.dll
+D:\SkillSheet - Copy (9)\DataAccess.Entities\obj\Debug\net8.0\DataAccess.Entities.pdb
+D:\SkillSheet - Copy (9)\DataAccess.Entities\obj\Debug\net8.0\DataAccess.Entities.genruntimeconfig.cache
+D:\SkillSheet - Copy (9)\DataAccess.Entities\obj\Debug\net8.0\ref\DataAccess.Entities.dll

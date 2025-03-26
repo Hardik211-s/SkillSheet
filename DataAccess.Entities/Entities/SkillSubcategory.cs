@@ -5,15 +5,15 @@ namespace DataAccess.Entities.Entities;
 
 public partial class SkillSubcategory
 {
-    public int SubcategoryId { get; set; }
+    public int SkillSubcategoryId { get; set; }
 
-    public int CategoryId { get; set; }
+    public int SkillCategoryId { get; set; }
 
-    public string SubcategoryName { get; set; } = null!;
+    public string SkillSubcategoryName { get; set; } = null!;
 
     public string? IconName { get; set; }
 
-    public virtual SkillCategory Category { get; set; } = null!;
+    public virtual SkillCategory SkillCategory { get; set; } = null!;
 
     public virtual ICollection<Skill> Skills { get; set; } = new List<Skill>();
 }

@@ -5,9 +5,9 @@ namespace DataAccess.Entities.Entities;
 
 public partial class SkillCategory
 {
-    public int CategoryId { get; set; }
+    public int SkillCategoryId { get; set; }
 
-    public string CategoryName { get; set; } = null!;
+    public string SkillCategoryName { get; set; } = null!;
 
     public string? IconName { get; set; }
 
