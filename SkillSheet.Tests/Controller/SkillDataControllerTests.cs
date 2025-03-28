@@ -22,7 +22,7 @@ namespace SkillSheetAPI.Tests.Controllers
         public async Task GetSkillCategory_ReturnsOkResult_WithCategories()
         {
             // Arrange
-            var mockCategories = new List<SkillCategoryDTO> { new SkillCategoryDTO { CategoryId= 1,CategoryName= "Programming & Development",
+            var mockCategories = new List<SkillCategoryDTO> { new SkillCategoryDTO { SkillCategoryId= 1,SkillCategoryName= "Programming & Development",
       IconName= "fa fa-code text-primary"} };
             _mockSkillDataService.Setup(s => s.GetSkillCategoryService()).ReturnsAsync(mockCategories);
 
@@ -39,8 +39,8 @@ namespace SkillSheetAPI.Tests.Controllers
         public async Task GetSkillSubcategory_ReturnsOkResult_WithSubcategories()
         {
             // Arrange
-            var mockSubcategories = new List<SkillSubcategoryDTO> { new SkillSubcategoryDTO { SubcategoryId=1,CategoryId= 1,
-      SubcategoryName= "Programming & Development",
+            var mockSubcategories = new List<SkillSubcategoryDTO> { new SkillSubcategoryDTO { SkillSubcategoryId=1,SkillCategoryId= 1,
+      SkillSubcategoryName= "Programming & Development",
       IconName= "fa fa-code text-primary"} };
             _mockSkillDataService.Setup(s => s.GetSkillSubcategoryService()).ReturnsAsync(mockSubcategories);
 
@@ -57,8 +57,8 @@ namespace SkillSheetAPI.Tests.Controllers
         public async Task GetSkillSubcategory_WithId_ReturnsOkResult()
         {
             // Arrange
-            var mockSubcategories = new List<SkillSubcategoryDTO> { new SkillSubcategoryDTO { SubcategoryId=1,CategoryId= 1,
-      SubcategoryName= "Programming & Development",
+            var mockSubcategories = new List<SkillSubcategoryDTO> { new SkillSubcategoryDTO { SkillSubcategoryId=1,SkillCategoryId= 1,
+      SkillSubcategoryName= "Programming & Development",
       IconName= "fa fa-code text-primary"} };
             _mockSkillDataService.Setup(s => s.GetSkillSubcategoryService(1)).ReturnsAsync(mockSubcategories);
 
@@ -75,7 +75,7 @@ namespace SkillSheetAPI.Tests.Controllers
         public async Task GetSkill_ReturnsOkResult_WithSkills()
         {
             // Arrange
-            var mockSkills = new List<SkillDTO> { new SkillDTO {SkillId=100, SubcategoryId=1,
+            var mockSkills = new List<SkillDTO> { new SkillDTO {SkillId=100, SkillSubcategoryId=1,
       SkillName= "React js",
       IconName= "fa fa-code text-primary"} };
             _mockSkillDataService.Setup(s => s.GetSkillService()).ReturnsAsync(mockSkills);
@@ -93,7 +93,7 @@ namespace SkillSheetAPI.Tests.Controllers
         public async Task GetSkill_WithId_ReturnsOkResult()
         {
             // Arrange
-            var mockSkills = new List<SkillDTO> { new SkillDTO {SkillId=100, SubcategoryId=1,
+            var mockSkills = new List<SkillDTO> { new SkillDTO {SkillId=100, SkillSubcategoryId=1,
       SkillName= "C#",
       IconName= "devicon-csharp-plain text-primary"} };
             _mockSkillDataService.Setup(s => s.GetSkillService(1)).ReturnsAsync(mockSkills);

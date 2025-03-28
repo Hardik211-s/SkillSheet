@@ -27,9 +27,9 @@ D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\bin\Debug\net8.0\SkillSheetAPI.S
 D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\bin\Debug\net8.0\DataAccess.Entities.dll
 D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\bin\Debug\net8.0\DataAccess.Repositories.dll
 D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\bin\Debug\net8.0\SkillSheetAPI.Models.dll
-D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\bin\Debug\net8.0\DataAccess.Entities.pdb
 D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\bin\Debug\net8.0\DataAccess.Repositories.pdb
 D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\bin\Debug\net8.0\SkillSheetAPI.Models.pdb
+D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\bin\Debug\net8.0\DataAccess.Entities.pdb
 D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\obj\Debug\net8.0\SkillSheetAPI.Services.csproj.AssemblyReference.cache
 D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\obj\Debug\net8.0\SkillSheetAPI.Services.Resource.ErrorResource.resources
 D:\SkillSheet - Copy (9)\SkillSheetAPI.Services\obj\Debug\net8.0\SkillSheetAPI.Services.Resource.GeneralResource.resources

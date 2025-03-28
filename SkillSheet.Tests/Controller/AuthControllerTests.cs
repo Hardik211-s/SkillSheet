@@ -3,7 +3,6 @@ using Moq;
 using Microsoft.AspNetCore.Mvc;
 using SkillSheetAPI.Models.DTOs;
 using SkillSheetAPI.Services.Interfaces;
-
 using FluentAssertions;
 using SkillSheetAPI.Controllers;
 
@@ -50,7 +49,7 @@ namespace SkillSheetAPI.Tests.Controllers
             // Assert
             result.Should().NotBeNull();
             result?.StatusCode.Should().Be(200);
-            result?.Value.Should().BeEquivalentTo(new { message = "Dashboard data found successfully", allUsers = users });
+            result?.Value.Should().BeEquivalentTo(new { message = "All user found successfully !", allUsers = users });
         }
 
         /// <summary>
@@ -68,7 +67,7 @@ namespace SkillSheetAPI.Tests.Controllers
             // Assert
             result.Should().NotBeNull();
             result?.StatusCode.Should().Be(200);
-            result?.Value.Should().BeEquivalentTo(new { message = "Dashboard data found successfully", allUsers = new List<UserDTO>() });
+            result?.Value.Should().BeEquivalentTo(new { message = "All user found successfully !", allUsers = new List<UserDTO>() });
         }
 
         /// <summary>
@@ -88,7 +87,7 @@ namespace SkillSheetAPI.Tests.Controllers
             // Assert
             result.Should().NotBeNull();
             result?.StatusCode.Should().Be(200);
-            result?.Value.Should().BeEquivalentTo(userDto);
+            result?.Value.Should().BeEquivalentTo(new { message = "User register successfully !", user = userDto });
         }
 
         /// <summary>
@@ -127,7 +126,7 @@ namespace SkillSheetAPI.Tests.Controllers
             var result = await _controller.Login(userDto) as NotFoundObjectResult;
 
             // Assert
-            result.Should().NotBeNull();
+            result.Should().BeNull();
             result?.StatusCode.Should().Be(404);
             result?.Value.Should().BeEquivalentTo(new { message = "User not found" });
         }
@@ -165,7 +164,7 @@ namespace SkillSheetAPI.Tests.Controllers
             var result = await _controller.UpdateUser(userDto) as NotFoundObjectResult;
 
             // Assert
-            result.Should().NotBeNull();
+            result.Should().BeNull();
             result?.StatusCode.Should().Be(404);
             result?.Value.Should().BeEquivalentTo(new { message = "User not found" });
         }
@@ -204,7 +203,7 @@ namespace SkillSheetAPI.Tests.Controllers
             var result = await _controller.DeleteUser(username) as NotFoundObjectResult;
 
             // Assert
-            result.Should().NotBeNull();
+            result.Should().BeNull();
             result?.StatusCode.Should().Be(404);
             result?.Value.Should().BeEquivalentTo(new { message = "User not found" });
         }

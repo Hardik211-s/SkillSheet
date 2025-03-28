@@ -1,7 +1,6 @@
 ﻿
 using AutoMapper;
 using DataAccess.Entities.Context;
-using DataAccess.Entities.Entities;
 using SkillSheetAPI.Models.DTOs;
 using DataAccess.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -49,42 +48,7 @@ namespace DataAccess.Repositories.Repositories
         }
         #endregion
 
-        #region AddUserDetailAsync
-        /// <summary>
-        /// Adds a new user detail asynchronously.
-        /// </summary>
-        /// <param name="userdata">The user detail DTO.</param>
-        /// <param name="imageURL">The image URL.</param>
-        /// <returns>A boolean indicating success.</returns>
-        public async Task<bool> AddUserDetail(UserDetailDTO userdata, string imageURL)
-        {
-            try
-            {
-                var existingUserDetail = await _skillsheetContext.UserDetails.FirstOrDefaultAsync(u => u.Username == userdata.Username);
-                if (existingUserDetail == null) throw new Exception(ErrorResource.UserNotExistErrror);
-
-                existingUserDetail.FullName = userdata.FullName;
-                existingUserDetail.Sex = userdata.Sex;
-                existingUserDetail.PhoneNo = userdata.PhoneNo;
-                existingUserDetail.BirthDate = userdata.Birthdate;
-                existingUserDetail.JoiningDate = userdata.JoiningDate;
-                existingUserDetail.WorkJapan = userdata.WorkJapan;
-                existingUserDetail.Qualification = userdata.Qualification ?? string.Empty;
-                existingUserDetail.Country = userdata.Country ?? string.Empty;
-                existingUserDetail.Description = userdata.Description;
-
-
-                _skillsheetContext.UserDetails.Update(existingUserDetail);
-                await _skillsheetContext.SaveChangesAsync();
-                return true;
-            }
-            catch (DbUpdateException)
-            {
-                throw new Exception("An error occurred while Update user detail in database.");
-
-            }
-        }
-        #endregion
+       
 
         #region EditUserDetailAsync
         /// <summary>
@@ -127,7 +91,7 @@ namespace DataAccess.Repositories.Repositories
             }
             catch (DbUpdateException)
             {
-                throw new Exception("An error occurred while Update user detail in database.");
+                throw new Exception(ErrorResource.DbUpdateDetailError);
 
             }
         }
@@ -152,7 +116,7 @@ namespace DataAccess.Repositories.Repositories
             }
             catch (DbException)
             {
-                throw new Exception("An error occurred while delete user detail in database.");
+                throw new Exception(ErrorResource.DbDeleteDetailError);
 
             }
         }

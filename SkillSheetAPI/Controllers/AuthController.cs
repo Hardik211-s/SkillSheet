@@ -2,7 +2,7 @@
 using SkillSheetAPI.Models.DTOs;
 using SkillSheetAPI.Services.Interfaces;
 using SkillSheetAPI.Resources;
-using MediaBrowser.Model.Dto;
+using Microsoft.AspNetCore.Authorization;
 
 namespace SkillSheetAPI.Controllers
 {
@@ -29,7 +29,6 @@ namespace SkillSheetAPI.Controllers
         /// <returns>An <see cref="IActionResult"/> containing the list of users.</returns>
 
         [HttpGet("allUser")]
-        //[Authorize(Roles = "User")]
         public async Task<IActionResult> GetAllUser()
         {
             try
@@ -51,6 +50,8 @@ namespace SkillSheetAPI.Controllers
         /// <returns>An <see cref="IActionResult"/> indicating the result of the operation.</returns>
 
         [HttpPost("register")]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> Register([FromBody] UserRegisterDTO userDto)
         {
             try
@@ -147,6 +148,8 @@ namespace SkillSheetAPI.Controllers
         /// <returns>An <see cref="IActionResult"/> indicating the result of the operation.</returns>
 
         [HttpDelete("Delete/{username}")]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> DeleteUser(string username)
         {
 

@@ -117,8 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Admin" xml:space="preserve">
+    <value>Admin</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="JwtKey" xml:space="preserve">
+    <value>Jwt:SecretKey</value>
+  </data>
   <data name="MailSubject" xml:space="preserve">
     <value>Test Email</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Role</value>
   </data>
   <data name="SmtpClient" xml:space="preserve">
     <value>smtp.gmail.com</value>
@@ -128,5 +143,8 @@
   </data>
   <data name="SourcePassword" xml:space="preserve">
     <value>deel avtw qgtn jbdn</value>
+  </data>
+  <data name="UserId" xml:space="preserve">
+    <value>UserId</value>
   </data>
 </root>

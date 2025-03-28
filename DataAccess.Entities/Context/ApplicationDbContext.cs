@@ -26,6 +26,7 @@ public partial class ApplicationDbContext : DbContext
 
     public virtual DbSet<UserSkill> UserSkills { get; set; }
 
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Skill>(entity =>
@@ -156,8 +157,7 @@ public partial class ApplicationDbContext : DbContext
 
             entity.HasOne(d => d.User).WithMany(p => p.UserSkills)
                 .HasForeignKey(d => d.UserId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("user_id_foreign2");
+                .HasConstraintName("user_skill_foreign2");
         });
 
         OnModelCreatingPartial(modelBuilder);

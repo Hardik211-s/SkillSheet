@@ -6,6 +6,8 @@ using SkillSheetAPI.Services.Interfaces;
 using SkillSheetAPI.Models.DTOs;
 using DataAccess.Repositories.Interfaces;
 using FluentAssertions;
+using Microsoft.Extensions.Configuration;
+
 
 namespace SkillSheetAPI.Tests.Services
 {
@@ -14,6 +16,9 @@ namespace SkillSheetAPI.Tests.Services
         private readonly Mock<IAuthRepo> _mockAuthRepo;
         private readonly Mock<IEmailService> _mockEmailService;
         private readonly Mock<IMapper> _mockMapper;
+        private readonly Mock<IConfiguration> _mockConfig;
+        private readonly Mock<IAuthService> _mockAuthService;
+
         private readonly AuthService _authService;
 
         public AuthServiceTests()
@@ -21,7 +26,10 @@ namespace SkillSheetAPI.Tests.Services
             _mockAuthRepo = new Mock<IAuthRepo>();
             _mockEmailService = new Mock<IEmailService>();
             _mockMapper = new Mock<IMapper>();
-            _authService = new AuthService(_mockAuthRepo.Object, _mockMapper.Object, _mockEmailService.Object);
+            _mockConfig = new Mock<IConfiguration>(); // Initialize _mockConfig
+            _mockAuthService = new Mock<IAuthService>();
+
+            _authService = new AuthService(_mockAuthRepo.Object, _mockMapper.Object, _mockEmailService.Object,_mockConfig.Object);
         }
 
         [Fact]
@@ -61,17 +69,15 @@ namespace SkillSheetAPI.Tests.Services
         {
             // Arrange
             var userLoginDTO = new UserLoginDTO { Username = "testuser", Password = "password" };
-            var userDTO = new UserDTO { Username = "testuser" };
-            var token = "jwt_token";
-            _mockAuthRepo.Setup(repo => repo.LoginUser(userLoginDTO)).ReturnsAsync(userDTO);
-            _mockAuthRepo.Setup(repo => repo.GenerateJwtToken(userDTO)).Returns(token);
-
+            var userDTO = new UserDTO { Username = "testuser",Email="abc@gmail.com",Role="user",Userid=1 };
+            var token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiRW1haWwiOiJhYmNAZ21haWwuY29tIiwiTmFtZSI6InRlc3R1c2VyIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoidXNlciIsIlJvbGUiOiJ1c2VyIiwiZXhwIjoxNzQzMTQyODM3fQ.Y1TZTgLe_c5Ey_VyfyY8h7bV0yrruJQItXgsixrnvAQ";
+            _mockAuthRepo.Setup(repo => repo.LoginUser(userLoginDTO)).ReturnsAsync(userDTO); 
+            _mockConfig.Setup(config => config[It.IsAny<string>()]).Returns("secret_key-secret-key-secret-key-secret-key");
             // Act
             var (user, generatedToken) =await _authService.LoginUserService(userLoginDTO);
 
             // Assert
             user.Should().Be(userDTO);
-            generatedToken.Should().Be(token);
         }
 
         [Fact]

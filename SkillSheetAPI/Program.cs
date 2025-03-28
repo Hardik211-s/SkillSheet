@@ -9,16 +9,15 @@ using System.Text;
 using SkillSheetAPI.MapperProfiles;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.OpenApi.Models;
-using Microsoft.AspNetCore.Http.Features;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddControllers();
 
 // Add services to the container.
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("dbms")));
 
-//Scope of
 builder.Services.AddScoped<IAuthRepo, AuthRepo>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IDashboardService, DashboardService>();
@@ -31,7 +30,6 @@ builder.Services.AddScoped<ISkillDataRepo, SkillDataRepo>();
 builder.Services.AddScoped<IUserDetailService, UserDetailService>();
 builder.Services.AddScoped<IUserSkillRepo, UserSkillRepo>();
 builder.Services.AddScoped<IUserSkillService, UserSkillService>();
-//builder.Services.AddScoped<IPdfService,PdfService>();
 
 // Register AutoMapper profiles
 builder.Services.AddAutoMapper(typeof(AuthMappingProfile));
@@ -39,9 +37,7 @@ builder.Services.AddAutoMapper(typeof(UserDetailMappingProfile));
 builder.Services.AddAutoMapper(typeof(SkillDataMappingProfile));
 builder.Services.AddAutoMapper(typeof(UserSkillMappingProfile));
 
-// Configure JWT authentication
 var jwtSecret = builder.Configuration["Jwt:SecretKey"];
-builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddAuthentication(Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)
        .AddJwtBearer(options =>
@@ -56,19 +52,11 @@ builder.Services.AddAuthentication(Microsoft.AspNetCore.Authentication.JwtBearer
            };
        });
 
-// Configure CORS to allow all origins
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowAllOrigins",
-        policy =>
-        {
-            policy.AllowAnyOrigin()
-                  .AllowAnyMethod()
-                  .AllowAnyHeader();
-        });
-});
 
-builder.Services.AddControllers();
+// Configure JWT authentication
+builder.Services.AddEndpointsApiExplorer();
+
+
 builder.Services.AddSwaggerGen(options =>
 {
     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -80,6 +68,8 @@ builder.Services.AddSwaggerGen(options =>
         In = ParameterLocation.Header,
         Description = "Enter 'Bearer <your_token>' to authenticate"
     });
+
+  
 
     options.AddSecurityRequirement(new OpenApiSecurityRequirement
     {
@@ -97,12 +87,12 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
-builder.Services.Configure<FormOptions>(options =>
+builder.Services.AddAuthorization(options =>
 {
-    options.MultipartBodyLengthLimit = 50 * 1024 * 1024; // 50 MB
+    options.AddPolicy("Admin", policy =>
+        policy.RequireRole("Admin")); // Ensure this matches the role in your token
 });
 
-builder.Services.AddAuthorization();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -111,23 +101,24 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-app.UseCors("AllowAllOrigins");
 app.UseCors(builder => builder
-   .AllowAnyOrigin()
-   .AllowAnyMethod()
-   .AllowAnyHeader());
-app.UseStaticFiles(new StaticFileOptions
-{
-    FileProvider = new PhysicalFileProvider(
-           Path.Combine(Directory.GetCurrentDirectory(), "Resources")),
-    RequestPath = "/Resources"
-}); 
-app.UseStaticFiles();
-
+             .AllowAnyOrigin()
+             .AllowAnyMethod()
+             .AllowAnyHeader());
+app.UseCors("AllowAllOrigins");
+app.UseCors("AllowSpecificOrigin");
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseStaticFiles();
+
+
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(
+           Path.Combine(Directory.GetCurrentDirectory(), "wwwroot")),
+    RequestPath = "/wwwroot"
+});
+
 app.MapControllers();
-app.MapFallbackToFile("index.html");
 app.Run();

@@ -2,6 +2,7 @@
 using AutoMapper;
 using DataAccess.Entities.Context;
 using DataAccess.Repositories.Interfaces;
+using DataAccess.Repositories.Resource;
 using Microsoft.EntityFrameworkCore;
 using SkillSheetAPI.Models.DTOs;
 
@@ -28,7 +29,7 @@ namespace DataAccess.Repositories.Repositories
             var allSkillCategory = _skillsheetContext.SkillCategories;
             if (allSkillCategory == null)
             {
-                throw new Exception("Skill category is not found.");
+                throw new Exception(ErrorResource.SkillCategoryNotfound);
             }
             return _mapper.Map<List<SkillCategoryDTO>>(allSkillCategory);
         }
@@ -44,7 +45,7 @@ namespace DataAccess.Repositories.Repositories
             var allSkillSubcategory = await _skillsheetContext.SkillSubcategories.ToListAsync();
             if (allSkillSubcategory == null)
             {
-                throw new Exception("Skill sub category is not found.");
+                throw new Exception(ErrorResource.SubCategoryNotFound);
             }
             return _mapper.Map<List<SkillSubcategoryDTO>>(allSkillSubcategory);
         }
@@ -61,7 +62,7 @@ namespace DataAccess.Repositories.Repositories
             var allSkillSubcategory = _skillsheetContext.SkillSubcategories;
             if (allSkillSubcategory == null)
             {
-                throw new Exception("Skill sub category is not found.");
+                throw new Exception(ErrorResource.SubCategoryNotFound);
             }
 
             var skillSubcategory =await allSkillSubcategory.Where(o => o.SkillCategoryId == categoryID).ToListAsync();
@@ -79,7 +80,7 @@ namespace DataAccess.Repositories.Repositories
             var allSkill = await _skillsheetContext.Skills.ToListAsync();
             if (allSkill == null)
             {
-                throw new Exception("Skills is not found.");
+                throw new Exception(ErrorResource.SkillNotFound);
             }
             return _mapper.Map<List<SkillDTO>>(allSkill);
         }
@@ -96,7 +97,7 @@ namespace DataAccess.Repositories.Repositories
             var allSkillDetail = _skillsheetContext.Skills;
             if (allSkillDetail == null)
             {
-                throw new Exception("Skills is not found.");
+                throw new Exception(ErrorResource.SkillNotFound);
             }
             var skills =await allSkillDetail.Where(o => o.SkillSubcategoryId == subCategoryID).ToListAsync();
             return _mapper.Map<List<SkillDTO>>(skills);

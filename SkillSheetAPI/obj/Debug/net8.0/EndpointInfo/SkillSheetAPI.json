@@ -175,18 +175,6 @@
         }
       }
     },
-    "/api/PDF/GeneratePDF": {
-      "get": {
-        "tags": [
-          "PDF"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api/SkillData/Category": {
       "get": {
         "tags": [
@@ -274,101 +262,6 @@
         "tags": [
           "UserDetail"
         ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/UserDetail/AddUserDetail": {
-      "post": {
-        "tags": [
-          "UserDetail"
-        ],
-        "requestBody": {
-          "content": {
-            "multipart/form-data": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "Username": {
-                    "type": "string"
-                  },
-                  "Sex": {
-                    "type": "string"
-                  },
-                  "Birthdate": {
-                    "type": "string",
-                    "format": "date"
-                  },
-                  "JoiningDate": {
-                    "type": "string",
-                    "format": "date"
-                  },
-                  "WorkJapan": {
-                    "type": "boolean"
-                  },
-                  "Photo": {
-                    "type": "string",
-                    "format": "binary"
-                  },
-                  "Qualification": {
-                    "type": "string"
-                  },
-                  "Country": {
-                    "type": "string"
-                  },
-                  "Description": {
-                    "type": "string"
-                  },
-                  "FullName": {
-                    "type": "string"
-                  },
-                  "PhoneNo": {
-                    "type": "integer",
-                    "format": "int64"
-                  }
-                }
-              },
-              "encoding": {
-                "Username": {
-                  "style": "form"
-                },
-                "Sex": {
-                  "style": "form"
-                },
-                "Birthdate": {
-                  "style": "form"
-                },
-                "JoiningDate": {
-                  "style": "form"
-                },
-                "WorkJapan": {
-                  "style": "form"
-                },
-                "Photo": {
-                  "style": "form"
-                },
-                "Qualification": {
-                  "style": "form"
-                },
-                "Country": {
-                  "style": "form"
-                },
-                "Description": {
-                  "style": "form"
-                },
-                "FullName": {
-                  "style": "form"
-                },
-                "PhoneNo": {
-                  "style": "form"
-                }
-              }
-            }
-          }
-        },
         "responses": {
           "200": {
             "description": "OK"
@@ -487,37 +380,6 @@
             }
           }
         ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/UserDetail/DeleteUserDetail": {
-      "delete": {
-        "tags": [
-          "UserDetail"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "string"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "type": "string"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "type": "string"
-              }
-            }
-          }
-        },
         "responses": {
           "200": {
             "description": "OK"

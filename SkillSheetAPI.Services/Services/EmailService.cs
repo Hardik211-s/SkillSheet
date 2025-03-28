@@ -56,7 +56,7 @@ namespace SkillSheetAPI.Services.Services
                 mailMessage.IsBodyHtml = true;
 
                 // Send the email
-                await Task.Run(() => client.Send(mailMessage));
+                  client.SendAsync(mailMessage, null);
             }
             catch (Exception ex) {
                 Console.WriteLine(ex.Message);

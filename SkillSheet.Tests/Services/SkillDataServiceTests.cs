@@ -2,10 +2,8 @@
 using Moq;
 using AutoMapper;
 using SkillSheetAPI.Services.Services;
-using SkillSheetAPI.Services.Interfaces;
 using SkillSheetAPI.Models.DTOs;
 using DataAccess.Repositories.Interfaces;
-using System.Collections.Generic;
 using FluentAssertions;
 
 namespace SkillSheetAPI.Tests.Services
@@ -27,7 +25,7 @@ namespace SkillSheetAPI.Tests.Services
         public async Task GetSkillCategoryService_ReturnsListOfSkillCategoryDTOs()
         {
             // Arrange
-            var skillCategories = new List<SkillCategoryDTO> { new SkillCategoryDTO { CategoryName = "Programming" } };
+            var skillCategories = new List<SkillCategoryDTO> { new SkillCategoryDTO { SkillCategoryName = "Programming" } };
             _mockSkillDataRepo.Setup(repo => repo.GetSkillCategory()).ReturnsAsync(skillCategories);
             _mockMapper.Setup(mapper => mapper.Map<List<SkillCategoryDTO>>(skillCategories)).Returns(skillCategories);
 
@@ -42,7 +40,7 @@ namespace SkillSheetAPI.Tests.Services
         public async Task GetSkillSubcategoryService_ReturnsListOfSkillSubcategoryDTOs()
         {
             // Arrange
-            var skillSubcategories = new List<SkillSubcategoryDTO> { new SkillSubcategoryDTO { SubcategoryName = "Web Development" } };
+            var skillSubcategories = new List<SkillSubcategoryDTO> { new SkillSubcategoryDTO { SkillSubcategoryName = "Web Development" } };
             _mockSkillDataRepo.Setup(repo => repo.GetSkillSubcategory()).ReturnsAsync(skillSubcategories);
             _mockMapper.Setup(mapper => mapper.Map<List<SkillSubcategoryDTO>>(skillSubcategories)).Returns(skillSubcategories);
 
@@ -58,7 +56,7 @@ namespace SkillSheetAPI.Tests.Services
         {
             // Arrange
             var categoryID = 1;
-            var skillSubcategories = new List<SkillSubcategoryDTO> { new SkillSubcategoryDTO { SubcategoryName = "Web Development" } };
+            var skillSubcategories = new List<SkillSubcategoryDTO> { new SkillSubcategoryDTO { SkillSubcategoryName = "Web Development" } };
             _mockSkillDataRepo.Setup(repo => repo.GetSkillSubcategory(categoryID)).ReturnsAsync(skillSubcategories);
             _mockMapper.Setup(mapper => mapper.Map<List<SkillSubcategoryDTO>>(skillSubcategories)).Returns(skillSubcategories);
 

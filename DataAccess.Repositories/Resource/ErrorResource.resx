@@ -117,6 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="DbAddError" xml:space="preserve">
+    <value>An error occurred while adduser in database.</value>
+  </data>
+  <data name="DbDeleteError" xml:space="preserve">
+    <value>An error occurred while delete user in database.</value>
+  </data>
+  <data name="DbUpdateError" xml:space="preserve">
+    <value>An error occurred while update user in database.</value>
+  </data>
   <data name="JwtError" xml:space="preserve">
     <value>JWT Secret Key is not configured.</value>
   </data>
@@ -125,6 +134,15 @@
   </data>
   <data name="SkillNotAvailableError" xml:space="preserve">
     <value>Particular user skill is not available in data</value>
+  </data>
+  <data name="SkillCategoryNotfound" xml:space="preserve">
+    <value>Skill category is not found.</value>
+  </data>
+  <data name="SkillNotFound" xml:space="preserve">
+    <value>Skills is not found.</value>
+  </data>
+  <data name="SubCategoryNotFound" xml:space="preserve">
+    <value>Skill sub category is not found.</value>
   </data>
   <data name="UserDetailExistError" xml:space="preserve">
     <value>UserDetail already exists! You can only update it.</value>
@@ -137,5 +155,26 @@
   </data>
   <data name="UserNotExistErrror" xml:space="preserve">
     <value>User does not exist!</value>
+  </data>
+  <data name="DbUpdateDetailError" xml:space="preserve">
+    <value>An error occurred while Update user detail in database.</value>
+  </data>
+  <data name="DbDeleteDetailError" xml:space="preserve">
+    <value>An error occurred while delete user detail in database.</value>
+  </data>
+  <data name="SkillUnavailable" xml:space="preserve">
+    <value>Skill is not available</value>
+  </data>
+  <data name="DbUserSkillAddError" xml:space="preserve">
+    <value>An error occurred while add user skill in database.</value>
+  </data>
+  <data name="DbUserSkillUpdateError" xml:space="preserve">
+    <value>An error occurred while edit user skill in database.</value>
+  </data>
+  <data name="DbUserSkillDeleteError" xml:space="preserve">
+    <value>An error occurred while delete user skill in database.</value>
+  </data>
+  <data name="PasswordError" xml:space="preserve">
+    <value>Password is incorrect</value>
   </data>
 </root>

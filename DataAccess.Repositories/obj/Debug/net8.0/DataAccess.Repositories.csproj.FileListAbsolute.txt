@@ -19,12 +19,6 @@ D:\SkillSheet\DataAccess.Repositories\obj\Debug\net8.0\DataAccess.Repositories.d
 D:\SkillSheet\DataAccess.Repositories\obj\Debug\net8.0\refint\DataAccess.Repositories.dll
 D:\SkillSheet\DataAccess.Repositories\obj\Debug\net8.0\DataAccess.Repositories.pdb
 D:\SkillSheet\DataAccess.Repositories\obj\Debug\net8.0\ref\DataAccess.Repositories.dll
-D:\SkillSheet - Copy (9)\DataAccess.Repositories\obj\Debug\net8.0\DataAccess.Repositories.csproj.AssemblyReference.cache
-D:\SkillSheet - Copy (9)\DataAccess.Repositories\obj\Debug\net8.0\DataAccess.Repositories.GeneratedMSBuildEditorConfig.editorconfig
-D:\SkillSheet - Copy (9)\DataAccess.Repositories\obj\Debug\net8.0\DataAccess.Repositories.AssemblyInfoInputs.cache
-D:\SkillSheet - Copy (9)\DataAccess.Repositories\obj\Debug\net8.0\DataAccess.Repositories.AssemblyInfo.cs
-D:\SkillSheet - Copy (9)\DataAccess.Repositories\obj\Debug\net8.0\DataAccess.Repositories.csproj.CoreCompileInputs.cache
-D:\SkillSheet - Copy (9)\DataAccess.Repositories\obj\Debug\net8.0\DataAccess.Repositories.sourcelink.json
 D:\SkillSheet - Copy (9)\DataAccess.Repositories\bin\Debug\net8.0\DataAccess.Repositories.deps.json
 D:\SkillSheet - Copy (9)\DataAccess.Repositories\bin\Debug\net8.0\DataAccess.Repositories.dll
 D:\SkillSheet - Copy (9)\DataAccess.Repositories\bin\Debug\net8.0\DataAccess.Repositories.pdb
@@ -32,9 +26,15 @@ D:\SkillSheet - Copy (9)\DataAccess.Repositories\bin\Debug\net8.0\DataAccess.Ent
 D:\SkillSheet - Copy (9)\DataAccess.Repositories\bin\Debug\net8.0\SkillSheetAPI.Models.dll
 D:\SkillSheet - Copy (9)\DataAccess.Repositories\bin\Debug\net8.0\DataAccess.Entities.pdb
 D:\SkillSheet - Copy (9)\DataAccess.Repositories\bin\Debug\net8.0\SkillSheetAPI.Models.pdb
+D:\SkillSheet - Copy (9)\DataAccess.Repositories\obj\Debug\net8.0\DataAccess.Repositories.csproj.AssemblyReference.cache
 D:\SkillSheet - Copy (9)\DataAccess.Repositories\obj\Debug\net8.0\DataAccess.Repositories.Resource.ErrorResource.resources
 D:\SkillSheet - Copy (9)\DataAccess.Repositories\obj\Debug\net8.0\DataAccess.Repositories.Resource.GeneralResource.resources
 D:\SkillSheet - Copy (9)\DataAccess.Repositories\obj\Debug\net8.0\DataAccess.Repositories.csproj.GenerateResource.cache
+D:\SkillSheet - Copy (9)\DataAccess.Repositories\obj\Debug\net8.0\DataAccess.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\SkillSheet - Copy (9)\DataAccess.Repositories\obj\Debug\net8.0\DataAccess.Repositories.AssemblyInfoInputs.cache
+D:\SkillSheet - Copy (9)\DataAccess.Repositories\obj\Debug\net8.0\DataAccess.Repositories.AssemblyInfo.cs
+D:\SkillSheet - Copy (9)\DataAccess.Repositories\obj\Debug\net8.0\DataAccess.Repositories.csproj.CoreCompileInputs.cache
+D:\SkillSheet - Copy (9)\DataAccess.Repositories\obj\Debug\net8.0\DataAccess.Repositories.sourcelink.json
 D:\SkillSheet - Copy (9)\DataAccess.Repositories\obj\Debug\net8.0\DataAcce.92E15848.Up2Date
 D:\SkillSheet - Copy (9)\DataAccess.Repositories\obj\Debug\net8.0\DataAccess.Repositories.dll
 D:\SkillSheet - Copy (9)\DataAccess.Repositories\obj\Debug\net8.0\refint\DataAccess.Repositories.dll

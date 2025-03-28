@@ -11,5 +11,7 @@ namespace SkillSheetAPI.Services.Interfaces
         Task<bool> UpdateUserService(UserRegisterDTO userDto);
         Task<bool> ChangePasswordService(ChangePasswordDTO changePasswordDTO);
         Task<bool> DeleteUserService(string username);
+        public string GenerateJwtToken(UserDTO user);
+
     }
 }

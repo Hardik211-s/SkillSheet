@@ -194,8 +194,8 @@ D:\SkillSheet\SkillSheetAPI\bin\Debug\net8.0\de\PdfSharp.Charting.resources.dll
 D:\SkillSheet\SkillSheetAPI\bin\Debug\net8.0\de\PdfSharp.resources.dll
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\appsettings.Development.json
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\appsettings.json
-D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\SkillSheetAPI.staticwebassets.endpoints.json
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\SkillSheetAPI.staticwebassets.runtime.json
+D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\SkillSheetAPI.staticwebassets.endpoints.json
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\SkillSheetAPI.exe
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\SkillSheetAPI.deps.json
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\SkillSheetAPI.runtimeconfig.json
@@ -204,18 +204,6 @@ D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\SkillSheetAPI.pdb
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\AutoMapper.dll
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\BCrypt.Net-Next.dll
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\Humanizer.dll
-D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\itext.barcodes.dll
-D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\itext.bouncy-castle-connector.dll
-D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\itext.forms.dll
-D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\itext.io.dll
-D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\itext.kernel.dll
-D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\itext.layout.dll
-D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\itext.pdfa.dll
-D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\itext.pdfua.dll
-D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\itext.sign.dll
-D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\itext.styledxmlparser.dll
-D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\itext.svg.dll
-D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\itext.commons.dll
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\Emby.Media.Model.dll
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\Emby.Web.GenericEdit.dll
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\MediaBrowser.Common.dll
@@ -231,7 +219,6 @@ D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.C
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
-D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
@@ -255,16 +242,8 @@ D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\Microsoft.IdentityModel.
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\Microsoft.OpenApi.dll
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\Mono.TextTemplating.dll
-D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\Npgsql.dll
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
-D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\PdfSharp.Charting.dll
-D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\PdfSharp.Quality.dll
-D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\PdfSharp.Snippets.dll
-D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\PdfSharp.System.dll
-D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\PdfSharp.WPFonts.dll
-D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\PdfSharp.dll
-D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\BouncyCastle.Crypto.dll
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -346,8 +325,6 @@ D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\ru\Microsoft.CodeAnalysi
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\de\PdfSharp.Charting.resources.dll
-D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\de\PdfSharp.resources.dll
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\DataAccess.Entities.dll
@@ -355,9 +332,9 @@ D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\DataAccess.Repositories.
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\SkillSheetAPI.Models.dll
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\SkillSheetAPI.Services.dll
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\DataAccess.Entities.pdb
-D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\DataAccess.Repositories.pdb
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\SkillSheetAPI.Models.pdb
 D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\SkillSheetAPI.Services.pdb
+D:\SkillSheet - Copy (9)\SkillSheetAPI\bin\Debug\net8.0\DataAccess.Repositories.pdb
 D:\SkillSheet - Copy (9)\SkillSheetAPI\obj\Debug\net8.0\SkillSheetAPI.csproj.AssemblyReference.cache
 D:\SkillSheet - Copy (9)\SkillSheetAPI\obj\Debug\net8.0\SkillSheetAPI.Resources.ErrorResource.resources
 D:\SkillSheet - Copy (9)\SkillSheetAPI\obj\Debug\net8.0\SkillSheetAPI.Resources.GeneralResource.resources

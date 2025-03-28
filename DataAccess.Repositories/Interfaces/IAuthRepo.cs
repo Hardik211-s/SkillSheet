@@ -14,7 +14,6 @@ namespace DataAccess.Repositories.Interfaces
         Task<bool> CheckUserPassword(UserRegisterDTO userData);
         Task<bool> DeleteUser(string id);
 
-        string GenerateJwtToken(UserDTO user);
 
     }
 }

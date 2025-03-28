@@ -100,16 +100,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "SkillSheetAPI.Controllers.PDFController",
-    "Method": "GeneratePDF",
-    "RelativePath": "api/PDF/GeneratePDF",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "SkillSheetAPI.Controllers.SkillDataController",
     "Method": "GetSkillCategory",
     "RelativePath": "api/SkillData/Category",
@@ -173,94 +163,12 @@
   },
   {
     "ContainingType": "SkillSheetAPI.Controllers.UserDetailController",
-    "Method": "AddUserDetail",
-    "RelativePath": "api/UserDetail/AddUserDetail",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "Username",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Sex",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Birthdate",
-        "Type": "System.DateOnly",
-        "IsRequired": false
-      },
-      {
-        "Name": "JoiningDate",
-        "Type": "System.DateOnly",
-        "IsRequired": false
-      },
-      {
-        "Name": "WorkJapan",
-        "Type": "System.Boolean",
-        "IsRequired": false
-      },
-      {
-        "Name": "Photo",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
-      },
-      {
-        "Name": "Qualification",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Country",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Description",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "FullName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "PhoneNo",
-        "Type": "System.Int64",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "SkillSheetAPI.Controllers.UserDetailController",
     "Method": "GetAllUserDetail",
     "RelativePath": "api/UserDetail/AllUserDetail",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "SkillSheetAPI.Controllers.UserDetailController",
-    "Method": "DeleteUserDetail",
-    "RelativePath": "api/UserDetail/DeleteUserDetail",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "username",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
     "ReturnTypes": []
   },
   {

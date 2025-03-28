@@ -19,7 +19,6 @@ namespace SkillSheetAPI.Controllers
         /// </summary>
         /// <returns>A list of skill categories.</returns>
         [HttpGet("Category")]
-        //[Authorize(Roles = "User")]
         public async Task<IActionResult> GetSkillCategory()
         {
             try

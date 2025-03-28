@@ -1,0 +1,6 @@
+@SkillSheetAPI_HostAddress = http://localhost:5041
+
+GET {{SkillSheetAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -3,8 +3,13 @@ using AutoMapper;
 using DataAccess.Repositories.Interfaces;
 using SkillSheetAPI.Models.DTOs;
 using SkillSheetAPI.Services.Interfaces;
-using SkillSheetAPI;
 using SkillSheetAPI.Services.Resource;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+using Microsoft.Extensions.Configuration;
+using System.Net;
 
 namespace SkillSheetAPI.Services.Services
 {
@@ -12,15 +17,18 @@ namespace SkillSheetAPI.Services.Services
     {
         IAuthRepo _authRepo { get; set; }
         IEmailService _emailService { get; set; }
+        private readonly IConfiguration _config;
+
         private readonly IMapper _mapper;
 
-        public AuthService(IAuthRepo authRepo, IMapper mapper, IEmailService emailService)
+        public AuthService(IAuthRepo authRepo, IMapper mapper, IEmailService emailService, IConfiguration config)
         {
             this._authRepo = authRepo;
             this._mapper = mapper;
             _emailService = emailService;
+            _config = config;
         }
-        #region Public Methods
+      
 
         /// <summary>
         /// Gets all users.
@@ -66,7 +74,7 @@ namespace SkillSheetAPI.Services.Services
             try
             {
                 var user = await _authRepo.LoginUser(userDto);
-                string token = _authRepo.GenerateJwtToken(user);
+                string token =GenerateJwtToken(user);
                 return (user, token);
             }
             catch (Exception e)
@@ -88,7 +96,7 @@ namespace SkillSheetAPI.Services.Services
                 bool isUpdated = await _authRepo.UpdateUser(userDto);
                 if (isUpdated)
                 {
-                    await _emailService.SendEmail(userDto.Username, userDto.Password, userDto.Email, "Edited");
+                    //await _emailService.SendEmail(userDto.Username, userDto.Password, userDto.Email, "Edited");
                 }
                 return isUpdated;
             }
@@ -120,7 +128,7 @@ namespace SkillSheetAPI.Services.Services
                 bool isUpdated = await _authRepo.UpdateUser(userdata);
                 if (isUpdated)
                 {
-                    await _emailService.SendEmail(userdata.Username, userdata.Password, userdata.Email, "Edited");
+                    //await _emailService.SendEmail(userdata.Username, userdata.Password, userdata.Email, "Edited");
                 }
                 return isUpdated;
             }
@@ -154,7 +162,35 @@ namespace SkillSheetAPI.Services.Services
 
         }
 
-        #endregion
+        /// <summary>
+        /// Generates a JWT token for a user.
+        /// </summary>
+        /// <param name="user">The user DTO.</param>
+        /// <returns>A JWT token string.</returns>
+        public string GenerateJwtToken(UserDTO user)
+        {
+            var claims =new[]
+            {
+                new Claim(ClaimTypes.Role, user.Role),
+                new Claim(GeneralResource.UserId, Convert.ToString(user.Userid)),
+                new Claim(GeneralResource.Email, user.Email),
+                new Claim(GeneralResource.Name, user.Username),
+                new Claim("Role", user.Role),
+            };
+
+           
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:SecretKey"]));
+
+            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+            
+            var token = new JwtSecurityToken(
+           claims: claims,
+           expires: DateTime.UtcNow.AddHours(10),
+           signingCredentials: creds
+       );
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
+        }
 
     }
 }

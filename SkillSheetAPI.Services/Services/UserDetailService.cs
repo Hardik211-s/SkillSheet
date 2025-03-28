@@ -1,6 +1,5 @@
 ﻿
 using AutoMapper;
-
 using DataAccess.Repositories.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
@@ -50,30 +49,7 @@ namespace SkillSheetAPI.Services.Services
         }
         #endregion
 
-        #region AddUserDetailService
-        /// <summary>
-        /// Adds a new user detail asynchronously.
-        /// </summary>
-        /// <param name="userDetailDto">The user detail DTO.</param>
-        /// <returns>A boolean indicating success.</returns>
-        public async Task<bool> AddUserDetailService(UserDetailDTO userDetailDto)
-        {
-            try
-            {
-                string imageURL = string.Empty;
-                if (userDetailDto.Photo != null)
-                {
-                    imageURL = await Upload(userDetailDto.Photo);
-                }
-                bool isAddUser = await _userDetailRepo.AddUserDetail(userDetailDto, imageURL);
-                return isAddUser;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-        }
-        #endregion
+       
 
         #region GetUserDetailService
         /// <summary>
@@ -166,11 +142,10 @@ namespace SkillSheetAPI.Services.Services
                 var maxFileSize = 10485760; // Get max file size from configuration
                 if (file.Length > maxFileSize)
                 {
-                    Console.WriteLine(maxFileSize + "      " + file.Length);
                     throw new Exception(ErrorResource.FileSizeError);
                 }
 
-                var folderName = Path.Combine("Resources", "Images");
+                var folderName = Path.Combine("wwwroot", "uploads");
                 var pathToSave = Path.Combine(Directory.GetCurrentDirectory(), folderName);
 
                 if (!Directory.Exists(pathToSave))

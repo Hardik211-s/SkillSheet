@@ -3,8 +3,7 @@ using Moq;
 using Microsoft.AspNetCore.Mvc;
 using SkillSheetAPI.Controllers;
 using SkillSheetAPI.Services.Interfaces;
-using SkillSheetAPI.Models.DTOs;
-using Newtonsoft.Json;
+using SkillSheetAPI.Models.DTOs; 
 using FluentAssertions;
 using SkillSheetAPI.Resources;
 namespace  SkillSheetAPI.Tests.Controllers
@@ -38,20 +37,22 @@ namespace  SkillSheetAPI.Tests.Controllers
         }
 
         [Fact]
-        public async Task AddUserDetail_ReturnsOkResult_WithUser()
+        public async Task GetAllUserDetail_ReturnsOkResult_WithEmptyList()
         {
             // Arrange
-            var userDetailDto = new UserDetailDTO { Username = "testuser" };
-            _mockUserDetailService.Setup(service => service.AddUserDetailService(userDetailDto)).ReturnsAsync(true);
+            var userList = new List<DbUserDetailDTO>();
+            _mockUserDetailService.Setup(service => service.GetAllUserService()).ReturnsAsync(userList);
 
             // Act
-            var result = await _controller.AddUserDetail(userDetailDto) as OkObjectResult;
+            var result = await _controller.GetAllUserDetail() as OkObjectResult;
 
             // Assert
             result.Should().NotBeNull();
             result?.StatusCode.Should().Be(200);
-            result?.Value.Should().BeEquivalentTo( new { message = GeneralResource.UserAddSuccess});
+            result?.Value.Should().BeEquivalentTo(new { message = GeneralResource.AllUserFound, allUserDetail = userList });
         }
+       
+       
 
         [Fact]
         public async Task UserDetailById_ReturnsOkResult_WithUser()
@@ -73,22 +74,7 @@ namespace  SkillSheetAPI.Tests.Controllers
 
        
 
-        [Fact]
-        public async Task DeleteUserDetail_ReturnsOkResult_WhenUserIsDeleted()
-        {
-            // Arrange
-            var username = "testuser";
-            _mockUserDetailService.Setup(service => service.DeleteUserDetailService(username)).ReturnsAsync(true);
-
-            // Act
-            var result =await _controller.DeleteUserDetail(username);
-
-            // Assert
-            var okResult = Assert.IsType<OkObjectResult>(result);
-            var jsonString = JsonConvert.SerializeObject(okResult.Value);
-            var response = JsonConvert.DeserializeObject<Dictionary<string,string>>(jsonString); 
-            Assert.Equal(GeneralResource.UserDelete, response?["message"]);
-        }
+        
 
         [Fact]
         public async Task EditUserDetail_ReturnsOkResult_WithUser()

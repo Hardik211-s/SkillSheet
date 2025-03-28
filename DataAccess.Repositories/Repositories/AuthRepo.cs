@@ -1,7 +1,5 @@
 ﻿
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
+
 using AutoMapper;
 using DataAccess.Entities.Context;
 using DataAccess.Entities.Entities;
@@ -9,7 +7,6 @@ using DataAccess.Repositories.Interfaces;
 using DataAccess.Repositories.Resource;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using Microsoft.IdentityModel.Tokens;
 using SkillSheetAPI.Models.DTOs;
 using System.Data.Common;
 
@@ -74,7 +71,7 @@ namespace DataAccess.Repositories.Repositories
             isLogged = BCrypt.Net.BCrypt.Verify(userLoginDTO.Password, user.Password);
             if (!isLogged)
             {
-                //throw new Exception(.UserExistError);
+                throw new Exception(ErrorResource.PasswordError);
             }
             return _mapper.Map<UserDTO>(user);
         }
@@ -102,7 +99,7 @@ namespace DataAccess.Repositories.Repositories
             }
             catch (DbException)
             {
-                throw new Exception();
+                throw new Exception(ErrorResource.DbAddError);
             }
         }
 
@@ -118,7 +115,7 @@ namespace DataAccess.Repositories.Repositories
                 var userEntity = await _skillsheetContext.UserDetails.FirstOrDefaultAsync(u => u.Username == userRegisterDTO.Username);
                 if (userEntity == null)
                 {
-                    throw new Exception("User is not register");
+                    throw new Exception(ErrorResource.UserNotExistErrror);
                 }
                 userEntity.Password = BCrypt.Net.BCrypt.HashPassword(userRegisterDTO.Password); // Hash Password
                 userEntity.Username = userRegisterDTO.Username;
@@ -129,7 +126,7 @@ namespace DataAccess.Repositories.Repositories
             }
             catch (DbUpdateException)
             {
-                throw new Exception("An error occurred while update user in database.");
+                throw new Exception(ErrorResource.DbUpdateError);
             }
         }
 
@@ -155,8 +152,6 @@ namespace DataAccess.Repositories.Repositories
         {
             try
             {
-
-
                 var userEntity = await _skillsheetContext.UserDetails.FirstOrDefaultAsync(u => u.Username == username);
                 if (userEntity != null && userEntity.Role == GeneralResource.Admin)
                 {
@@ -167,49 +162,20 @@ namespace DataAccess.Repositories.Repositories
                 {
                     throw new Exception(ErrorResource.UserNotExistErrror);
                 }
-                _skillsheetContext.UserDetails.Remove(userEntity);
-                await _skillsheetContext.SaveChangesAsync();
-                return true;
+                 _skillsheetContext.UserDetails.Remove(userEntity);
+                 int f= await  _skillsheetContext.SaveChangesAsync(); 
+                 return f>0;
             }
-            catch (DbException)
+            catch (DbUpdateException)
             {
-                throw new Exception("An error occurred while delete user in database.");
+                throw new Exception(ErrorResource.DbDeleteError);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
             }
         }
 
-
-
-
-        /// <summary>
-        /// Generates a JWT token for a user.
-        /// </summary>
-        /// <param name="user">The user DTO.</param>
-        /// <returns>A JWT token string.</returns>
-        public string GenerateJwtToken(UserDTO user)
-        {
-            var claims = new[]
-            {
-                new Claim(GeneralResource.UserId, Convert.ToString(user.Userid)),
-                new Claim(GeneralResource.Email, user.Email),
-                new Claim(GeneralResource.Name, user.Username),
-                new Claim(ClaimTypes.Role, user.Role),
-                new Claim(GeneralResource.Role, user.Role),
-            };
-            var secretKey = _config[GeneralResource.JwtKey];
-            if (string.IsNullOrEmpty(secretKey))
-            {
-                throw new ArgumentNullException(GeneralResource.JwtKey, ErrorResource.JwtError);
-            }
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));
-            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-            var token = new JwtSecurityToken(
-                claims: claims,
-                expires: DateTime.Now.AddDays(1),
-                signingCredentials: creds
-            );
-
-            return new JwtSecurityTokenHandler().WriteToken(token);
-        }
     }
 }
 

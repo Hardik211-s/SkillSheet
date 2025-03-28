@@ -61,6 +61,78 @@ namespace DataAccess.Repositories.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to An error occurred while adduser in database..
+        /// </summary>
+        public static string DbAddError {
+            get {
+                return ResourceManager.GetString("DbAddError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An error occurred while delete user detail in database..
+        /// </summary>
+        public static string DbDeleteDetailError {
+            get {
+                return ResourceManager.GetString("DbDeleteDetailError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An error occurred while delete user in database..
+        /// </summary>
+        public static string DbDeleteError {
+            get {
+                return ResourceManager.GetString("DbDeleteError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An error occurred while Update user detail in database..
+        /// </summary>
+        public static string DbUpdateDetailError {
+            get {
+                return ResourceManager.GetString("DbUpdateDetailError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An error occurred while update user in database..
+        /// </summary>
+        public static string DbUpdateError {
+            get {
+                return ResourceManager.GetString("DbUpdateError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An error occurred while add user skill in database..
+        /// </summary>
+        public static string DbUserSkillAddError {
+            get {
+                return ResourceManager.GetString("DbUserSkillAddError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An error occurred while delete user skill in database..
+        /// </summary>
+        public static string DbUserSkillDeleteError {
+            get {
+                return ResourceManager.GetString("DbUserSkillDeleteError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An error occurred while edit user skill in database..
+        /// </summary>
+        public static string DbUserSkillUpdateError {
+            get {
+                return ResourceManager.GetString("DbUserSkillUpdateError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to JWT Secret Key is not configured..
         /// </summary>
         public static string JwtError {
@@ -79,11 +151,56 @@ namespace DataAccess.Repositories.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Password is incorrect.
+        /// </summary>
+        public static string PasswordError {
+            get {
+                return ResourceManager.GetString("PasswordError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Skill category is not found..
+        /// </summary>
+        public static string SkillCategoryNotfound {
+            get {
+                return ResourceManager.GetString("SkillCategoryNotfound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Particular user skill is not available in data.
         /// </summary>
         public static string SkillNotAvailableError {
             get {
                 return ResourceManager.GetString("SkillNotAvailableError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Skills is not found..
+        /// </summary>
+        public static string SkillNotFound {
+            get {
+                return ResourceManager.GetString("SkillNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Skill is not available.
+        /// </summary>
+        public static string SkillUnavailable {
+            get {
+                return ResourceManager.GetString("SkillUnavailable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Skill sub category is not found..
+        /// </summary>
+        public static string SubCategoryNotFound {
+            get {
+                return ResourceManager.GetString("SubCategoryNotFound", resourceCulture);
             }
         }
         

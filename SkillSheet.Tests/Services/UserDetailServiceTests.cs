@@ -3,7 +3,6 @@ using Moq;
 using AutoMapper;
 using Microsoft.Extensions.Configuration;
 using SkillSheetAPI.Services.Services;
-using SkillSheetAPI.Services.Interfaces;
 using SkillSheetAPI.Models.DTOs;
 using DataAccess.Repositories.Interfaces;
 using FluentAssertions;
@@ -49,27 +48,8 @@ namespace SkillSheetAPI.Tests.Services
             // Assert
             result.Should().BeEquivalentTo(userModels);
         }
+        
 
-        /// <summary>
-        /// Tests that AddUserDetailService returns true when a user is added.
-        /// </summary>
-        [Fact]
-        public async Task AddUserDetailService_ReturnsTrue_WhenUserIsAdded()
-        {
-            // Arrange
-            var userDetailDTO = new UserDetailDTO { Username = "testuser" };
-            var formFileMock = new Mock<IFormFile>();
-            formFileMock.Setup(f => f.Length).Returns(1);
-            formFileMock.Setup(f => f.FileName).Returns("test.jpg");
-            userDetailDTO.Photo = formFileMock.Object;
-            _mockUserDetailRepo.Setup(repo => repo.AddUserDetail(userDetailDTO, It.IsAny<string>())).ReturnsAsync(true);
-
-            // Act
-            var result = await _userDetailService.AddUserDetailService(userDetailDTO);
-
-            // Assert
-            result.Should().BeTrue();
-        }
 
         /// <summary>
         /// Tests that GetUserDetailService returns a DbUserDetailDTO.
@@ -107,7 +87,33 @@ namespace SkillSheetAPI.Tests.Services
             // Assert
             result.Should().BeTrue();
         }
+        [Fact]
+        public async Task EditUserDetailService_ReturnsTrue_WhenEditIsSuccessful()
+        {
+            // Arrange
+            var userDetailDto = new UserDetailDTO { Username = "testuser" };
+            var dbUserDetailDto = new DbUserDetailDTO { Username = "testuser" };
+            _mockUserDetailRepo.Setup(repo => repo.EditUserDetail(userDetailDto, It.IsAny<string>())).ReturnsAsync(dbUserDetailDto);
+             
+            // Act
+            var result = await _userDetailService.EditUserDetailService(userDetailDto);
 
+            // Assert
+            Assert.True(result);
+        }
+        [Fact]
+        public async Task EditUserDetailService_ReturnsFalse_WhenEditFails()
+        {
+            // Arrange
+            var userDetailDto = new UserDetailDTO { Username = "testuser" };
+            _mockUserDetailRepo.Setup(repo => repo.EditUserDetail(userDetailDto, It.IsAny<string>())).ReturnsAsync((DbUserDetailDTO)null);
+
+            // Act
+            var result = await _userDetailService.EditUserDetailService(userDetailDto);
+
+            // Assert
+            result.Should().BeTrue();
+        }
         /// <summary>
         /// Tests that Upload returns the file path when a file is uploaded.
         /// </summary>

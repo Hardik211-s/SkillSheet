@@ -17,15 +17,12 @@ D:\SkillSheet\SkillSheetAPI.Models\obj\Debug\net8.0\ref\SkillSheetAPI.Models.dll
 D:\SkillSheet - Copy (9)\SkillSheetAPI.Models\bin\Debug\net8.0\SkillSheetAPI.Models.deps.json
 D:\SkillSheet - Copy (9)\SkillSheetAPI.Models\bin\Debug\net8.0\SkillSheetAPI.Models.dll
 D:\SkillSheet - Copy (9)\SkillSheetAPI.Models\bin\Debug\net8.0\SkillSheetAPI.Models.pdb
-D:\SkillSheet - Copy (9)\SkillSheetAPI.Models\bin\Debug\net8.0\DataAccess.Entities.dll
-D:\SkillSheet - Copy (9)\SkillSheetAPI.Models\bin\Debug\net8.0\DataAccess.Entities.pdb
 D:\SkillSheet - Copy (9)\SkillSheetAPI.Models\obj\Debug\net8.0\SkillSheetAPI.Models.csproj.AssemblyReference.cache
 D:\SkillSheet - Copy (9)\SkillSheetAPI.Models\obj\Debug\net8.0\SkillSheetAPI.Models.GeneratedMSBuildEditorConfig.editorconfig
 D:\SkillSheet - Copy (9)\SkillSheetAPI.Models\obj\Debug\net8.0\SkillSheetAPI.Models.AssemblyInfoInputs.cache
 D:\SkillSheet - Copy (9)\SkillSheetAPI.Models\obj\Debug\net8.0\SkillSheetAPI.Models.AssemblyInfo.cs
 D:\SkillSheet - Copy (9)\SkillSheetAPI.Models\obj\Debug\net8.0\SkillSheetAPI.Models.csproj.CoreCompileInputs.cache
 D:\SkillSheet - Copy (9)\SkillSheetAPI.Models\obj\Debug\net8.0\SkillSheetAPI.Models.sourcelink.json
-D:\SkillSheet - Copy (9)\SkillSheetAPI.Models\obj\Debug\net8.0\SkillShe.F59B37DF.Up2Date
 D:\SkillSheet - Copy (9)\SkillSheetAPI.Models\obj\Debug\net8.0\SkillSheetAPI.Models.dll
 D:\SkillSheet - Copy (9)\SkillSheetAPI.Models\obj\Debug\net8.0\refint\SkillSheetAPI.Models.dll
 D:\SkillSheet - Copy (9)\SkillSheetAPI.Models\obj\Debug\net8.0\SkillSheetAPI.Models.pdb

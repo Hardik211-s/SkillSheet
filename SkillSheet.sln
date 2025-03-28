@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillSheetAPI", "SkillSheetAPI\SkillSheetAPI.csproj", "{6D2AD396-EBBE-45C2-9231-4D7FEB9FF8EB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D155AC3C-952C-4711-8509-B47A4EC747D1} = {D155AC3C-952C-4711-8509-B47A4EC747D1}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.Entities", "DataAccess.Entities\DataAccess.Entities.csproj", "{D155AC3C-952C-4711-8509-B47A4EC747D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.Repositories", "DataAccess.Repositories\DataAccess.Repositories.csproj", "{0545D541-B740-407C-9A93-50CFB3360400}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillSheetAPI.Models", "SkillSheetAPI.Models\SkillSheetAPI.Models.csproj", "{B62F2B09-FDF6-46C8-BD14-34A6C1CAB9AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillSheetAPI.Services", "SkillSheetAPI.Services\SkillSheetAPI.Services.csproj", "{CACB45A3-3DBB-44EC-AFA9-A3D24C7A5384}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillSheet.Tests", "SkillSheet.Tests\SkillSheet.Tests.csproj", "{DE393E4F-C426-421D-86CB-0D177D723B0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D2AD396-EBBE-45C2-9231-4D7FEB9FF8EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D2AD396-EBBE-45C2-9231-4D7FEB9FF8EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D2AD396-EBBE-45C2-9231-4D7FEB9FF8EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D2AD396-EBBE-45C2-9231-4D7FEB9FF8EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D155AC3C-952C-4711-8509-B47A4EC747D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D155AC3C-952C-4711-8509-B47A4EC747D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D155AC3C-952C-4711-8509-B47A4EC747D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D155AC3C-952C-4711-8509-B47A4EC747D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0545D541-B740-407C-9A93-50CFB3360400}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0545D541-B740-407C-9A93-50CFB3360400}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0545D541-B740-407C-9A93-50CFB3360400}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0545D541-B740-407C-9A93-50CFB3360400}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B62F2B09-FDF6-46C8-BD14-34A6C1CAB9AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B62F2B09-FDF6-46C8-BD14-34A6C1CAB9AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B62F2B09-FDF6-46C8-BD14-34A6C1CAB9AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B62F2B09-FDF6-46C8-BD14-34A6C1CAB9AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CACB45A3-3DBB-44EC-AFA9-A3D24C7A5384}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CACB45A3-3DBB-44EC-AFA9-A3D24C7A5384}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CACB45A3-3DBB-44EC-AFA9-A3D24C7A5384}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CACB45A3-3DBB-44EC-AFA9-A3D24C7A5384}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE393E4F-C426-421D-86CB-0D177D723B0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE393E4F-C426-421D-86CB-0D177D723B0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE393E4F-C426-421D-86CB-0D177D723B0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE393E4F-C426-421D-86CB-0D177D723B0A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

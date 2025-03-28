@@ -7,7 +7,6 @@ namespace SkillSheetAPI.Services.Interfaces
     {
 
         Task<List<DbUserDetailDTO>> GetAllUserService();
-        Task<bool> AddUserDetailService(UserDetailDTO userDetailDto);
         Task<DbUserDetailDTO> GetUserDetailService(int id);
         Task<bool> DeleteUserDetailService(string username);
         Task<bool> EditUserDetailService(UserDetailDTO userDetailDto);

@@ -1,156 +1,68 @@
 {
   "Files": [
     {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\19197184.jpg",
-      "PackagePath": "staticwebassets\\assets\\19197184.jpg"
+      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\uploads\\066b4301-966b-433c-87f3-e69bae88ce5c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\066b4301-966b-433c-87f3-e69bae88ce5c.jpg"
     },
     {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\19199158.jpg",
-      "PackagePath": "staticwebassets\\assets\\19199158.jpg"
+      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\uploads\\11935806-7388-4a58-9c0b-15a963dc7899.jpg",
+      "PackagePath": "staticwebassets\\uploads\\11935806-7388-4a58-9c0b-15a963dc7899.jpg"
     },
     {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\3055778.jpg",
-      "PackagePath": "staticwebassets\\assets\\3055778.jpg"
+      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\uploads\\17a8a326-7d6f-4fe6-b35e-0be4821305d6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\17a8a326-7d6f-4fe6-b35e-0be4821305d6.jpg"
     },
     {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\3487284.jpg",
-      "PackagePath": "staticwebassets\\assets\\3487284.jpg"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\5162744.jpg",
-      "PackagePath": "staticwebassets\\assets\\5162744.jpg"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\5215677-removebg-preview.png",
-      "PackagePath": "staticwebassets\\assets\\5215677-removebg-preview.png"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\6587133.jpg",
-      "PackagePath": "staticwebassets\\assets\\6587133.jpg"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\8786988-removebg-preview.png",
-      "PackagePath": "staticwebassets\\assets\\8786988-removebg-preview.png"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\8786988.jpg",
-      "PackagePath": "staticwebassets\\assets\\8786988.jpg"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\Set_of_programmers_02_02.jpg",
-      "PackagePath": "staticwebassets\\assets\\Set_of_programmers_02_02.jpg"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\add_skill.png",
-      "PackagePath": "staticwebassets\\assets\\add_skill.png"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\bigdata_4.jpg",
-      "PackagePath": "staticwebassets\\assets\\bigdata_4.jpg"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\camera.png",
-      "PackagePath": "staticwebassets\\assets\\camera.png"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\find user2.png",
-      "PackagePath": "staticwebassets\\assets\\find user2.png"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\find_user.png",
-      "PackagePath": "staticwebassets\\assets\\find_user.png"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\freepik__background__74231.png",
-      "PackagePath": "staticwebassets\\assets\\freepik__background__74231.png"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icon.png",
-      "PackagePath": "staticwebassets\\assets\\icon.png"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icon2.png",
-      "PackagePath": "staticwebassets\\assets\\icon2.png"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-add-user-30 (1).png",
-      "PackagePath": "staticwebassets\\assets\\icons8-add-user-30 (1).png"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-cancel-30.png",
-      "PackagePath": "staticwebassets\\assets\\icons8-cancel-30.png"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-dashboard-48 (1).png",
-      "PackagePath": "staticwebassets\\assets\\icons8-dashboard-48 (1).png"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-dashboard-48.png",
-      "PackagePath": "staticwebassets\\assets\\icons8-dashboard-48.png"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-detail-40.png",
-      "PackagePath": "staticwebassets\\assets\\icons8-detail-40.png"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-name-24.png",
-      "PackagePath": "staticwebassets\\assets\\icons8-name-24.png"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-sheet-24.png",
-      "PackagePath": "staticwebassets\\assets\\icons8-sheet-24.png"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-sheet-48.png",
-      "PackagePath": "staticwebassets\\assets\\icons8-sheet-48.png"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\icons8-user-settings-64.png",
-      "PackagePath": "staticwebassets\\assets\\icons8-user-settings-64.png"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\manage_profile.png",
-      "PackagePath": "staticwebassets\\assets\\manage_profile.png"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\my_skill.png",
-      "PackagePath": "staticwebassets\\assets\\my_skill.png"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\profile.png",
-      "PackagePath": "staticwebassets\\assets\\profile.png"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\assets\\vision-scope-document-abstract-concept-illustration-vision-statement-scope-document-main-plan-project-management-software-business-analysis-idea-goal.png",
-      "PackagePath": "staticwebassets\\assets\\vision-scope-document-abstract-concept-illustration-vision-statement-scope-document-main-plan-project-management-software-business-analysis-idea-goal.png"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\favicon.ico",
-      "PackagePath": "staticwebassets\\favicon.ico"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\index.html",
-      "PackagePath": "staticwebassets\\index.html"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\main-6G43QSKD.js",
-      "PackagePath": "staticwebassets\\main-6G43QSKD.js"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\polyfills-FFHMD2TL.js",
-      "PackagePath": "staticwebassets\\polyfills-FFHMD2TL.js"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\scripts-EEEIPNC3.js",
-      "PackagePath": "staticwebassets\\scripts-EEEIPNC3.js"
-    },
-    {
-      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\styles-E4SXJBJ6.css",
-      "PackagePath": "staticwebassets\\styles-E4SXJBJ6.css"
+      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\uploads\\19738246-f69a-41be-bb62-fa66355ade6f.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\19738246-f69a-41be-bb62-fa66355ade6f.jpeg"
     },
     {
       "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\uploads\\2.jpg",
       "PackagePath": "staticwebassets\\uploads\\2.jpg"
+    },
+    {
+      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\uploads\\2efd0341-670e-46d2-b098-e96264ec9287.jpg",
+      "PackagePath": "staticwebassets\\uploads\\2efd0341-670e-46d2-b098-e96264ec9287.jpg"
+    },
+    {
+      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\uploads\\50a97419-797e-4ac5-a04b-2178c349e05d.jpg",
+      "PackagePath": "staticwebassets\\uploads\\50a97419-797e-4ac5-a04b-2178c349e05d.jpg"
+    },
+    {
+      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\uploads\\8fcb961c-19d8-43f3-87d7-217f75cec88f.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\8fcb961c-19d8-43f3-87d7-217f75cec88f.jpeg"
+    },
+    {
+      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\uploads\\98e1e46a-707c-4154-8f76-ae32c10d716d.jpg",
+      "PackagePath": "staticwebassets\\uploads\\98e1e46a-707c-4154-8f76-ae32c10d716d.jpg"
+    },
+    {
+      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\uploads\\a67b435e-4c33-4d22-9abf-ffbff69fcc4a.jpg",
+      "PackagePath": "staticwebassets\\uploads\\a67b435e-4c33-4d22-9abf-ffbff69fcc4a.jpg"
+    },
+    {
+      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\uploads\\a8a54300-2d74-4d94-a70f-743a95994fdd.jpg",
+      "PackagePath": "staticwebassets\\uploads\\a8a54300-2d74-4d94-a70f-743a95994fdd.jpg"
+    },
+    {
+      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\uploads\\be8e9a45-e511-454e-b933-9f1c1bf7d6cb.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\be8e9a45-e511-454e-b933-9f1c1bf7d6cb.jpeg"
+    },
+    {
+      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\uploads\\d11e584d-0fa4-4c23-870c-2675cc061652.jpg",
+      "PackagePath": "staticwebassets\\uploads\\d11e584d-0fa4-4c23-870c-2675cc061652.jpg"
+    },
+    {
+      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\uploads\\f518812c-732f-47f7-8090-a182c5013376.jpg",
+      "PackagePath": "staticwebassets\\uploads\\f518812c-732f-47f7-8090-a182c5013376.jpg"
+    },
+    {
+      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\uploads\\fd836ba0-b2b0-453f-b2e1-e38c8db653da.jpg",
+      "PackagePath": "staticwebassets\\uploads\\fd836ba0-b2b0-453f-b2e1-e38c8db653da.jpg"
+    },
+    {
+      "Id": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI\\wwwroot\\uploads\\ffe2ed40-d4e8-42f0-8799-dd0cbd7663b3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\ffe2ed40-d4e8-42f0-8799-dd0cbd7663b3.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SkillSheetAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

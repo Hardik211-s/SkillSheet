@@ -77,7 +77,7 @@ namespace DataAccess.Repositories.Repositories
                 })
                 .ToListAsync();
 
-            if (userSkill.Count == 0) throw new Exception("Skill is not available");
+            if (userSkill.Count == 0) throw new Exception(ErrorResource.SkillNotAvailableError);
 
             return userSkill;
         }
@@ -128,7 +128,7 @@ namespace DataAccess.Repositories.Repositories
             }
             catch (DbException)
             {
-                throw new Exception("An error occurred while add user skill in database.");
+                throw new Exception(ErrorResource.DbUserSkillAddError);
             }
         }
         #endregion
@@ -158,7 +158,7 @@ namespace DataAccess.Repositories.Repositories
             }
             catch (DbException)
             {
-                throw new Exception("An error occurred while edit user skill in database.");
+                throw new Exception(ErrorResource.DbUserSkillUpdateError);
             }
         }
         #endregion
@@ -184,7 +184,7 @@ namespace DataAccess.Repositories.Repositories
             }
             catch (DbException)
             {
-                throw new Exception("An error occurred while delete user skill in database.");
+                throw new Exception(ErrorResource.DbUserSkillDeleteError);
 
             }
         }

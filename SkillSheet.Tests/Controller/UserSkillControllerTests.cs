@@ -28,7 +28,7 @@ namespace SkillSheetAPI.Tests.Controllers
             _mockUserSkillService.Setup(service => service.AllUserSkillService()).ReturnsAsync(userSkillList);
 
             // Act
-            var result =await _controller.GetUserSkill() as ObjectResult;
+            var result = await _controller.GetUserSkill() as ObjectResult;
 
             // Assert
             result.Should().NotBeNull();
@@ -67,7 +67,7 @@ namespace SkillSheetAPI.Tests.Controllers
             // Assert
             result.Should().NotBeNull();
             result?.StatusCode.Should().Be(200);
-            result?.Value.Should().BeEquivalentTo(new { userSkill });
+            result?.Value.Should().BeEquivalentTo(new { message = "User skill added!" });
 
         }
 
@@ -84,7 +84,7 @@ namespace SkillSheetAPI.Tests.Controllers
             // Assert
             result.Should().NotBeNull();
             result?.StatusCode.Should().Be(200);
-            result?.Value.Should().BeEquivalentTo(new {userSkill= userSkillDto} );
+            result?.Value.Should().BeEquivalentTo(new { message = "User skill edited!" });
         }
 
         [Fact]
@@ -101,7 +101,7 @@ namespace SkillSheetAPI.Tests.Controllers
             // Assert
             result.Should().NotBeNull();
             result?.StatusCode.Should().Be(200);
-            result?.Value.Should().BeEquivalentTo(new { userSkill = userSkill });
+            result?.Value.Should().BeEquivalentTo(new { message = "User skill deleted!" });
         }
     }
 }
