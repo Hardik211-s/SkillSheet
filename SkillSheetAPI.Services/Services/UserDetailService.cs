@@ -3,6 +3,7 @@ using AutoMapper;
 using DataAccess.Repositories.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
+using SixLabors.ImageSharp;
 using SkillSheetAPI.Models.DTOs;
 using SkillSheetAPI.Services.Interfaces;
 using SkillSheetAPI.Services.Resource;
@@ -157,19 +158,18 @@ namespace SkillSheetAPI.Services.Services
                 var fullPath = Path.Combine(pathToSave, uniqueFileName);
                 string dbPath = Path.Combine(folderName, uniqueFileName).Replace("\\", "/");
 
+                
                 using (var stream = file.OpenReadStream())
+                using (var image = await Image.LoadAsync(stream))
                 {
-                    using (var image = System.Drawing.Image.FromStream(stream))
-                    {
-                        image.Save(fullPath);
-                    }
+                    await image.SaveAsync(fullPath); // Automatically detects format from file extension
                 }
 
                 return dbPath;
             }
             catch (Exception ex)
             {
-                return ex.Message;
+                throw new Exception( ex.Message);
             }
         }
         #endregion

@@ -26,16 +26,22 @@ namespace SkillSheetAPI.Services.Services
         /// Gets the dashboard data.
         /// </summary>
         /// <returns>A <see cref="DashboardDataDTO"/> containing the dashboard data.</returns>
-        public async Task<DashboardDataDTO>GetDashboardData()
+        public async Task<DashboardDataDTO> GetDashboardData()
         {
-            //Call other servoce here for data
-            DashboardDataDTO dashboardDataDTO = new DashboardDataDTO();
-            dashboardDataDTO.TotalUser= (await _authService.GetAllUserService()).Count();
-            dashboardDataDTO.TotalSkill=(await _skillService.AllUserSkillService()).Select(x => x.Skill).Distinct().Count();
-            dashboardDataDTO.UserAllData=await _skillService.AllUserSkillService();
-            dashboardDataDTO.AllUserDetail = await _userDetailService.GetAllUserService();
-            dashboardDataDTO.ExperienceAVG =Math.Truncate( dashboardDataDTO.UserAllData.Average(x => x.Experience));
-            return dashboardDataDTO;
+            try
+            {
+                //Call other servoce here for data
+                DashboardDataDTO dashboardDataDTO = new DashboardDataDTO();
+                dashboardDataDTO.TotalUser = (await _authService.GetAllUserService()).Count();
+                dashboardDataDTO.TotalSkill = (await _skillService.AllUserSkillService()).Select(x => x.Skill).Distinct().Count();
+                dashboardDataDTO.UserAllData = await _skillService.AllUserSkillService();
+                dashboardDataDTO.AllUserDetail = await _userDetailService.GetAllUserService();
+                dashboardDataDTO.ExperienceAVG = Math.Truncate(dashboardDataDTO.UserAllData.Average(x => x.Experience));
+                return dashboardDataDTO;
+            }
+            catch (Exception ex) {
+                throw new Exception(ex.Message);
+            }
             }
     }
 }

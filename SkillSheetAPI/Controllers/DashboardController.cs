@@ -4,7 +4,7 @@ using SkillSheetAPI.Resources;
 namespace SkillSheetAPI.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/dashboard")]
     public class DashboardController : ControllerBase
     {
         IDashboardService _dashboardService;

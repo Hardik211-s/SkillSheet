@@ -6,7 +6,7 @@ using SkillSheetAPI.Resources;
 namespace SkillSheetAPI.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/userdetail")]
     public class UserDetailController : Controller
     {
 
@@ -26,7 +26,7 @@ namespace SkillSheetAPI.Controllers
         /// Gets all user details.
         /// </summary>
         /// <returns>An <see cref="IActionResult"/> containing the list of user details.</returns>
-        [HttpGet("AllUserDetail")]
+        [HttpGet()]
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetAllUserDetail()
         {
@@ -51,7 +51,7 @@ namespace SkillSheetAPI.Controllers
         /// <param name="userDetailDto">The user detail DTO.</param>
         /// <returns>An <see cref="IActionResult"/> indicating the result of the operation.</returns>
 
-        [HttpPatch("EditUserDetail")]
+        [HttpPatch()]
         [Authorize(Roles = "User")]
 
         public async Task<IActionResult> EditUserDetail([FromForm] UserDetailDTO userDetailDto)
@@ -75,7 +75,7 @@ namespace SkillSheetAPI.Controllers
         /// </summary>
         /// <param name="id">The user ID.</param>
         /// <returns>An <see cref="IActionResult"/> containing the user detail.</returns>
-        [HttpGet("UserDetailById/{id}")]
+        [HttpGet("{id}")]
 
         public async Task<IActionResult> UserDetailById(int id)
         {

@@ -2,7 +2,7 @@
   {
     "ContainingType": "SkillSheetAPI.Controllers.AuthController",
     "Method": "GetAllUser",
-    "RelativePath": "api/Auth/allUser",
+    "RelativePath": "api/auth/alluser",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -12,7 +12,7 @@
   {
     "ContainingType": "SkillSheetAPI.Controllers.AuthController",
     "Method": "DeleteUser",
-    "RelativePath": "api/Auth/Delete/{username}",
+    "RelativePath": "api/auth/delete/{username}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -28,7 +28,7 @@
   {
     "ContainingType": "SkillSheetAPI.Controllers.AuthController",
     "Method": "Login",
-    "RelativePath": "api/Auth/login",
+    "RelativePath": "api/auth/login",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -44,7 +44,7 @@
   {
     "ContainingType": "SkillSheetAPI.Controllers.AuthController",
     "Method": "ChangePassword",
-    "RelativePath": "api/Auth/Password",
+    "RelativePath": "api/auth/password",
     "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
@@ -60,7 +60,7 @@
   {
     "ContainingType": "SkillSheetAPI.Controllers.AuthController",
     "Method": "Register",
-    "RelativePath": "api/Auth/register",
+    "RelativePath": "api/auth/register",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -76,7 +76,7 @@
   {
     "ContainingType": "SkillSheetAPI.Controllers.AuthController",
     "Method": "UpdateUser",
-    "RelativePath": "api/Auth/Update",
+    "RelativePath": "api/auth/update",
     "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
@@ -92,17 +92,7 @@
   {
     "ContainingType": "SkillSheetAPI.Controllers.DashboardController",
     "Method": "DashboardData",
-    "RelativePath": "api/Dashboard",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "SkillSheetAPI.Controllers.SkillDataController",
-    "Method": "GetSkillCategory",
-    "RelativePath": "api/SkillData/Category",
+    "RelativePath": "api/dashboard",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -112,7 +102,7 @@
   {
     "ContainingType": "SkillSheetAPI.Controllers.SkillDataController",
     "Method": "GetSkill",
-    "RelativePath": "api/SkillData/Skill",
+    "RelativePath": "api/skill",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -122,7 +112,7 @@
   {
     "ContainingType": "SkillSheetAPI.Controllers.SkillDataController",
     "Method": "GetSkill",
-    "RelativePath": "api/SkillData/Skill/{id}",
+    "RelativePath": "api/skill/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -137,8 +127,8 @@
   },
   {
     "ContainingType": "SkillSheetAPI.Controllers.SkillDataController",
-    "Method": "GetSkillSubcategory",
-    "RelativePath": "api/SkillData/Subcategory",
+    "Method": "GetSkillCategory",
+    "RelativePath": "api/skill/category",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -148,7 +138,17 @@
   {
     "ContainingType": "SkillSheetAPI.Controllers.SkillDataController",
     "Method": "GetSkillSubcategory",
-    "RelativePath": "api/SkillData/Subcategory/{id}",
+    "RelativePath": "api/skill/subcategory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SkillSheetAPI.Controllers.SkillDataController",
+    "Method": "GetSkillSubcategory",
+    "RelativePath": "api/skill/subcategory/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -164,7 +164,7 @@
   {
     "ContainingType": "SkillSheetAPI.Controllers.UserDetailController",
     "Method": "GetAllUserDetail",
-    "RelativePath": "api/UserDetail/AllUserDetail",
+    "RelativePath": "api/userdetail",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -174,7 +174,7 @@
   {
     "ContainingType": "SkillSheetAPI.Controllers.UserDetailController",
     "Method": "EditUserDetail",
-    "RelativePath": "api/UserDetail/EditUserDetail",
+    "RelativePath": "api/userdetail",
     "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
@@ -240,7 +240,7 @@
   {
     "ContainingType": "SkillSheetAPI.Controllers.UserDetailController",
     "Method": "UserDetailById",
-    "RelativePath": "api/UserDetail/UserDetailById/{id}",
+    "RelativePath": "api/userdetail/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -256,7 +256,7 @@
   {
     "ContainingType": "SkillSheetAPI.Controllers.UserSkillController",
     "Method": "GetUserSkill",
-    "RelativePath": "api/UserSkill",
+    "RelativePath": "api/userskill",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -266,7 +266,7 @@
   {
     "ContainingType": "SkillSheetAPI.Controllers.UserSkillController",
     "Method": "AddUserSkill",
-    "RelativePath": "api/UserSkill",
+    "RelativePath": "api/userskill",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -282,7 +282,7 @@
   {
     "ContainingType": "SkillSheetAPI.Controllers.UserSkillController",
     "Method": "EditUserSkill",
-    "RelativePath": "api/UserSkill",
+    "RelativePath": "api/userskill",
     "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
@@ -298,7 +298,7 @@
   {
     "ContainingType": "SkillSheetAPI.Controllers.UserSkillController",
     "Method": "GetUserSkill",
-    "RelativePath": "api/UserSkill/{id}",
+    "RelativePath": "api/userskill/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -314,7 +314,7 @@
   {
     "ContainingType": "SkillSheetAPI.Controllers.UserSkillController",
     "Method": "DeleteUserSkill",
-    "RelativePath": "api/UserSkill/{id}",
+    "RelativePath": "api/userskill/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

@@ -156,4 +156,13 @@
   <data name="UserRegister" xml:space="preserve">
     <value>User registered successfully!</value>
   </data>
+  <data name="UserSkillAdded" xml:space="preserve">
+    <value>User skill added!</value>
+  </data>
+  <data name="UserSkillDeleted" xml:space="preserve">
+    <value>User skill deleted!</value>
+  </data>
+  <data name="UserSkillEdited" xml:space="preserve">
+    <value>User skill edited!</value>
+  </data>
 </root>

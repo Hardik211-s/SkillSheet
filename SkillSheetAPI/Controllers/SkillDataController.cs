@@ -4,7 +4,7 @@ using SkillSheetAPI.Services.Interfaces;
 namespace SkillSheetAPI.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/skill")]
     public class SkillDataController : Controller
     {
 
@@ -18,7 +18,7 @@ namespace SkillSheetAPI.Controllers
         /// Gets the skill categories.
         /// </summary>
         /// <returns>A list of skill categories.</returns>
-        [HttpGet("Category")]
+        [HttpGet("category")]
         public async Task<IActionResult> GetSkillCategory()
         {
             try
@@ -38,7 +38,7 @@ namespace SkillSheetAPI.Controllers
         /// Gets the skill subcategories.
         /// </summary>
         /// <returns>A list of skill subcategories.</returns>
-        [HttpGet("Subcategory")]
+        [HttpGet("subcategory")]
         public async Task<IActionResult> GetSkillSubcategory()
         {
             try
@@ -59,7 +59,7 @@ namespace SkillSheetAPI.Controllers
         /// </summary>
         /// <param name="id">The subcategory ID.</param>
         /// <returns>The skill subcategory.</returns>
-        [HttpGet("Subcategory/{id}")]
+        [HttpGet("subcategory/{id}")]
         public async Task<IActionResult> GetSkillSubcategory(int id)
         {
             try
@@ -79,7 +79,7 @@ namespace SkillSheetAPI.Controllers
         /// Gets the skills.
         /// </summary>
         /// <returns>A list of skills.</returns>
-        [HttpGet("Skill")]
+        [HttpGet()]
         public async Task<IActionResult> GetSkill()
         {
             try
@@ -100,7 +100,7 @@ namespace SkillSheetAPI.Controllers
         /// </summary>
         /// <param name="id">The skill ID.</param>
         /// <returns>The skill.</returns>
-        [HttpGet("Skill/{id}")]
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetSkill(int id)
         {
             try

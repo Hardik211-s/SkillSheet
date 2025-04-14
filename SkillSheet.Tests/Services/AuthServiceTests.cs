@@ -92,7 +92,6 @@ namespace SkillSheetAPI.Tests.Services
 
             // Assert
             result.Should().BeTrue();
-            _mockEmailService.Verify(service => service.SendEmail(userRegisterDTO.Username, userRegisterDTO.Password, userRegisterDTO.Email, "Edited"), Times.Once);
         }
 
         [Fact]

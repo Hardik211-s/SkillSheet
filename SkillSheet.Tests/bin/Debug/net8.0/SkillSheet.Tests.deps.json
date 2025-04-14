@@ -24,6 +24,96 @@
           "SkillSheet.Tests.dll": {}
         }
       },
+      "Amazon.Lambda.APIGatewayEvents/2.7.1": {
+        "runtime": {
+          "lib/net8.0/Amazon.Lambda.APIGatewayEvents.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.2.0.0"
+          }
+        }
+      },
+      "Amazon.Lambda.ApplicationLoadBalancerEvents/2.2.0": {
+        "runtime": {
+          "lib/net8.0/Amazon.Lambda.ApplicationLoadBalancerEvents.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Amazon.Lambda.AspNetCoreServer/9.0.4": {
+        "dependencies": {
+          "Amazon.Lambda.APIGatewayEvents": "2.7.1",
+          "Amazon.Lambda.ApplicationLoadBalancerEvents": "2.2.0",
+          "Amazon.Lambda.Core": "2.5.0",
+          "Amazon.Lambda.Logging.AspNetCore": "3.1.1",
+          "Amazon.Lambda.Serialization.SystemTextJson": "2.4.4"
+        },
+        "runtime": {
+          "lib/net8.0/Amazon.Lambda.AspNetCoreServer.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.4.0"
+          }
+        }
+      },
+      "Amazon.Lambda.AspNetCoreServer.Hosting/1.7.4": {
+        "dependencies": {
+          "Amazon.Lambda.APIGatewayEvents": "2.7.1",
+          "Amazon.Lambda.AspNetCoreServer": "9.0.4",
+          "Amazon.Lambda.Core": "2.5.0",
+          "Amazon.Lambda.RuntimeSupport": "1.12.3"
+        },
+        "runtime": {
+          "lib/net8.0/Amazon.Lambda.AspNetCoreServer.Hosting.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Amazon.Lambda.Core/2.5.0": {
+        "runtime": {
+          "lib/net8.0/Amazon.Lambda.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Amazon.Lambda.Logging.AspNetCore/3.1.1": {
+        "dependencies": {
+          "Amazon.Lambda.Core": "2.5.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.1",
+          "Microsoft.Extensions.Logging": "9.0.2",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Amazon.Lambda.Logging.AspNetCore.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "Amazon.Lambda.RuntimeSupport/1.12.3": {
+        "dependencies": {
+          "Amazon.Lambda.Core": "2.5.0",
+          "SnapshotRestore.Registry": "1.0.1"
+        },
+        "runtime": {
+          "lib/net8.0/Amazon.Lambda.RuntimeSupport.dll": {
+            "assemblyVersion": "1.12.3.0",
+            "fileVersion": "1.12.3.0"
+          }
+        }
+      },
+      "Amazon.Lambda.Serialization.SystemTextJson/2.4.4": {
+        "dependencies": {
+          "Amazon.Lambda.Core": "2.5.0"
+        },
+        "runtime": {
+          "lib/net8.0/Amazon.Lambda.Serialization.SystemTextJson.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
       "AutoMapper/14.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Options": "9.0.2"
@@ -666,6 +756,22 @@
           }
         }
       },
+      "SixLabors.ImageSharp/3.1.7": {
+        "runtime": {
+          "lib/net6.0/SixLabors.ImageSharp.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.1.7.0"
+          }
+        }
+      },
+      "SnapshotRestore.Registry/1.0.1": {
+        "runtime": {
+          "lib/net8.0/SnapshotRestore.Registry.dll": {
+            "assemblyVersion": "1.0.1.0",
+            "fileVersion": "1.0.1.0"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/6.6.2": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "6.0.5",
@@ -824,8 +930,11 @@
       },
       "SkillSheetAPI/1.0.0": {
         "dependencies": {
+          "Amazon.Lambda.AspNetCoreServer": "9.0.4",
+          "Amazon.Lambda.AspNetCoreServer.Hosting": "1.7.4",
           "AutoMapper": "14.0.0",
           "DataAccess.Entities": "1.0.0",
+          "DataAccess.Repositories": "1.0.0",
           "MediaBrowser.Common": "4.8.10",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.12",
           "Microsoft.AspNetCore.SpaServices.Extensions": "8.0.13",
@@ -859,6 +968,7 @@
         "dependencies": {
           "DataAccess.Repositories": "1.0.0",
           "Microsoft.IdentityModel.Tokens": "8.7.0",
+          "SixLabors.ImageSharp": "3.1.7",
           "SkillSheetAPI.Models": "1.0.0",
           "System.IdentityModel.Tokens.Jwt": "8.7.0"
         },
@@ -876,6 +986,62 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Amazon.Lambda.APIGatewayEvents/2.7.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ORuKOBjquor/clDL5ogeUoKEHt/iRmaC673gFpNzpwF5VkJ7LRvQc4MYnkeIexnXEwdS7yTkM4eSu9wzORi/wg==",
+      "path": "amazon.lambda.apigatewayevents/2.7.1",
+      "hashPath": "amazon.lambda.apigatewayevents.2.7.1.nupkg.sha512"
+    },
+    "Amazon.Lambda.ApplicationLoadBalancerEvents/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UtCd9tFuVyED8+DmDKEkdXJbAb/TdHIz51R/CsJCexKerO6HGOG87FGId4Ce9IXE+qjlBGyNQsKCw9oLLNe0hw==",
+      "path": "amazon.lambda.applicationloadbalancerevents/2.2.0",
+      "hashPath": "amazon.lambda.applicationloadbalancerevents.2.2.0.nupkg.sha512"
+    },
+    "Amazon.Lambda.AspNetCoreServer/9.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-92yWLCOvygFds0sLbXmXFgkLUMF4cotHRX5QrZ/IBe57xxE2nmsnN+XYVZMMQT8s9SJTbO1pPbTbhYSrK4UCKQ==",
+      "path": "amazon.lambda.aspnetcoreserver/9.0.4",
+      "hashPath": "amazon.lambda.aspnetcoreserver.9.0.4.nupkg.sha512"
+    },
+    "Amazon.Lambda.AspNetCoreServer.Hosting/1.7.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0H3TEjnPH+mme/+AnMqjeNGwJv0p0WU5Y03+L9v2eVj/pLJwyK+ZJNyXtt1EV2kRz1i+d34IRoCNlMoFHIv08w==",
+      "path": "amazon.lambda.aspnetcoreserver.hosting/1.7.4",
+      "hashPath": "amazon.lambda.aspnetcoreserver.hosting.1.7.4.nupkg.sha512"
+    },
+    "Amazon.Lambda.Core/2.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JrDdnjUPFcZ74VDjVc2kMucyUpjHnN77Al9Owc17DYYFYAVav46fLRl1BlJj0UPhJxTakoB/h1PhU/6J005Qrw==",
+      "path": "amazon.lambda.core/2.5.0",
+      "hashPath": "amazon.lambda.core.2.5.0.nupkg.sha512"
+    },
+    "Amazon.Lambda.Logging.AspNetCore/3.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-q7ZUrjVulikcV8+hMIrAk+LJe3xQsdWCtM/yS0enjajopOuit71xYAJhrT1eXstvZMpqfg+B7gCUJboN9lHG9g==",
+      "path": "amazon.lambda.logging.aspnetcore/3.1.1",
+      "hashPath": "amazon.lambda.logging.aspnetcore.3.1.1.nupkg.sha512"
+    },
+    "Amazon.Lambda.RuntimeSupport/1.12.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Cl2ptWbAv20fvQvLzDt8M7EPFTtKkXq11Xa9XWirAew2CA2eoQ1rTafNKw589ewvuO1LO30sNGVeojrt4qLICw==",
+      "path": "amazon.lambda.runtimesupport/1.12.3",
+      "hashPath": "amazon.lambda.runtimesupport.1.12.3.nupkg.sha512"
+    },
+    "Amazon.Lambda.Serialization.SystemTextJson/2.4.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iv/cvqFuZ3v3+NFDyof0IJZvU+4kdpzOe3pWSBwp9HB885I+D32WQxuid9V4GnvRynER9XnWMPaDmImX8qH5cA==",
+      "path": "amazon.lambda.serialization.systemtextjson/2.4.4",
+      "hashPath": "amazon.lambda.serialization.systemtextjson.2.4.4.nupkg.sha512"
     },
     "AutoMapper/14.0.0": {
       "type": "package",
@@ -1184,6 +1350,20 @@
       "sha512": "sha512-1A6HpMPbzK+quxdtug1aDHI4BSRTgpi7OaDt8WQh7SFJd2sSQ0nNTZ7sYrwyxVf4AdKdN7XJL9tpiiJjRUaa4g==",
       "path": "npgsql.entityframeworkcore.postgresql/9.0.3",
       "hashPath": "npgsql.entityframeworkcore.postgresql.9.0.3.nupkg.sha512"
+    },
+    "SixLabors.ImageSharp/3.1.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9fIOOAsyLFid6qKypM2Iy0Z3Q9yoanV8VoYAHtI2sYGMNKzhvRTjgFDHonIiVe+ANtxIxM6SuqUzj0r91nItpA==",
+      "path": "sixlabors.imagesharp/3.1.7",
+      "hashPath": "sixlabors.imagesharp.3.1.7.nupkg.sha512"
+    },
+    "SnapshotRestore.Registry/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UdA5y8wpa6dHiV4+J9MveLr6GRDB1llTmb4c+MeRYRoWKVNC5Y+nTDcC16/QAyw1dRry+aPS1yAy6f57mS+Xfw==",
+      "path": "snapshotrestore.registry/1.0.1",
+      "hashPath": "snapshotrestore.registry.1.0.1.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/6.6.2": {
       "type": "package",

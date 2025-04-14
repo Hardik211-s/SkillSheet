@@ -176,5 +176,32 @@ namespace SkillSheetAPI.Resources {
                 return ResourceManager.GetString("UserRegister", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User skill added!.
+        /// </summary>
+        public static string UserSkillAdded {
+            get {
+                return ResourceManager.GetString("UserSkillAdded", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User skill deleted!.
+        /// </summary>
+        public static string UserSkillDeleted {
+            get {
+                return ResourceManager.GetString("UserSkillDeleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User skill edited!.
+        /// </summary>
+        public static string UserSkillEdited {
+            get {
+                return ResourceManager.GetString("UserSkillEdited", resourceCulture);
+            }
+        }
     }
 }

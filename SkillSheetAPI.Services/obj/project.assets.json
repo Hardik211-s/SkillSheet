@@ -413,6 +413,22 @@
           }
         }
       },
+      "SixLabors.ImageSharp/3.1.7": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SixLabors.ImageSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SixLabors.ImageSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SixLabors.ImageSharp.props": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/9.0.2": {
         "type": "package",
         "compile": {
@@ -1171,6 +1187,22 @@
         "postgresql.png"
       ]
     },
+    "SixLabors.ImageSharp/3.1.7": {
+      "sha512": "9fIOOAsyLFid6qKypM2Iy0Z3Q9yoanV8VoYAHtI2sYGMNKzhvRTjgFDHonIiVe+ANtxIxM6SuqUzj0r91nItpA==",
+      "type": "package",
+      "path": "sixlabors.imagesharp/3.1.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "build/SixLabors.ImageSharp.props",
+        "lib/net6.0/SixLabors.ImageSharp.dll",
+        "lib/net6.0/SixLabors.ImageSharp.xml",
+        "sixlabors.imagesharp.128.png",
+        "sixlabors.imagesharp.3.1.7.nupkg.sha512",
+        "sixlabors.imagesharp.nuspec"
+      ]
+    },
     "System.Diagnostics.DiagnosticSource/9.0.2": {
       "sha512": "z5CMQNLzk8UKnTEHRKb4nq03CCDWBMEF2gfP3oPKZn4F8wip6LFZCP5rF90DREHqdNddScIGAfszXJSjh4drSw==",
       "type": "package",
@@ -1315,28 +1347,29 @@
     "net8.0": [
       "DataAccess.Repositories >= 1.0.0",
       "Microsoft.IdentityModel.Tokens >= 8.7.0",
+      "SixLabors.ImageSharp >= 3.1.7",
       "SkillSheetAPI.Models >= 1.0.0",
       "System.IdentityModel.Tokens.Jwt >= 8.7.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin-\\.nuget\\packages\\": {},
+    "C:\\Users\\HardikSavaliya\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI.Services\\SkillSheetAPI.Services.csproj",
+      "projectUniqueName": "C:\\SkillSheet - Copy (9)\\SkillSheetAPI.Services\\SkillSheetAPI.Services.csproj",
       "projectName": "SkillSheetAPI.Services",
-      "projectPath": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI.Services\\SkillSheetAPI.Services.csproj",
-      "packagesPath": "C:\\Users\\Admin-\\.nuget\\packages\\",
-      "outputPath": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI.Services\\obj\\",
+      "projectPath": "C:\\SkillSheet - Copy (9)\\SkillSheetAPI.Services\\SkillSheetAPI.Services.csproj",
+      "packagesPath": "C:\\Users\\HardikSavaliya\\.nuget\\packages\\",
+      "outputPath": "C:\\SkillSheet - Copy (9)\\SkillSheetAPI.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Admin-\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HardikSavaliya\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1346,18 +1379,17 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://www.nuget.org/api/v2/curated-feeds/microsoftdotnet/": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\SkillSheet - Copy (9)\\DataAccess.Repositories\\DataAccess.Repositories.csproj": {
-              "projectPath": "D:\\SkillSheet - Copy (9)\\DataAccess.Repositories\\DataAccess.Repositories.csproj"
+            "C:\\SkillSheet - Copy (9)\\DataAccess.Repositories\\DataAccess.Repositories.csproj": {
+              "projectPath": "C:\\SkillSheet - Copy (9)\\DataAccess.Repositories\\DataAccess.Repositories.csproj"
             },
-            "D:\\SkillSheet - Copy (9)\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj": {
-              "projectPath": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj"
+            "C:\\SkillSheet - Copy (9)\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj": {
+              "projectPath": "C:\\SkillSheet - Copy (9)\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj"
             }
           }
         }
@@ -1381,6 +1413,10 @@
           "Microsoft.IdentityModel.Tokens": {
             "target": "Package",
             "version": "[8.7.0, )"
+          },
+          "SixLabors.ImageSharp": {
+            "target": "Package",
+            "version": "[3.1.7, )"
           },
           "System.IdentityModel.Tokens.Jwt": {
             "target": "Package",

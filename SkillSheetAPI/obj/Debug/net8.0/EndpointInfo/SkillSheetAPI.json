@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Auth/allUser": {
+    "/api/auth/alluser": {
       "get": {
         "tags": [
           "Auth"
@@ -17,7 +17,7 @@
         }
       }
     },
-    "/api/Auth/register": {
+    "/api/auth/register": {
       "post": {
         "tags": [
           "Auth"
@@ -48,7 +48,7 @@
         }
       }
     },
-    "/api/Auth/login": {
+    "/api/auth/login": {
       "post": {
         "tags": [
           "Auth"
@@ -79,7 +79,7 @@
         }
       }
     },
-    "/api/Auth/Update": {
+    "/api/auth/update": {
       "patch": {
         "tags": [
           "Auth"
@@ -110,7 +110,7 @@
         }
       }
     },
-    "/api/Auth/Password": {
+    "/api/auth/password": {
       "patch": {
         "tags": [
           "Auth"
@@ -141,7 +141,7 @@
         }
       }
     },
-    "/api/Auth/Delete/{username}": {
+    "/api/auth/delete/{username}": {
       "delete": {
         "tags": [
           "Auth"
@@ -163,7 +163,7 @@
         }
       }
     },
-    "/api/Dashboard": {
+    "/api/dashboard": {
       "get": {
         "tags": [
           "Dashboard"
@@ -175,7 +175,7 @@
         }
       }
     },
-    "/api/SkillData/Category": {
+    "/api/skill/category": {
       "get": {
         "tags": [
           "SkillData"
@@ -187,7 +187,7 @@
         }
       }
     },
-    "/api/SkillData/Subcategory": {
+    "/api/skill/subcategory": {
       "get": {
         "tags": [
           "SkillData"
@@ -199,42 +199,7 @@
         }
       }
     },
-    "/api/SkillData/Subcategory/{id}": {
-      "get": {
-        "tags": [
-          "SkillData"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/SkillData/Skill": {
-      "get": {
-        "tags": [
-          "SkillData"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/SkillData/Skill/{id}": {
+    "/api/skill/subcategory/{id}": {
       "get": {
         "tags": [
           "SkillData"
@@ -257,7 +222,42 @@
         }
       }
     },
-    "/api/UserDetail/AllUserDetail": {
+    "/api/skill": {
+      "get": {
+        "tags": [
+          "SkillData"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/skill/{id}": {
+      "get": {
+        "tags": [
+          "SkillData"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/userdetail": {
       "get": {
         "tags": [
           "UserDetail"
@@ -267,9 +267,7 @@
             "description": "OK"
           }
         }
-      }
-    },
-    "/api/UserDetail/EditUserDetail": {
+      },
       "patch": {
         "tags": [
           "UserDetail"
@@ -364,7 +362,7 @@
         }
       }
     },
-    "/api/UserDetail/UserDetailById/{id}": {
+    "/api/userdetail/{id}": {
       "get": {
         "tags": [
           "UserDetail"
@@ -387,7 +385,7 @@
         }
       }
     },
-    "/api/UserSkill": {
+    "/api/userskill": {
       "get": {
         "tags": [
           "UserSkill"
@@ -457,7 +455,7 @@
         }
       }
     },
-    "/api/UserSkill/{id}": {
+    "/api/userskill/{id}": {
       "get": {
         "tags": [
           "UserSkill"

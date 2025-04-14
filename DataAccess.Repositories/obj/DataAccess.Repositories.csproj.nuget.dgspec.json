@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SkillSheet - Copy (9)\\DataAccess.Repositories\\DataAccess.Repositories.csproj": {}
+    "C:\\SkillSheet - Copy (9)\\DataAccess.Repositories\\DataAccess.Repositories.csproj": {}
   },
   "projects": {
-    "D:\\SkillSheet - Copy (9)\\DataAccess.Entities\\DataAccess.Entities.csproj": {
+    "C:\\SkillSheet - Copy (9)\\DataAccess.Entities\\DataAccess.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SkillSheet - Copy (9)\\DataAccess.Entities\\DataAccess.Entities.csproj",
+        "projectUniqueName": "C:\\SkillSheet - Copy (9)\\DataAccess.Entities\\DataAccess.Entities.csproj",
         "projectName": "DataAccess.Entities",
-        "projectPath": "D:\\SkillSheet - Copy (9)\\DataAccess.Entities\\DataAccess.Entities.csproj",
-        "packagesPath": "C:\\Users\\Admin-\\.nuget\\packages\\",
-        "outputPath": "D:\\SkillSheet - Copy (9)\\DataAccess.Entities\\obj\\",
+        "projectPath": "C:\\SkillSheet - Copy (9)\\DataAccess.Entities\\DataAccess.Entities.csproj",
+        "packagesPath": "C:\\Users\\HardikSavaliya\\.nuget\\packages\\",
+        "outputPath": "C:\\SkillSheet - Copy (9)\\DataAccess.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin-\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HardikSavaliya\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -27,8 +27,7 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://www.nuget.org/api/v2/curated-feeds/microsoftdotnet/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -97,20 +96,20 @@
         }
       }
     },
-    "D:\\SkillSheet - Copy (9)\\DataAccess.Repositories\\DataAccess.Repositories.csproj": {
+    "C:\\SkillSheet - Copy (9)\\DataAccess.Repositories\\DataAccess.Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SkillSheet - Copy (9)\\DataAccess.Repositories\\DataAccess.Repositories.csproj",
+        "projectUniqueName": "C:\\SkillSheet - Copy (9)\\DataAccess.Repositories\\DataAccess.Repositories.csproj",
         "projectName": "DataAccess.Repositories",
-        "projectPath": "D:\\SkillSheet - Copy (9)\\DataAccess.Repositories\\DataAccess.Repositories.csproj",
-        "packagesPath": "C:\\Users\\Admin-\\.nuget\\packages\\",
-        "outputPath": "D:\\SkillSheet - Copy (9)\\DataAccess.Repositories\\obj\\",
+        "projectPath": "C:\\SkillSheet - Copy (9)\\DataAccess.Repositories\\DataAccess.Repositories.csproj",
+        "packagesPath": "C:\\Users\\HardikSavaliya\\.nuget\\packages\\",
+        "outputPath": "C:\\SkillSheet - Copy (9)\\DataAccess.Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin-\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HardikSavaliya\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -120,18 +119,17 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://www.nuget.org/api/v2/curated-feeds/microsoftdotnet/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\SkillSheet - Copy (9)\\DataAccess.Entities\\DataAccess.Entities.csproj": {
-                "projectPath": "D:\\SkillSheet - Copy (9)\\DataAccess.Entities\\DataAccess.Entities.csproj"
+              "C:\\SkillSheet - Copy (9)\\DataAccess.Entities\\DataAccess.Entities.csproj": {
+                "projectPath": "C:\\SkillSheet - Copy (9)\\DataAccess.Entities\\DataAccess.Entities.csproj"
               },
-              "D:\\SkillSheet - Copy (9)\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj": {
-                "projectPath": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj"
+              "C:\\SkillSheet - Copy (9)\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj": {
+                "projectPath": "C:\\SkillSheet - Copy (9)\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj"
               }
             }
           }
@@ -181,20 +179,20 @@
         }
       }
     },
-    "D:\\SkillSheet - Copy (9)\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj": {
+    "C:\\SkillSheet - Copy (9)\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj",
+        "projectUniqueName": "C:\\SkillSheet - Copy (9)\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj",
         "projectName": "SkillSheetAPI.Models",
-        "projectPath": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj",
-        "packagesPath": "C:\\Users\\Admin-\\.nuget\\packages\\",
-        "outputPath": "D:\\SkillSheet - Copy (9)\\SkillSheetAPI.Models\\obj\\",
+        "projectPath": "C:\\SkillSheet - Copy (9)\\SkillSheetAPI.Models\\SkillSheetAPI.Models.csproj",
+        "packagesPath": "C:\\Users\\HardikSavaliya\\.nuget\\packages\\",
+        "outputPath": "C:\\SkillSheet - Copy (9)\\SkillSheetAPI.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin-\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HardikSavaliya\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -204,8 +202,7 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://www.nuget.org/api/v2/curated-feeds/microsoftdotnet/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {

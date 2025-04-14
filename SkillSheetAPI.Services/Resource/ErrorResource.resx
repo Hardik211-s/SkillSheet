@@ -126,7 +126,4 @@
   <data name="FileUploadError" xml:space="preserve">
     <value>No file uploaded.</value>
   </data>
-  <data name="String1" xml:space="preserve">
-    <value>n</value>
-  </data>
 </root>

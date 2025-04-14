@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace SkillSheetAPI.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/auth")]
     public class AuthController : ControllerBase
     {
         IAuthService _authService;
@@ -28,7 +28,7 @@ namespace SkillSheetAPI.Controllers
         /// </summary>
         /// <returns>An <see cref="IActionResult"/> containing the list of users.</returns>
 
-        [HttpGet("allUser")]
+        [HttpGet("alluser")]
         public async Task<IActionResult> GetAllUser()
         {
             try
@@ -58,7 +58,7 @@ namespace SkillSheetAPI.Controllers
             {
                 var user =await _authService.RegisterUserService(userDto);
                 
-                return Ok(new { message = "User register successfully !", user});
+                return Ok(new { message = GeneralResource.UserRegister, user});
             }
             catch (Exception ex)
             {
@@ -97,7 +97,7 @@ namespace SkillSheetAPI.Controllers
         /// <returns>An <see cref="IActionResult"/> indicating the result of the operation.</returns>
 
         //[Authorize]
-        [HttpPatch("Update")]
+        [HttpPatch("update")]
         public async Task<IActionResult> UpdateUser([FromBody] UserRegisterDTO userDto)
         {
 
@@ -121,7 +121,7 @@ namespace SkillSheetAPI.Controllers
         /// <returns>An <see cref="IActionResult"/> indicating the result of the operation.</returns>
 
         //[Authorize]
-        [HttpPatch("Password")]
+        [HttpPatch("password")]
         public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordDTO changePasswordDTO)
         {
 
@@ -147,7 +147,7 @@ namespace SkillSheetAPI.Controllers
         /// <param name="username">The username.</param>
         /// <returns>An <see cref="IActionResult"/> indicating the result of the operation.</returns>
 
-        [HttpDelete("Delete/{username}")]
+        [HttpDelete("delete/{username}")]
         [Authorize(Roles = "Admin")]
 
         public async Task<IActionResult> DeleteUser(string username)

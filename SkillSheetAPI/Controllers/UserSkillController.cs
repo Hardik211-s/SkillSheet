@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace SkillSheetAPI.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/userskill")]
     public class UserSkillController : Controller
     {
         IUserSkillService _userSkillService;
@@ -76,7 +76,7 @@ namespace SkillSheetAPI.Controllers
                 if (userSkill == null) {
                     return BadRequest(ErrorResource.GeneralError);
                 }
-                return Ok(new { message = "User skill added!" });
+                return Ok(new { message = GeneralResource.UserSkillAdded });
 
             }
             catch (Exception ex)
@@ -102,7 +102,7 @@ namespace SkillSheetAPI.Controllers
                 {
                     return BadRequest(ErrorResource.GeneralError);
                 }
-                return Ok(new { message = "User skill edited!" });
+                return Ok(new { message = GeneralResource.UserSkillEdited });
 
             }
             catch (Exception ex)
@@ -128,7 +128,7 @@ namespace SkillSheetAPI.Controllers
                 {
                     return BadRequest(ErrorResource.GeneralError);
                 }
-                return Ok(new { message="User skill deleted!" });
+                return Ok(new { message=GeneralResource.UserSkillDeleted});
             }
             catch (Exception ex)
             {

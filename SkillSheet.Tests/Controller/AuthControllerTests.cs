@@ -87,7 +87,7 @@ namespace SkillSheetAPI.Tests.Controllers
             // Assert
             result.Should().NotBeNull();
             result?.StatusCode.Should().Be(200);
-            result?.Value.Should().BeEquivalentTo(new { message = "User register successfully !", user = userDto });
+            result?.Value.Should().BeEquivalentTo(new { message = "User registered successfully!", user = userDto });
         }
 
         /// <summary>

@@ -6,6 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>75ad9b38-37b6-400b-9228-e9933ffda106</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+	  <AWSProjectType>Lambda</AWSProjectType>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,6 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Amazon.Lambda.AspNetCoreServer" Version="9.0.4" />
+    <PackageReference Include="Amazon.Lambda.AspNetCoreServer.Hosting" Version="1.7.4" />
     <PackageReference Include="AutoMapper" Version="14.0.0" />
     <PackageReference Include="MediaBrowser.Common" Version="4.8.10" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.12" />
@@ -41,6 +44,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DataAccess.Entities\DataAccess.Entities.csproj" />
+    <ProjectReference Include="..\DataAccess.Repositories\DataAccess.Repositories.csproj" />
     <ProjectReference Include="..\SkillSheetAPI.Models\SkillSheetAPI.Models.csproj" />
     <ProjectReference Include="..\SkillSheetAPI.Services\SkillSheetAPI.Services.csproj" />
   </ItemGroup>
@@ -51,11 +55,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>ErrorResource.resx</DependentUpon>
     </Compile>
-    <Compile Update="Resources\GeneralResource.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>GeneralResource.resx</DependentUpon>
-    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -63,10 +62,30 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ErrorResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="Resources\GeneralResource.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>GeneralResource.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="..\.dockerignore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="..\.dockerignore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="..\.dockerignore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="..\.dockerignore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="..\.dockerignore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="..\.dockerignore" />
   </ItemGroup>
 
 </Project>

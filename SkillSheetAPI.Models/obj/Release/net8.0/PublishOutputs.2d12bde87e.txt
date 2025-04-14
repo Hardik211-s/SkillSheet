@@ -1,0 +1,6 @@
+C:\SkillSheet - Copy (9)\SkillSheetAPI.Models\bin\Release\net8.0\publish\SkillSheetAPI.Models.dll
+C:\SkillSheet - Copy (9)\SkillSheetAPI.Models\bin\Release\net8.0\publish\SkillSheetAPI.Models.deps.json
+C:\SkillSheet - Copy (9)\SkillSheetAPI.Models\bin\Release\net8.0\publish\SkillSheetAPI.Models.pdb
+C:\SkillSheet - Copy (9)\SkillSheetAPI.Models\bin\Release\net8.0\publish\Microsoft.AspNetCore.Http.Features.dll
+C:\SkillSheet - Copy (9)\SkillSheetAPI.Models\bin\Release\net8.0\publish\Microsoft.Extensions.Primitives.dll
+C:\SkillSheet - Copy (9)\SkillSheetAPI.Models\bin\Release\net8.0\publish\System.IO.Pipelines.dll
