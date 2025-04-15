@@ -93,36 +93,34 @@ namespace DataAccess.Repositories.Repositories
         {
             try
             {
-                int size = userSkillDTO.MyId.Length;
                 var userSkillDetail = new UserSkill();
 
-                //while loop for add multiple skill for perticular user
-                while (size != 0)
+                
+              
+                bool exists = await _skillsheetContext.UserSkills
+                        .AnyAsync(us => us.SkillId == userSkillDTO.MyId && us.UserId == userSkillDTO.UserId);
+                var userSkill = _mapper.Map<UserSkill>(userSkillDTO);
+                if (exists)
                 {
-                    bool exists = await _skillsheetContext.UserSkills
-                        .AnyAsync(us => us.SkillId == userSkillDTO.MyId[size - 1] && us.UserId == userSkillDTO.UserId);
-                    var userSkill = _mapper.Map<UserSkill>(userSkillDTO);
-                    if (exists)
+                    var skillPresence = await _skillsheetContext.UserSkills.FirstOrDefaultAsync(o => o.UserId == userSkillDTO.UserId && o.SkillId == userSkillDTO.MyId);
+                    if (skillPresence != null)
                     {
-                        var skillPresence = await _skillsheetContext.UserSkills.FirstOrDefaultAsync(o => o.UserId == userSkillDTO.UserId && o.SkillId == userSkillDTO.MyId[size - 1]);
-                        if (skillPresence != null)
-                        {
-                            skillPresence.ProficiencyLevel = userSkillDTO.ProficiencyLevel;
-                            skillPresence.Experience = userSkillDTO.Experience;
-                        }
-
-                        var userSkillDetail1 = _skillsheetContext.UserSkills.Update(skillPresence!).Entity;
-                        await _skillsheetContext.SaveChangesAsync();
-
-                        size -= 1;
-                        continue;
+                        skillPresence.ProficiencyLevel = userSkillDTO.ProficiencyLevel;
+                        skillPresence.Experience = userSkillDTO.Experience;
                     }
 
-                    userSkill.SkillId = userSkillDTO.MyId[size - 1];
+                    var userSkillDetail1 = _skillsheetContext.UserSkills.Update(skillPresence!).Entity;
+                    await _skillsheetContext.SaveChangesAsync();
+
+                }
+                else
+                {
+
+                    userSkill.SkillId = userSkillDTO.MyId;
                     userSkillDetail = _skillsheetContext.UserSkills.Add(userSkill).Entity;
                     await _skillsheetContext.SaveChangesAsync();
-                    size -= 1;
                 }
+                
 
                 return _mapper.Map<DbUserSkillDTO>(userSkillDetail);
             }

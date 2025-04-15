@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SkillSheetAPI.Models")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9dbd0f1fd60babb2f88448ed6ec5266c4a6dddba")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9637be756de6204f8ac1a303d0676067919df8e")]
 [assembly: System.Reflection.AssemblyProductAttribute("SkillSheetAPI.Models")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SkillSheetAPI.Models")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

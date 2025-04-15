@@ -6,7 +6,7 @@ namespace SkillSheetAPI.Models.DTOs
     {
         public int UserId { get; set; }
 
-        public int[] MyId { get; set; } 
+        public int MyId { get; set; } 
 
         public string ProficiencyLevel { get; set; }
 
