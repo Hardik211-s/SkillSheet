@@ -1,136 +1,87 @@
 using DataAccess.Entities.Context;
-using Microsoft.EntityFrameworkCore;
 using DataAccess.Repositories.Interfaces;
 using DataAccess.Repositories.Repositories;
-using SkillSheetAPI.Services.Services;
-using SkillSheetAPI.Services.Interfaces;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using SkillSheetAPI.Services.Interfaces;
+using SkillSheetAPI.Services.Repositories;
+using SkillSheetAPI.Utils;
 using System.Text;
-using SkillSheetAPI.MapperProfiles;
-using Microsoft.Extensions.FileProviders;
-using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
 builder.Services.AddControllers();
+builder.Services.AddOpenApi();
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
-// Add services to the container.
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("dbms")));
+builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql(connectionString));
 
-//Register repo and service
-builder.Services.AddScoped<IAuthRepo, AuthRepo>();
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IQualificationRepository,QualificationRepository>();
+builder.Services.AddScoped<ISkillRepository,SkillRepository>();
+builder.Services.AddScoped<ILanguageRepository,LanguageRepository>();
+builder.Services.AddScoped<IUnitofWork, UnitOfWork>();
 builder.Services.AddScoped<IAuthService, AuthService>();
-builder.Services.AddScoped<IDashboardService, DashboardService>();
-builder.Services.AddScoped<IEmailService, EmailService>();
-builder.Services.AddScoped<ISkillDataService, SkillDataService>();
-builder.Services.AddScoped<IUserDetailRepo, UserDetailRepo>();
-builder.Services.AddScoped<ISkillDataRepo, SkillDataRepo>();
-builder.Services.AddScoped<IUserDetailService, UserDetailService>();
-builder.Services.AddScoped<ISkillDataRepo, SkillDataRepo>();
-builder.Services.AddScoped<IUserDetailService, UserDetailService>();
-builder.Services.AddScoped<IUserSkillRepo, UserSkillRepo>();
-builder.Services.AddScoped<IUserSkillService, UserSkillService>();
-builder.Services.AddHttpClient();
-var apiKey = builder.Configuration["OpenWeatherMap:ApiKey"] 
-    ?? Environment.GetEnvironmentVariable("OpenWeatherMap__ApiKey");
-builder.Services.AddScoped<IWeatherService>(sp =>
-{
-    var httpClientFactory = sp.GetRequiredService<IHttpClientFactory>();
-    var httpClient = httpClientFactory.CreateClient();
-    return new WeatherService(httpClient, apiKey);
-});
-// Register AutoMapper profiles
-builder.Services.AddAutoMapper(typeof(AuthMappingProfile));
-builder.Services.AddAutoMapper(typeof(UserDetailMappingProfile));
-builder.Services.AddAutoMapper(typeof(SkillDataMappingProfile));
-builder.Services.AddAutoMapper(typeof(UserSkillMappingProfile));
-
-var jwtSecret = builder.Configuration["Jwt:SecretKey"];
-
-builder.Services.AddAuthentication(Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)
-       .AddJwtBearer(options =>
-       {
-           options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
-           {
-               ValidateIssuerSigningKey = true,
-               IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSecret)),
-               ValidateIssuer = false,
-               ValidateAudience = false,
-               ValidateLifetime = true,
-           };
-       });
-
-
-// Configure JWT authentication
+builder.Services.AddScoped<IAdminService, AdminService>();
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IQualificationService, QualificationService>();
+builder.Services.AddScoped<ISkillService, SkillService>();
+builder.Services.AddScoped<ILanguageService, LanguageService>();
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+builder.Services.AddSingleton<JwtTokenService>();
+builder.Services.AddScoped<IPasswordService,PasswordService>();
 
-
-builder.Services.AddSwaggerGen(options =>
+builder.Services.AddCors(options =>
 {
-    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-    {
-        Name = "Authorization",
-        Type = SecuritySchemeType.Http,
-        Scheme = "Bearer",
-        BearerFormat = "JWT",
-        In = ParameterLocation.Header,
-        Description = "Enter 'Bearer <your_token>' to authenticate"
-    });
-
-  
-
-    options.AddSecurityRequirement(new OpenApiSecurityRequirement
-    {
+    options.AddPolicy("AllowReactApp",
+        policy =>
         {
-            new OpenApiSecurityScheme
-            {
-                Reference = new OpenApiReference
-                {
-                    Type = ReferenceType.SecurityScheme,
-                    Id = "Bearer"
-                }
-            },
-            new string[] {} // No specific scopes required
-        }
-    });
+            policy
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .WithOrigins("http://localhost:5173");
+        });
 });
 
-builder.Services.AddAuthorization(options =>
+var jwtSettings = builder.Configuration.GetSection("JwtSettings");
+var key = Encoding.ASCII.GetBytes(jwtSettings["SecretKey"]);
+
+builder.Services.AddAuthentication(options =>
 {
-    options.AddPolicy("Admin", policy =>
-        policy.RequireRole("Admin")); // Ensure this matches the role in your token
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = jwtSettings["Issuer"],
+        ValidAudience = jwtSettings["Audience"],
+        IssuerSigningKey = new SymmetricSecurityKey(key)
+    };
 });
 
-builder.Services.AddAWSLambdaHosting(LambdaEventSource.HttpApi);
-builder.Services.AddAWSLambdaHosting(LambdaEventSource.RestApi);
+builder.Services.AddAuthorization();
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-//if (app.Environment.IsDevelopment())
-//{
+if (app.Environment.IsDevelopment())
+{
     app.UseSwagger();
     app.UseSwaggerUI();
-//}
-app.UseCors(builder => builder
-             .AllowAnyOrigin()
-             .AllowAnyMethod()
-             .AllowAnyHeader());
-app.UseCors("AllowAllOrigins");
-app.UseCors("AllowSpecificOrigin");
-//app.UseHttpsRedirection();
+}
+app.UseCors("AllowReactApp");
+app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseStaticFiles();
-
-
-app.UseStaticFiles(new StaticFileOptions
-{
-    FileProvider = new PhysicalFileProvider(
-           Path.Combine(Directory.GetCurrentDirectory(), "wwwroot")),
-    RequestPath = "/wwwroot"
-});
-
 app.MapControllers();
+
 app.Run();
