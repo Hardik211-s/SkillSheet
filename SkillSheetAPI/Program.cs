@@ -32,7 +32,15 @@ builder.Services.AddScoped<ISkillDataRepo, SkillDataRepo>();
 builder.Services.AddScoped<IUserDetailService, UserDetailService>();
 builder.Services.AddScoped<IUserSkillRepo, UserSkillRepo>();
 builder.Services.AddScoped<IUserSkillService, UserSkillService>();
-
+builder.Services.AddHttpClient();
+var apiKey = builder.Configuration["OpenWeatherMap:ApiKey"] 
+    ?? Environment.GetEnvironmentVariable("OpenWeatherMap__ApiKey");
+builder.Services.AddScoped<IWeatherService>(sp =>
+{
+    var httpClientFactory = sp.GetRequiredService<IHttpClientFactory>();
+    var httpClient = httpClientFactory.CreateClient();
+    return new WeatherService(httpClient, apiKey);
+});
 // Register AutoMapper profiles
 builder.Services.AddAutoMapper(typeof(AuthMappingProfile));
 builder.Services.AddAutoMapper(typeof(UserDetailMappingProfile));
