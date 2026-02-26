@@ -24,6 +24,7 @@ builder.Services.AddScoped<IAuthRepo, AuthRepo>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IDashboardService, DashboardService>();
 builder.Services.AddScoped<IEmailService, EmailService>();
+builder.Services.AddScoped<IIssueService, IssueService>();
 builder.Services.AddScoped<ISkillDataService, SkillDataService>();
 builder.Services.AddScoped<IUserDetailRepo, UserDetailRepo>();
 builder.Services.AddScoped<ISkillDataRepo, SkillDataRepo>();
